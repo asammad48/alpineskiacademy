@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowboard Lessons in Baqueira | Learn and Perfect Your Style | Alpine Ski Academy </title>
+    <meta name="description"
+        content="Master the board with our snowboard lessons in Baqueira. Expert instructors will guide you from your first turns to the snowpark. Fun and progression guaranteed for children and adults of all levels. Your adventure awaits!">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <script src="language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "Tu escuela de esquí y snowboard en Baqueira Beret. Clases personalizadas para todos los niveles y edades.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+        "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - Escuela de Esquí y Snowboard en Baqueira Beret">
+    <meta property="og:description"
+        content="Tu escuela de esquí y snowboard en Baqueira Beret. Clases personalizadas para todos los niveles y edades.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escuela de Esquí y Snowboard en Baqueira Beret">
+    <meta property="twitter:description"
+        content="Tu escuela de esquí y snowboard en Baqueira Beret. Clases personalizadas para todos los niveles y edades.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span> <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.jpg"
+                    alt="Alpine Ski Academy – Ski and snowboard school in Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="clases-esqui-baqueira/clases-esqui-baqueria-en.html" id="skiLessonsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ski Lessons
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Particular Classes -->
+                            <li>
+                                <h6 class="dropdown-header">Particular Classes</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/private-ski-lessons-kids-baqueira.html">Kids</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/private-ski-lessons-families-baqueira.html">Families</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/private-ski-lessons-adults-baqueira.html">Adults</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/private-ski-lessons-carv-baqueira.html">With Carv</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Specialized Classes -->
+                            <li>
+                                <h6 class="dropdown-header">Specialized Classes</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/freeride-ski-lessons-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/freestyle-ski-lessons-baqueira.html">Freestyle</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Group Classes -->
+                            <li>
+                                <h6 class="dropdown-header">Group Classes</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/private-ski-lessons-kids-baqueira.html">Kids Group</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/adult-group-ski-lessons-baqueira.html">Adult Group</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/en/private-ski-lessons-carv-baqueira.html">Companies/Schools</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="en/snowboard-lessons-baqueira.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ski-trips.html">Trips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webcams-baqueria.html">Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ski-snowboard-equipment-hire-baqueira.html">Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ski-snowboard-lessons-prices-baqueira.html">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-bookings.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Book Now Button -->
+                <div class="nav-cta ms-3">
+                    <a href="contact-bookings.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Book Now
+                    </a>
+                </div>
+                <!-- Language Switcher Dropdown -->
+                <div class="language-switcher dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe me-1"></i> EN
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item active language-option" href="en.html" data-lang="en">
+                                <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+                            </a></li>
+                        <li><a class="dropdown-item language-option" href="index.html" data-lang="es">
+                                <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+                            </a></li>
+                        <li><a class="dropdown-item language-option" href="ca.html" data-lang="ca">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg" width="20" height="15" class="me-2">Català
+                            </a></li>
+                        <li><a class="dropdown-item language-option" href="fr.html" data-lang="fr">
+                                <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+                            </a></li>
+                        <li><a class="dropdown-item language-option" href="pt.html" data-lang="pt">
+                                <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Snowboard Hero Section with Video -->
+<section class="hero-snowboard">
+    <video autoplay muted loop class="hero-video">
+        <source src="images/Snowboard/profesora-snowboard-happy-riding-powder.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-4">Ski Equipment Hire in Baqueira</h1>
+                <p class="lead mb-5">Hire your ski or snowboard equipment in Baqueira. We offer free advice and send our recommendations with an exclusive perk.</p>
+                <a href="../clases-esqui-baqueira/clases-esqui-baqueria-en.html" class="btn btn-primary btn-lg me-3">View Available Classes</a>
+                <a href="ski-snowboard-lessons-prices-baqueira.html" class="btn btn-outline-light btn-lg">View Prices</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcrumb Navigation -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../en.html"><i class="fas fa-home me-1"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Snowboard Lessons</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title">Where to hire skis and snowboards in Baqueira?</h2>
+                <p class="textjustify">If you're coming to ski in Baqueira and don't have your own gear, hiring the right equipment is key to fully enjoying the experience.</p>
+                <p class="textjustify">At Alpine Ski Academy, a ski & snowboard school placed in Baqueira Beret, we aren't a rental shop, but we offer a complementary and free service: personal advice to help you choose the most suitable equipment for your level, your discipline, and the resort's conditions.</p>
+                <p class="textjustify">We collaborate with establishments located in strategic and very convenient areas, both in Ruda and Vielha, which have new and updated equipment, adapted for all levels: from beginners to expert piste, all-mountain, freeride, or freestyle skiers.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Snowboard/profesora-snowboard-baqueira.webp" alt="Ski equipment hire in Baqueira" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Methodology Section -->
+<section class="methodology-section">
+    <div class="container">
+        <h2 class="section-title text-center">Our free advisory service</h2>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>Personalized Equipment Advice</h4>
+                    <p>At Alpine Ski Academy, we help you choose the ideal equipment for you at no extra cost. This service is included with any booking of our ski or snowboard lessons.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>All Levels Covered</h4>
+                    <p>From beginners to advanced skiers, we provide guidance on the right equipment for your level, discipline, and goals to ensure optimal performance and safety.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-laugh-beam"></i>
+                    </div>
+                    <h4>Exclusive Perks</h4>
+                    <p>When you book through us, you'll receive an exclusive perk like discounts at our partner rental shops located in Ruda, Salardú, and Vielha.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Classes Section -->
+<section class="classes-section" id="classes">
+    <div class="container">
+        <h2 class="section-title text-center">Types of recommended equipment based on your profile</h2>
+        <p class="text-center mb-5">We detail the type of equipment we usually recommend for each skier profile</p>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/niño-debutante-snowboard-baqueira.webp" alt="Beginner ski equipment" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Beginner (children and adult beginners)</h3>
+                        <p>Soft skis, short radius, and narrow waist. Easy to turn, not very demanding. Comfortable boots, not excessively rigid. Helmet compulsory. For children: skis shorter than their height and back protectors if necessary.</p>
+                        <p><strong>Level:</strong> First-time skiers</p>
+                        <a href="../clases-esqui-baqueira/grupo-ninos.html" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/profesora-snowboard-baqueira.webp" alt="Intermediate ski equipment" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Intermediate level (piste and technical improvement)</h3>
+                        <p>More reactive, but controllable skis. Medium radius, waist between 70 and 80 mm. Medium stiffness boots adapted to weight. Poles suitable for height.</p>
+                        <p><strong>Level:</strong> Comfortable on blue and red runs</p>
+                        <a href="../clases-esqui-baqueira/clases-esqui-baqueria-en.html" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/profesroa-snowboard-baqueira-beret.webp" alt="Freeride equipment" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Freeride / All-Mountain</h3>
+                        <p>Longer skis, with greater floatation and wide waist (90+ mm). Solid and stable structure. Firm boots with good power transmission.</p>
+                        <p><strong>Level:</strong> Off-piste enthusiasts</p>
+                        <a href="../clases-esqui-baqueira/particulares-freeride.html" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/clase-de-snowboard-baqueira-alpine-ski-academy.webp" alt="Technical and freestyle equipment" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Technical & Freestyle</h3>
+                        <p>For technical lessons: High-end piste skis with radius adapted to discipline. For freestyle: Twin tip skis with medium/wide waist and moderate flex. Both require specific boot characteristics.</p>
+                        <p><strong>Level:</strong> Advanced to expert</p>
+                        <a href="../clases-esqui-baqueira/particulares-freestyle.html" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <h2 class="section-title text-center">How is the hire organised?</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4>When to collect the equipment?</h4>
+                        <p>Whenever possible, we recommend collecting the equipment the day before, especially if your lesson is first thing in the morning. This allows you to avoid rushing, calmly try on boots, and make adjustments if necessary.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4>How much time is needed?</h4>
+                        <p>If you have to collect it on the same day, we recommend arriving at least 45 minutes before your lesson. Shops open at 8:30 AM, which gives you enough time to organise everything if your ski or snowboard lesson is at 9:30 AM.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4>Where are the shops?</h4>
+                        <p>The shops we collaborate with are located in Ruda, Salardú, and Vielha, in very accessible areas. We'll send you a direct link via WhatsApp when you confirm your booking with addresses, opening hours, and how to get there from your accommodation.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h4>What should you bring or know?</h4>
+                        <p>We'll help you know what equipment you need based on your level. The shops will have it prepared (as much as possible) and adjusted to your profile. And you'll receive an exclusive perk for coming from Alpine Ski Academy.</p>
+                        <p><strong>Contact for advice:</strong> WhatsApp <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a> or <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="about-us.html" class="btn btn-outline-primary">Meet Our Team</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title text-center">What do people say about our equipment advice service?</h2>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"During the PolarSound weekend, my binding broke and they treated me like family, fixed my board and binding in seconds so I could continue riding. Amazing, thank you!"</p>
+                    <p class="testimonial-author">Javier Mora</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Fantastic Victor and Emilio, 100% available, competent and effective. Thanks for making our vacation perfect."</p>
+                    <p class="testimonial-author">Diogo Salema da Costa</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent treatment and very professional!"</p>
+                    <p class="testimonial-author">Jesús Suárez</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title text-center">Frequently asked questions about equipment hire</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is equipment hire included in the lesson price?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. Equipment hire is an external service. At Alpine Ski Academy, we help you manage it easily and at no additional cost, but payment for the hire is made directly at the shop. In return, you'll receive an exclusive perk for coming from us.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I hire equipment on the same day as the lesson?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, although we recommend collecting it the day before if your lesson starts early. Shops open at 8:30 AM, so if you arrive with enough time (about 45 minutes before the lesson), you can also manage it in the morning without a problem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <p>Do you have more questions about equipment, preparation, or our services?</p>
+            <a href="blog.html" class="btn btn-outline-primary">Visit our Blog</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Need help with your equipment?</h2>
+        <p class="mb-4">Write to us when you make your booking and we'll send you everything you need: shop address, what to ask for, when to collect it, and how to get your exclusive perk.</p>
+        
+        <div class="mt-4">
+            <a href="https://wa.me/34669911342" target="_blank"https://wa.me/34669911342" target="_blank">+34669911342</a>" class="btn btn-light btn-lg me-3">
+                <i class="fas fa-phone me-2"></i>Call to Book
+            </a>
+            <a href="mailto:<a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>" class="btn btn-outline-light btn-lg" target="_blank">
+                <i class="fas fa-envelope me-2"></i>Request Information
+            </a>
+        </div>
+        
+        <p class="mt-4">👉 Book your lesson now and receive personalised advice. Write us a WhatsApp if you prefer!</p>
+    </div>
+</section>
+
+ <!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">Providing world-class ski and snowboard instruction since 2005. Our
+                        certified instructors will help you master the slopes with confidence.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="../clases-esqui-baqueira/clases-esqui-baqueria-en.html" style="text-decoration: none; color: inherit;">Ski Lessons</a></li>
+                        <li><a href="snowboard-lessons-baqueira.html" style="text-decoration: none; color: inherit;">Snowboard Lessons</a></li>
+                        <li><a href="about-us.html" style="text-decoration: none; color: inherit;">About us</a></li>
+                        <li><a href="ski-trips.html" style="text-decoration: none; color: inherit;">Trips</a></li>
+                        <li><a href="webcams-baqueria.html" style="text-decoration: none; color: inherit;">Cameras</a></li>
+                        <li><a href="ski-snowboard-equipment-hire-baqueira.html" style="text-decoration: none; color: inherit;">Equipment rental</a></li>
+                        <li><a href="ski-snowboard-lessons-prices-baqueira.html" style="text-decoration: none; color: inherit;">Prices</a></li>
+                        <li><a href="contact-bookings.html" style="text-decoration: none; color: inherit;">Contact/Booking</a></li>
+                        <li><a href="blog-en.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about-us.html" style="text-decoration: none; color: inherit;">About Us</a></li>
+                        <li><a href="about-us.html" style="text-decoration: none; color: inherit;">Our Team</a></li>
+                        <li><a href="about-us.html" style="text-decoration: none; color: inherit;">Testimonials</a></li>
+                        <li><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="contact-bookings.html" style="text-decoration: none; color: inherit;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Connect With Us</h5>
+                    <div class="social-links mb-3">
+                        <a href="https://www.instagram.com/alpine.skiacademy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy?lang=es"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Legal Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="legal-notice.html" style="text-decoration: none; color: inherit;">Legal Notice</a></li>
+                        <li><a href="privacy-policy.html" style="text-decoration: none; color: inherit;">Privacy Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Cookie Policy</a></li>
+                        <li><a href="Cancellation-policy.html" style="text-decoration: none; color: inherit;">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy S.L. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. is an independent company. We are not linked to or
+                        part of Baqueira Beret, S.A. The use of the name Baqueira is strictly to locate the place where
+                        we carry out our services.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+<script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+</script>
+</body>
+
+</html>

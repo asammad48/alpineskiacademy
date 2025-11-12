@@ -1,0 +1,591 @@
+/* Classes Page Specific Styles - FIXED VERSION */
+.classes-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/clase-esqui-debutante-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+    margin-top: -106px;
+}
+
+/* FIX 1: Reduce whitespace in breadcrumb section */
+.breadcrumb-section {
+    padding: 8px 0 !important;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 5px 0 !important;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #6c757d;
+}
+
+.breadcrumb-item.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* FIX 2: Proper intro section structure */
+.intro-section {
+    padding: 30px 0 40px !important;
+}
+
+.intro-content {
+    text-align: left !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.intro-content .lead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    color: #5d6d7e;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* FIX 3: Proper modalidades section alignment */
+.modalidades-section {
+    padding: 40px 0 !important;
+}
+
+.modalidad-card {
+    border-left: 4px solid var(--primary);
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+    transition: all 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 420px; /* Ensure equal height */
+}
+
+.modalidad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(52, 152, 219, 0.2);
+}
+
+.modalidad-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modalidad-card h3 i {
+    color: var(--primary);
+}
+
+.modalidad-card > p {
+    font-size: 1.1rem;
+    color: #5d6d7e;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* Feature List Styles */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    flex-grow: 1;
+}
+
+.feature-list li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1rem;
+    color: #5d6d7e;
+    line-height: 1.5;
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.modalidad-card .btn {
+    margin-top: auto; /* Push button to bottom */
+    align-self: flex-start;
+}
+
+/* FIX 4: Proper CTA section layout */
+.cta-section {
+    padding: 40px 0 !important;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-text {
+    margin-bottom: 30px;
+}
+
+.cta-text h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-text p {
+    font-size: 1.1rem;
+    color: #5d6d7e;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* FIX 5: WhatsApp button hover colors */
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%) !important;
+    border-color: transparent !important;
+}
+
+/* Image Container Styles */
+.img-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.img-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.03);
+}
+
+/* Light Alt Background */
+.bg-light-alt {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+}
+
+/* FAQ Section Enhancements */
+.faq-section {
+    padding: 40px 0 !important;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    padding: 20px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-question:hover {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    background: white;
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-answer.active {
+    padding: 25px;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #5d6d7e;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Section spacing adjustments */
+.differentiators-section {
+    padding: 40px 0 !important;
+}
+
+.benefits-section {
+    padding: 40px 0 !important;
+}
+
+.pricing-section {
+    padding: 40px 0 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .classes-hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    .intro-section {
+        padding: 20px 0 30px !important;
+    }
+    
+    .intro-content .lead {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    
+    .intro-content p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .modalidades-section {
+        padding: 30px 0 !important;
+    }
+    
+    .modalidad-card {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+        min-height: 380px;
+    }
+    
+    .modalidad-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .cta-content {
+        text-align: center;
+    }
+    
+    .cta-buttons {
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .faq-question {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    
+    .faq-answer.active {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .classes-hero-section {
+        padding: 80px 0 40px;
+    }
+    
+    .modalidad-card {
+        padding: 15px 10px;
+        min-height: 350px;
+    }
+    
+    .feature-list li {
+        padding-left: 25px;
+        font-size: 0.9rem;
+    }
+    
+    .img-container {
+        margin: 20px 0;
+    }
+    
+    .cta-text h3 {
+        font-size: 1.5rem;
+    }
+}
+
+ :root {
+            --primary: #1a6fc4;
+            --secondary: #f8f9fa;
+            --accent: #ff6b00;
+            --dark: #343a40;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1549881124-eef420f9e4d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .text-center .section-title:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0d5aa7;
+            border-color: #0d5aa7;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .bg-light-alt {
+            background-color: #f8fbfe;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-link {
+            color: green;
+        }
+        
+        .breadcrumb {
+            background-color: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .modalidad-card {
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .img-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+        
+        .img-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        
+        .img-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        #clases-esqui-baqueira
+        {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/clase-esqui-debutante-baqueira.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .fa-whatsapp me-1:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+}
+     

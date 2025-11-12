@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página no encontrada | Alpine Ski Academy</title>
+    <meta name="description" content="La página que buscas no existe. Serás redirigido a la página principal de Alpine Ski Academy.">
+    <meta http-equiv="refresh" content="3; url=/index.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+        
+        .btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+        }
+        
+        .redirect-info {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo1.jpg" alt="Alpine Ski Academy Logo" class="logo">
+        <div class="error-code">404</div>
+        <h1>Página no encontrada</h1>
+        <p>Lo sentimos, la página que estás buscando no existe o ha sido movida.</p>
+        <p>Serás redirigido automáticamente a la página principal en unos segundos.</p>
+        <a href="/index.html" class="btn">Ir a la página principal</a>
+        <div class="redirect-info">
+            <p>Redirigiendo automáticamente...</p>
+        </div>
+    </div>
+    
+    <script>
+        // Immediate redirect in case meta refresh doesn't work
+        setTimeout(function() {
+            window.location.href = '/index.html';
+        }, 3000);
+    </script>
+</body>
+</html>
+

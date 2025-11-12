@@ -1,0 +1,85 @@
+# Custom Error Pages
+ErrorDocument 404 /404.html
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Ensure MultiViews doesn't interfere with extensionless rewrites
+Options -MultiViews
+
+# ============================================
+# BLOG FOLDER - COMPLETE EXCLUSION (MUST BE FIRST)
+# ============================================
+# Handle uppercase Blog requests - redirect to lowercase blog (ONE TIME ONLY)
+RewriteCond %{THE_REQUEST} \s/Blog/ [NC]
+RewriteRule ^Blog/(.*)$ /blog/$1 [NC,R=301,L]
+
+# Redirect /blog/ directory to blog.html
+RewriteCond %{REQUEST_URI} ^/blog/?$ [NC]
+RewriteRule ^blog/?$ /blog.html [NC,R=301,L]
+
+# STOP PROCESSING FOR BLOG FOLDER - Allow direct access to all blog files
+# If the request is for a blog file, serve it directly and stop all other rules
+RewriteCond %{REQUEST_URI} ^/blog/ [NC]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# ============================================
+# LANGUAGE PAGES
+# ============================================
+# Special-case language roots to .html even if same-named directories exist
+RewriteRule ^(en|ca|fr|pt)/?$ $1.html [NC,L]
+
+# Collapse duplicate language prefixes: /en/en/... -> /en/...
+RewriteRule ^(en|ca|fr|pt)/(?:\1)\.html$ /$1 [NC,R=301,L]
+RewriteRule ^(en|ca|fr|pt)/(?:\1)/(.*)$ /$1/$2 [NC,R=301,L]
+
+# Prevent nested language paths like /en/ca or /en/ca.html → redirect to /ca
+RewriteRule ^(en|ca|fr|pt)/(en|ca|fr|pt)\.html$ /$2 [NC,R=301,L]
+RewriteRule ^(en|ca|fr|pt)/(en|ca|fr|pt)/?$ /$2 [NC,R=301,L]
+
+# ============================================
+# HTML EXTENSION REMOVAL (EXCLUDING BLOG COMPLETELY)
+# ============================================
+# Remove .html extension from URLs (ONLY for non-blog files)
+# First, redirect .html to non-.html (external redirect for SEO)
+RewriteCond %{THE_REQUEST} \s/([^/\s]+)\.html [NC]
+RewriteCond %{REQUEST_URI} !^/blog [NC]
+RewriteCond %{REQUEST_URI} !^/Blog [NC]
+RewriteRule ^ /%1? [NC,L,R=301]
+
+# Then, internally rewrite non-.html URLs to .html files (ONLY for non-blog files)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/blog [NC]
+RewriteCond %{REQUEST_URI} !^/Blog [NC]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+# ============================================
+# INDEX HANDLING
+# ============================================
+# Handle index.html - redirect /index.html to /
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^ /? [NC,L,R=301]
+
+# ============================================
+# SERVER SETTINGS
+# ============================================
+# Prevent directory listing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Browser caching for static files (optional - improves performance)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

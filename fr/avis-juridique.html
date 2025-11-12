@@ -1,0 +1,508 @@
+﻿ <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Ski Academy: École de Ski et Snowboard à Baqueira Beret</title>
+    <meta name="description"
+    content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges, progrès garanti et expériences inoubliables sur la neige.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <!-- <script src="language.js"></script> -->
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - École de Ski et Snowboard en Baqueira Beret">
+    <meta property="og:description"
+        content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - École de Ski et Snowboard en Baqueira Beret">
+    <meta property="twitter:description"
+        content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span><a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span><a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Header with Navigation and Language Switcher -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="../fr.html">
+            <img src="logo1.jpg"
+                alt="Alpine Ski Academy – École de ski et snowboard à Baqueira">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cours de Ski
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                        <!-- Cours particuliers -->
+                        <li>
+                            <h6 class="dropdown-header">Cours Particuliers</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-particuliers-enfants-baqueira.html">Enfants</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-prives-familles-baqueira.html">Familles</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-particuliers-adultes-baqueira.html">Adultes</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-prives-carv-baqueira.html">Avec Carv</a></li>
+
+                        <!-- Cours spéciaux -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-freeride-baqueira.html">Freeride</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-freestyle-baqueira.html">Freestyle</a></li>
+
+                        <!-- Cours en groupe -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h6 class="dropdown-header">Cours en Groupe</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-groupe-enfants-baqueira.html">Groupe Enfants</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-groupe-adultes-baqueira.html">Groupe Adultes</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-groupe-entreprises-ecoles-baqueira.html">Entreprises/Écoles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cours-snowboard-baqueira.html">Snowboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a-propos-de-nous.html">Nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerie.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="voyages-ski.html">Voyages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webcams-baqueria-fr.html">Caméras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location-materiel-ski-snowboard-baqueira.html">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prix-cours-ski-snowboard-baqueira.html">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-reservations.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Book Now Button -->
+            <div class="nav-cta ms-3">
+                <a href="contact-reservations.html" class="btn btn-primary btn-book-now">
+                    <i class="fas fa-calendar-check me-1"></i>Réserver
+                </a>
+            </div>
+            <!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> FR
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+         <li><a class="dropdown-item active language-option" href="avis-juridique.html" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../aviso-legal.html" data-lang="es">
+            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../en/legal-notice.html" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../ca/avis-legal.html" data-lang="ca">
+            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+        </a></li>
+       
+        <li><a class="dropdown-item language-option" href="../pt/aviso-legal-pt.html" data-lang="pt">
+            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+        </a></li>
+    </ul>
+</div>
+        </div>
+    </div>
+</nav>
+
+<div class="legal-page">
+  <div class="legal-header">
+    <h1>Avis Juridique</h1>
+    <p class="last-updated">Dernière mise à jour: <span id="current-date"></span></p>
+  </div>
+
+  <section class="legal-section">
+    <h2>Informations de l'Entreprise</h2>
+    <p>Conformément à l'article 10 de la loi 34/2002, du 11 juillet, sur les Services de la Société de l'Information et le Commerce Électronique (LSSICE), BOE n° 166, les données d'identification de l'entreprise sont fournies ci-dessous :</p>
+    
+    <div class="company-info">
+      <div class="info-item">
+        <strong>Nom/Raison Sociale:</strong> Víctor Puche Fita
+      </div>
+      <div class="info-item">
+        <strong>NIF/CIF:</strong> 47730931
+      </div>
+      <div class="info-item">
+        <strong>Adresse:</strong> Travessa Pla de Beret 5ªA (12430, Lérida)
+      </div>
+      <div class="info-item">
+        <strong>Téléphone:</strong> 669 911 342
+      </div>
+      <div class="info-item">
+        <strong>Email:</strong> <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>
+      </div>
+      <div class="info-item">
+        <strong>Site Web:</strong> https://alpineskiacademy.com/
+      </div>
+    </div>
+  </section>
+
+  <section class="legal-section">
+    <h2>Conditions Générales d'Utilisation</h2>
+    <p>Víctor Puche Fita (ci-après dénommé « Baqueira Beret Ski Academy ») ne peut assumer aucune responsabilité découlant d'une utilisation incorrecte, inappropriée ou illégale des informations apparaissant sur les sites Web de Baqueira Beret Ski Academy.</p>
+    <p>Dans les limites établies par la loi, Baqueira Beret Ski Academy n'assume aucune responsabilité quant à l'exactitude, l'exhaustivité, la mise à jour et la précision des données ou informations contenues sur ses sites Web.</p>
+    <p>Les contenus et informations disponibles sur les sites Web de Baqueira Beret Ski Academy sont obtenus à partir de diverses sources. Cependant, ces contenus et informations ne lient pas Baqueira Beret Ski Academy et ne constituent pas des opinions, conseils ou avis juridiques de quelque nature que ce soit, car il s'agit simplement d'un service d'information.</p>
+    <p>Les sites Web de Baqueira Beret Ski Academy peuvent contenir des liens vers des sites tiers que Baqueira Beret Ski Academy ne peut contrôler. Par conséquent, Baqueira Beret Ski Academy ne peut assumer de responsabilité pour le contenu pouvant apparaître sur des pages tierces.</p>
+    <p>L'accès au site Web et/ou l'utilisation de ses services implique l'acceptation pleine et entière de tous ses termes d'utilisation. Baqueira Beret Ski Academy se réserve le droit de modifier unilatéralement le site Web et ses services, y compris les termes d'utilisation.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>Conditions d'Utilisation du Site Web</h2>
+    <p>L'utilisateur doit utiliser le site Web conformément aux Utilisations Autorisées. Il est expressément interdit d'utiliser le site Web ou ses services pour des fins illégales, contraires à la Bonne Foi, à l'Ordre Public, ou aux dispositions établies dans les termes d'utilisation.</p>
+    <p>Il est également interdit d'utiliser le site Web de manière à nuire aux droits ou intérêts de tiers ou qui, de quelque manière que ce soit, entrave l'utilisation normale du site Web par d'autres utilisateurs.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>Droits de Propriété Intellectuelle et Industrielle</h2>
+    <p>Tout le contenu du site Web (marques, noms commerciaux, images, icônes, conception et présentation générale des différentes sections) est soumis aux droits de propriété intellectuelle ou industrielle de Baqueira Beret Ski Academy et de tiers.</p>
+    <p>En aucun cas, l'accès au site Web ne implique que Baqueira Beret Ski Academy ou le titulaire de ces droits :</p>
+    <ul class="legal-list">
+      <li>Fournit une autorisation ou une licence pour ce contenu</li>
+      <li>Renonce, transfère ou cède des droits totaux ou partiels sur le contenu (y compris, mais sans s'y limiter, les droits de reproduction, de distribution et de communication publique)</li>
+      <li>Tout usage du site Web et/ou de son contenu autre que ceux expressément autorisés par Baqueira Beret Ski Academy est interdit</li>
+      <li>Aucun utilisateur ne peut revendre, republier, imprimer, télécharger, copier, retransmettre ou présenter tout élément de ce site Web ou son contenu sans le consentement écrit préalable de Baqueira Beret Ski Academy, sauf si la loi le permet, de manière raisonnable, en copiant ou en imprimant le contenu pour un usage personnel et non commercial, en conservant inchangés les droits d'auteur et autres données d'identification de Baqueira Beret Ski Academy et/ou du titulaire des droits sur ces contenus</li>
+    </ul>
+    <p>Ce site Web et son contenu sont protégés par les lois internationales et espagnoles sur la Propriété Industrielle et Intellectuelle, qu'il s'agisse de créations individuelles et/ou de compilations. L'utilisateur ne peut pas retirer ou modifier de quelque manière que ce soit les informations relatives à ces droits inclus sur le site Web. Tous les droits sont réservés en faveur de Baqueira Beret Ski Academy ou du titulaire de ces droits.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>Exonération de Garanties et de Responsabilité</h2>
+    <p>Baqueira Beret Ski Academy ne garantit ni ne s'engage sur le bon fonctionnement du site Web et/ou de ses services.</p>
+    <p>Les contenus de tous types inclus sur le site Web, qui sont accessibles au grand public, facilitent la jouissance des informations, produits et services fournis par Baqueira Beret Ski Academy.</p>
+    <p>Baqueira Beret Ski Academy ne cautionne pas le contenu des sites Web liés, et ne garantit pas la légalité, l'exactitude, la véracité et la fiabilité des informations qu'ils contiennent.</p>
+  </section>
+
+  <section class="legal-section">
+    <h2>Juridiction et Loi Applicable</h2>
+    <p>Les termes d'utilisation et les services offerts sur le site Web sont régis par la loi espagnole. Baqueira Beret Ski Academy n'a aucun contrôle sur les personnes pouvant accéder à son site Web ou leur localisation. En cas de conflit ou de réclamation concernant le site Web ou l'un des services fournis, les parties acceptent expressément de se soumettre aux tribunaux et juridictions espagnols.</p>
+  </section>
+</div>
+
+<style>
+.legal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.legal-header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.1rem;
+  color: #2c3e50;
+}
+
+.last-updated {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.legal-section {
+  margin-bottom: 0.75rem;
+}
+
+.legal-section h2 {
+  font-size: 1.3rem;
+  color: #3498db;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.legal-section p {
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.company-info {
+  background-color: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 2px;
+  margin-top: 0.4rem;
+}
+
+.info-item {
+  margin-bottom: 0.15rem;
+  padding: 0.05rem 0;
+}
+
+.info-item strong {
+  display: inline-block;
+  min-width: 150px;
+  color: #2c3e50;
+}
+
+.legal-list {
+  padding-left: 1rem;
+  margin: 0.4rem 0;
+}
+
+.legal-list li {
+  margin-bottom: 0.3rem;
+  text-align: justify;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .legal-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .legal-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .info-item strong {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-info {
+    padding: 0.5rem;
+  }
+  
+  .info-item {
+    display: block;
+  }
+  
+  .info-item strong {
+    display: block;
+    margin-bottom: 0.05rem;
+  }
+}
+</style>
+
+<script>
+// Add current date automatically
+document.addEventListener('DOMContentLoaded', function() {
+  const currentDate = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = currentDate.toLocaleDateString('fr-FR', options);
+  document.getElementById('current-date').textContent = formattedDate;
+});
+</script>
+ 
+ <!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges, progrès garanti et expériences inoubliables sur la neige.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                         <li><a href="#" style="text-decoration: none; color: inherit;">Cours de Ski</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Cours de Snowboard</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À Propos</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Voyages</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Caméras</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Location de Matériel</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Tarifs</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact / Réservation</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Entreprise</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À Propos de Nous</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Notre équipe</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Témoignages</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Liens légaux</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Mentions Légales</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique de Confidentialité</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique de Cookies</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique d'Annulation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. est une entreprise indépendante. Nous ne sommes pas liés ni ne faisons partie de Baqueira Beret, S.A. L'utilisation du nom Baqueira est strictement pour localiser le lieu où nous réalisons nos services en tant qu'école de ski.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de Ski Freestyle à Baqueira | Technique, Style et Sécurité | Alpine Ski Academy </title>
+    <meta name="description"
+    content="🎿 Maîtrisez le snowpark avec nos cours de freestyle à Baqueira. Apprenez les sauts, les modules et le switch avec des moniteurs experts. Progression sécurisée, contrôle technique et plaisir garanti. Sentez l'adrénaline à Era Marmota !">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <script src="language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - École de Ski et Snowboard en Baqueira Beret">
+    <meta property="og:description"
+        content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - École de Ski et Snowboard en Baqueira Beret">
+    <meta property="twitter:description"
+        content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span><a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span><a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Header with Navigation and Language Switcher -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo1.jpg"
+                alt="Alpine Ski Academy – École de ski et snowboard à Baqueira">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cours de Ski
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                        <!-- Cours particuliers -->
+                        <li>
+                            <h6 class="dropdown-header">Cours Particuliers</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Enfants</a></li>
+                        <li><a class="dropdown-item" href="#">Familles</a></li>
+                        <li><a class="dropdown-item" href="#">Adultes</a></li>
+                        <li><a class="dropdown-item" href="#">Avec Carv</a></li>
+
+                        <!-- Cours spéciaux -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Freeride</a></li>
+                        <li><a class="dropdown-item" href="#">Freestyle</a></li>
+
+                        <!-- Cours en groupe -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h6 class="dropdown-header">Cours en Groupe</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Groupe Enfants</a></li>
+                        <li><a class="dropdown-item" href="#">Groupe Adultes</a></li>
+                        <li><a class="dropdown-item" href="#">Entreprises/Écoles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Snowboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Voyages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Caméras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- Book Now Button -->
+            <div class="nav-cta ms-3">
+                <a href="#contact" class="btn btn-primary btn-book-now">
+                    <i class="fas fa-calendar-check me-1"></i>Réserver
+                </a>
+            </div>
+            <!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> FR
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+         <li><a class="dropdown-item active language-option" href="fr.html" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+        </a></li>
+        <li><a class="dropdown-item language-option" href="es.html" data-lang="es">
+            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+        </a></li>
+        <li><a class="dropdown-item language-option" href="en.html" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+        </a></li>
+        <li><a class="dropdown-item language-option" href="#" data-lang="ca">
+            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+        </a></li>
+       
+        <li><a class="dropdown-item language-option" href="#" data-lang="pt">
+            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+        </a></li>
+    </ul>
+</div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="freestyle-hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-70">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h1 class="display-5 fw-bold mb-4">Cours de Ski Freestyle à Baqueira : Maîtrisez l'Air avec Technique et Style</h1>
+                <p class="lead mb-4">Découvrez le côté le plus créatif et émotionnel du ski avec nos cours de freestyle à Baqueira. Chez Alpine Ski Academy, nous vous apprenons à voler avec contrôle, sécurité et technique.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/34669911342" class="btn btn-primary btn-lg me-3" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>Réservez votre Cours de Freestyle
+                    </a>
+                    <a href="precios.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-euro-sign me-2"></i>Consultez nos tarifs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcrumb Section -->
+<section class="breadcrumb-section py-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="clases-esqui-baqueira.html">Cours de ski</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Freestyle</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p class="lead text-center mb-5">En maîtrisant les sauts, les virages, les modules et le style libre dans le snowpark Era Marmota et les zones préparées du domaine skiable. Avec des instructeurs certifiés et des riders expérimentés, vous apprendrez à construire votre progression pas à pas, des fondamentaux du switch aux rotations, rails et corks.</p>
+                
+                <p class="text-center">Que vous fassiez vos premiers sauts ou que vous aspiriez à la compétition, nous concevons votre chemin dans le freestyle avec une approche personnalisée et sécurisée.</p>
+                
+                <p class="text-center fw-bold text-primary mt-4">Vivez le freestyle avec style et confiance !</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Freestyle Images Grid - Fixed Alignment -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Action dans le Snowpark</h2>
+            </div>
+        </div>
+        <div class="freestyle-images-grid">
+            <div class="freestyle-card-equal">
+                <img src="img/Fotos-freestyle/360-freestyle-adulto-baqueira.webp" alt="360 freestyle d'adulte à Baqueira">
+                <h4 class="text-primary">Rotations Avancées</h4>
+                <p>Maîtrisez les virages de 360° et plus dans le snowpark</p>
+            </div>
+            <div class="freestyle-card-equal">
+                <img src="img/Fotos-freestyle/clases-esqui-freestyle-era-marmota-baqueira.webp" alt="Cours de freestyle à Era Marmota Baqueira">
+                <h4 class="text-primary">Snowpark Era Marmota</h4>
+                <p>Le meilleur terrain pour apprendre le freestyle dans les Pyrénées</p>
+            </div>
+            <div class="freestyle-card-equal">
+                <img src="img/Fotos-freestyle/rail-snowparck-era-marmota-baqueira.webp" alt="Rail dans le snowpark Era Marmota Baqueira">
+                <h4 class="text-primary">Modules et Rails</h4>
+                <p>Apprenez les techniques sur différents obstacles</p>
+            </div>
+            <div class="freestyle-card-equal">
+                <img src="img/Fotos-freestyle/salto-snowparck-tail-grab.webp" alt="Saut avec tail grab dans le snowpark Baqueira">
+                <h4 class="text-primary">Techniques de Grab</h4>
+                <p>Améliorez votre style avec différentes prises</p>
+            </div>
+            <div class="freestyle-card-equal">
+                <img src="img/Fotos-freestyle/salto-linea-azul-snowparck-baqueira.webp" alt="Saut dans la ligne bleue du snowpark Baqueira">
+                <h4 class="text-primary">Progression Sécurisée</h4>
+                <p>Commencez avec les lignes bleues et progressez graduellement</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- More Freestyle Images - Fixed Alignment -->
+<section class="section-py">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="freestyle-card-equal">
+                    <img src="img/Fotos-freestyle/iniciacion-freestyle-era-marmota-baqueira-niños.webp" alt="Initiation au freestyle pour enfants à Era Marmota Baqueira">
+                    <h4 class="text-primary">Cours pour Enfants</h4>
+                    <p>Initiation sécurisée au freestyle pour les plus petits</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="freestyle-card-equal">
+                    <img src="img/Fotos-freestyle/niño-freestile-baqueira-alpine-ski-academy.webp" alt="Enfant pratiquant le freestyle avec Alpine Ski Academy">
+                    <h4 class="text-primary">Jeunes Talents</h4>
+                    <p>Formation spécialisée pour les jeunes riders</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Section -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center">Pourquoi Apprendre le Freestyle avec Alpine Ski Academy ?</h2>
+                <p class="text-center mb-5">Le freestyle, c'est bien plus que sauter. C'est de la créativité, du contrôle, de la technique, de la sécurité et de l'expression. Chez Alpine Ski Academy, nous vous offrons une formation professionnelle et progressive pour que vous avanciez en toute confiance, pas à pas, dans le snowpark et en dehors.</p>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="benefit-card text-center">
+                            <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Progression Sûre et Technique</h3>
+                            <p>Enseignement pas à pas, du switch aux premiers aériens, rotations et rails. Contrôle du corps avant la hauteur.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="benefit-card text-center">
+                            <i class="fas fa-user-graduate fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Instructeurs Freestyle Certifiés</h3>
+                            <p>Riders experts avec de l'expérience dans les snowparks européens et une formation spécifique. Sécurité, pédagogie et flow assurés.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="benefit-card text-center">
+                            <i class="fas fa-map-marked-alt fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Snowpark Era Marmota : Terrain Idéal</h3>
+                            <p>Cours dans le meilleur snowpark des Pyrénées : lignes vertes, bleues et rouges, sauts, boxes et rails pour tous les niveaux.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="benefit-card text-center">
+                            <i class="fas fa-video fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Correction Vidéo et Coaching Visuel</h3>
+                            <p>Analyse visuelle sur piste pour que vous compreniez et amélioriez votre technique avec un feedback immédiat.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="benefit-card text-center">
+                            <i class="fas fa-skiing fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Matériel Adapté et Conseils Personnalisés</h3>
+                            <p>Nous vous conseillons sur les skis twin-tip, les protections adéquates et les fixations montées au centre du ski.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="benefit-card text-center">
+                            <i class="fas fa-heart fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Ambiance Motivante et Créative</h3>
+                            <p>Apprenez dans un environnement qui respecte votre style, célèbre l'évolution et vous pousse à vous dépasser avec flow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Levels Section -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center">Cours de Freestyle pour Tous les Niveaux</h2>
+                <p class="text-center mb-5">Des Premiers Switch aux Corks</p>
+                <p class="text-center mb-4">Chez Alpine Ski Academy, nous proposons des cours de freestyle adaptés à votre niveau et à vos objectifs. Que ce soit votre premier contact avec le snowpark ou que vous maîtrisiez déjà l'air et souhaitiez perfectionner des figures plus techniques, nous concevons une progression personnalisée et sécurisée.</p>
+                
+                <div class="level-card p-4 rounded-3 mb-4 border-start border-success border-4">
+                    <div class="level-badge bg-success text-white mb-3">🟢 Initiation au Freestyle</div>
+                    <h3 class="text-primary">Premiers Sauts, Switch et Modules Basiques</h3>
+                    <p>Idéal pour les riders qui skient bien en parallèle sur pistes rouges et sont curieux du freestyle. Vous apprendrez les fondamentaux techniques : switch (skier en arrière avec contrôle), petits sauts, ollies, nose/tail press, premiers rails et modules faciles du snowpark.</p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h5 class="text-dark">Exigences minimales :</h5>
+                            <p>Contrôle total en parallèle sur piste rouge et sécurité dans toutes les conditions.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-dark">Équipement recommandé :</h5>
+                            <p>Skis twin-tip, fixations centrées, casque obligatoire, dorsale et protections optionnelles.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="level-card p-4 rounded-3 mb-4 border-start border-primary border-4">
+                    <div class="level-badge bg-primary text-white mb-3">🔵 Niveau Intermédiaire</div>
+                    <h3 class="text-primary">Contrôle Aérien, Grabs et Rails Stables</h3>
+                    <p>Pour ceux qui ont déjà essayé le snowpark et veulent consolider technique et style. Nous travaillerons la stabilité sur les petits et moyens sauts, la coordination en l'air, les grabs (safety, mute, tail), la glisse stable sur les rails et boxes, le contrôle en switch et la préparation physique et mentale.</p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h5 class="text-dark">Objectif :</h5>
+                            <p>Gagner en flow, en contrôle en l'air et en sécurité lors des réceptions.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-dark">Méthodologie :</h5>
+                            <p>Corrections vidéo, exercices spécifiques et analyse détaillée de votre exécution.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="level-card p-4 rounded-3 border-start border-danger border-4">
+                    <div class="level-badge bg-danger text-white mb-3">🔴 Niveau Avancé</div>
+                    <h3 class="text-primary">Corks, Rotations et Style Personnel</h3>
+                    <p>Pour les riders qui maîtrisent déjà le park et cherchent à améliorer leurs rotations (360°, 540°, 720°...), introduire des figures inversées (flips/corks), enchaîner les modules et peaufiner leur style. Nous utilisons l'analyse vidéo, la correction en temps réel et une préparation technique détaillée.</p>
+                    <p class="fw-bold text-danger mt-3">Inclus : Techniques d'impulsion, positionnement au décollage, correction de trajectoire et contrôle du corps en rotations.</p>
+                    <p class="mt-2">Préparation spécifique disponible : Si vous souhaitez concourir ou faire partie d'un club ou d'un projet, nous créerons un plan sur mesure avec vous.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="section-py freestyle-how-it-works bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center text-white">Fonctionnement des Cours de Freestyle</h2>
+                <p class="text-center mb-5">Sécurité, Progression et Plaisir Contrôlé</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="operation-card text-center">
+                            <i class="fas fa-clock fa-2x text-warning mb-3"></i>
+                            <h4 class="text-warning">Horaire et Durée</h4>
+                            <p>Cours de 2+ heures, format individuel ou groupe réduit. Horaires flexibles adaptés à votre agenda.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="operation-card text-center">
+                            <i class="fas fa-map-marker-alt fa-2x text-warning mb-3"></i>
+                            <h4 class="text-warning">Point de Rendez-vous</h4>
+                            <p>Baqueira 1800 ou accès directs au snowpark Era Marmota. Confirmation préalable selon conditions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="operation-card text-center">
+                            <i class="fas fa-video fa-2x text-warning mb-3"></i>
+                            <h4 class="text-warning">Vidéo-Analyse</h4>
+                            <p>Enregistrement et analyse en temps réel pour corrections techniques spécifiques et amélioration continue.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Safety Equipment -->
+                <div class="safety-equipment mt-5 p-4 rounded-3 bg-warning text-dark">
+                    <h4 class="text-dark mb-3"><i class="fas fa-exclamation-triangle me-2"></i>Équipement de Sécurité Recommandé</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>Obligatoire :</strong> Casque</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>Recommandé :</strong> Dorsale, protection du coccyx, skis twin-tip</p>
+                        </div>
+                    </div>
+                    <p class="mt-2 mb-0">Nous vous conseillons pour la location ou l'achat du matériel le plus adapté à votre niveau.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="section-title text-center">Témoignages de riders freestyle</h2>
+                
+                <div class="testimonial-card p-4 rounded-3 mb-4">
+                    <div class="stars mb-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <h3 class="text-primary">Mónica Fernández – Espagne</h3>
+                    <p class="mb-0">"Le meilleur moniteur de ski, sans aucun doute ! Merci, Sergi 🙌🏻 Il m'a aidée à entrer dans le park avec assurance et technique."</p>
+                </div>
+                
+                <div class="testimonial-card p-4 rounded-3">
+                    <div class="stars mb-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <h3 class="text-primary">Sebas – Espagne</h3>
+                    <p class="mb-0">"Très bons professeurs. J'ai passé une semaine avec Sergi, il m'a appris à enchaîner les sauts et à améliorer mon style. Je reviendrai."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center">Questions Fréquentes sur les Cours de Freestyle à Baqueira</h2>
+                
+                <div class="faq-item mb-4">
+                    <h3 class="text-primary">❄️ Quel niveau technique minimum dois-je avoir pour commencer le freestyle en toute sécurité ?</h3>
+                    <p class="mb-0">Pour vous initier au freestyle en toute sécurité à Baqueira, il est indispensable que vous skiiez avec fluidité en parallèle sur pistes rouges.</p>
+                    <p class="mt-2">Cela garantit que vous ayez le contrôle, l'équilibre et la gestion de la vitesse nécessaires pour évoluer dans le snowpark, skier en switch, réaliser des transitions stables et gérer les réceptions. Il n'est pas nécessaire d'avoir déjà sauté, mais il faut maîtriser le ski alpin de base.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="text-primary">🎿 De quel matériel ai-je besoin pour mes cours de freestyle ?</h3>
+                    <p class="mb-0">Vous avez besoin de skis twin-tip (double spatule) avec fixations montées au centre du ski (facultatif mais conseillé), car ils permettent de skier en switch et de réaliser des rotations avec un meilleur contrôle.</p>
+                    <p class="mt-2">Le casque est obligatoire. Nous recommandons également une dorsale, une protection du coccyx (culotte de protection) et un masque ou des lunettes spécifiques. Si vous ne disposez pas du matériel, nous pouvons vous conseiller à Baqueira pour louer ou acheter le nécessaire selon votre niveau et vos objectifs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="section-py bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="display-5 fw-bold mb-4">Préparez-vous à Voler avec Technique, Style et Sécurité</h2>
+                <p class="lead mb-4">Le freestyle n'est pas seulement une question de courage. C'est de la technique, de la progression, du flow et une connexion unique avec la montagne.</p>
+                <p class="mb-5">Chez Alpine Ski Academy, nous vous guidons pas à pas, pour que vous profitiez de chaque saut, de chaque virage et de chaque réussite en toute sécurité et confiance. Que ce soit votre premier switch ou votre premier cork, nous vous accompagnons à chaque phase de votre vol.</p>
+                
+                <p class="h4 fw-bold text-warning mb-4">🎿 Prêt à décoller ?</p>
+                
+                <div class="final-cta-buttons-flex">
+                    <a href="https://wa.me/34669911342" class="btn btn-warning btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>Réservez votre Cours de Freestyle
+                    </a>
+                    <a href="precios.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-euro-sign me-2"></i>Voir Tarifes et Options
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges, progrès garanti et expériences inoubliables sur la neige.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                         <li><a href="#" style="text-decoration: none; color: inherit;">Cours de Ski</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Cours de Snowboard</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À Propos</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Voyages</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Caméras</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Location de Matériel</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Tarifs</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact / Réservation</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Entreprise</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À Propos de Nous</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Notre équipe</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Témoignages</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Liens légaux</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Mentions Légales</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique de Confidentialité</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique de Cookies</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique d'Annulation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. est une entreprise indépendante. Nous ne sommes pas liés ni ne faisons partie de Baqueira Beret, S.A. L'utilisation du nom Baqueira est strictement pour localiser le lieu où nous réalisons nos services en tant qu'école de ski.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Esqui em Grupo para Adultos em Baqueira | Melhore com Bom Ambiente </title>
+    <meta name="description"
+    content="A alternativa ideal à aula particular: grupos homogéneos por nível, professores experientes e um ambiente fantástico. Para adultos principiantes ou intermédios.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <!-- <script src="language.js"></script> -->
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - Escola de Esqui e Snowboard em Baqueira Beret">
+    <meta property="og:description"
+        content="A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escola de Esqui e Snowboard em Baqueira Beret">
+    <meta property="twitter:description"
+        content="A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span><a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span><a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Header with Navigation and Language Switcher -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo1.jpg"
+                alt="Alpine Ski Academy – Escola de esqui e snowboard em Baqueira">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Aulas de Esqui
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                        <!-- Aulas particulares -->
+                        <li>
+                            <h6 class="dropdown-header">Aulas Particulares</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="clases-esqui-particulares-ninos-baqueira.html">Crianças</a></li>
+                        <li><a class="dropdown-item" href="aulas-esqui-privadas-familias-baqueira.html">Famílias</a></li>
+                        <li><a class="dropdown-item" href="aulas-particulares-adultos-baqueira.html">Adultos</a></li>
+                        <li><a class="dropdown-item" href="aulas-esqui-privadas-carv-baqueira.html">Com Carv</a></li>
+
+                        <!-- Aulas especiais -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="aulas-esqui-freeride-baqueira.html">Freeride</a></li>
+                        <li><a class="dropdown-item" href="aulas-esqui-freestyle-baqueira.html">Freestyle</a></li>
+
+                        <!-- Aulas em grupo -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h6 class="dropdown-header">Aulas em Grupo</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="aulas-esqui-grupo-criancas-baqueira.html">Grupo Crianças</a></li>
+                        <li><a class="dropdown-item" href="aulas-esqui-grupo-adultos-baqueira.html">Grupo Adultos</a></li>
+                        <li><a class="dropdown-item" href="aulas-esqui-grupo-empresas-escolas-baqueira.html">Empresas/Escolas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/about-us.html">Snowboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/about-us.html">Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/gallery.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/ski-trips.html">Viagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/webcams-baqueria.html">Câmaras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/ski-snowboard-equipment-hire-baqueira.html">Aluguer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/ski-snowboard-lessons-prices-baqueira.html">Preços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pt/contact-bookings.html">Contacto</a>
+                </li>
+            </ul>
+            <!-- Book Now Button -->
+            <div class="nav-cta ms-3">
+                <a href="../../pt/contact-bookings.html" class="btn btn-primary btn-book-now">
+                    <i class="fas fa-calendar-check me-1"></i>Reservar
+                </a>
+            </div>
+            <!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> PT
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+        <li><a class="dropdown-item active language-option" href="../pt.html" data-lang="pt">
+            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../../index.html" data-lang="es">
+            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../en/adult-group-ski-lessons-baqueira.html" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../fr/cours-ski-groupe-adultes-baqueira.html" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../ca/classes-esqui-grup-adults-baqueira.html" data-lang="ca">
+            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+        </a></li>
+    </ul>
+</div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-60">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-5 fw-bold mb-4">Aulas de Esqui em Grupo para Adultos em Baqueira</h1>
+                    <p class="lead mb-4">Aprenda, Melhore e Partilhe a Experiência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="../../pt/clases-esqui-baqueria-pt.html">Aulas de esqui</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Grupo Adultos</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="lead text-center mb-5">Quer aprender a esquiar ou aperfeiçoar a sua técnica sem estar sozinho na pista? As aulas em grupo para adultos da Alpine Ski Academy são uma excelente alternativa às aulas particulares: progresso técnico, ambiente descontraído e um preço mais acessível, tudo com professores qualificados e dinâmicas adaptadas ao seu nível.</p>
+                    
+                    <p class="text-center">Organizamos grupos homogéneos por nível, em horários de manhã e tarde, com um máximo de 8 alunos por aula. É uma oportunidade perfeita para conhecer outros esquiadores, melhorar o seu esqui e desfrutar mais de cada dia em Baqueira.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="section-py bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Grupos de Adultos em Ação</h2>
+                </div>
+            </div>
+            
+            <div id="adultsSlider" class="carousel slide kids-slider" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#adultsSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#adultsSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#adultsSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#adultsSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#adultsSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#adultsSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner rounded-3">
+                    <div class="carousel-item active">
+                        <img src="img/fotos-clases-grupo-adultos/clases-colectivas-adultos-jovenes-baqueira.webp" class="d-block w-100" alt="Grupo de adultos a aprender esqui em Baqueira">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fotos-clases-grupo-adultos/clases-colectivas-baqueira-beret-adultos.webp" class="d-block w-100" alt="Aula grupal de esqui para adultos principiantes">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/fotos-clases-grupo-adultos/clases-colectivas-grupo-adultos-baqueira.webp" class="d-block w-100" alt="Adultos a aperfeiçoar técnica de esqui">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#adultsSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#adultsSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Seguinte</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Vantagens das Nossas Aulas de Grupo para Adultos</h2>
+                    <p class="text-center mb-5">As nossas aulas coletivas para adultos foram concebidas para que aprenda ou melhore com segurança, boa técnica e num ambiente motivador. Não importa se é a sua primeira vez ou se já esquiou antes: agrupamo-lo por nível para que aproveite ao máximo a experiência.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="feature-card">
+                                <h4 class="text-primary">Aprendizagem Técnica em Grupo</h4>
+                                <p>Em cada aula trabalha-se uma progressão clara: postura, viragens, controlo de velocidade, apoios e adaptação ao terreno. Mesmo estando em grupo, o professor corrige individualmente e dá feedback técnico preciso.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-card">
+                                <h4 class="text-primary">Nível Homogéneo e Ritmo Comum</h4>
+                                <p>Agrupamos por nível e experiência, para que se sinta confortável, avance a bom ritmo e não se sinta frustrado. Pode enviar-nos um pequeno vídeo se tiver dúvidas sobre o seu grupo ideal.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-card">
+                                <h4 class="text-primary">Alternativa à Aula Particular</h4>
+                                <p>Uma opção mais económica, mas com a mesma exigência técnica. Ideal para quem quer melhorar sem necessidade de atenção exclusiva ou simplesmente gosta mais de aprender em grupo. Para outras opções, consulte as nossas <a href="#" class="text-primary">aulas de esqui particulares para adultos</a>.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-card">
+                                <h4 class="text-primary">Grupos de Manhã e Tarde</h4>
+                                <p>Escolha o período que melhor se adapta ao seu dia:</p>
+                                <ul>
+                                    <li><strong>Manhã:</strong> 9:30–12:30 h</li>
+                                    <li><strong>Tarde:</strong> 13:00–16:00 h</li>
+                                </ul>
+                                <p>A tarde é ideal se quiser esquiar com menos afluência e aproveitar o forfait reduzido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-py bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Como Funcionam as Aulas de Esqui em Grupo para Adultos</h2>
+                    <p class="text-center mb-5">Queremos que se sinta confortável desde o primeiro minuto. Aqui explicamos como as nossas aulas para adultos são organizadas: desde o ponto de encontro até à formação de grupos e os horários disponíveis.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="logistics-card text-center">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                                <h4 class="text-primary">Ponto de Encontro</h4>
+                                <p>As aulas começam e terminam num ponto que se define de acordo com o nível do grupo e condições da estância (1800, 1500 ou Era Cabana).</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="logistics-card text-center">
+                                <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                                <h4 class="text-primary">Formação de Grupos</h4>
+                                <p>Grupos por nível (principiante, intermédio ou avançado) com máximo 8 alunos. Mínimo 4 pessoas para abrir grupo.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="logistics-card text-center">
+                                <i class="fas fa-video fa-2x text-primary mb-3"></i>
+                                <h4 class="text-primary">Avaliação Prévia</h4>
+                                <p>Se tiver dúvidas sobre o seu nível, pode enviar-nos um vídeo breve por WhatsApp para o atribuirmos ao grupo mais adequado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">Depoimentos sobre as nossas aulas em grupo para adultos</h2>
+                    
+                    <div class="testimonial-card p-4 rounded-3 mb-4">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <h4 class="text-primary">Jesús Suárez – Espanha</h4>
+                        <p class="mb-0">"Atendimento excelente e muito profissionais. O ambiente nas aulas em grupo foi ótimo e aprendi mais do que esperava. Voltarei com certeza!"</p>
+                    </div>
+                    
+                    <div class="testimonial-card p-4 rounded-3">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <h4 class="text-primary">Luis Alb. Mullor – Espanha</h4>
+                        <p class="mb-0">"Excelentes profissionais! Como instrutores, são impagáveis. Aprendi em grupo mais do que em anos de aulas privadas."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-py bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Perguntas Frequentes sobre as Aulas de Esqui em Grupo para Adultos</h2>
+                    
+                    <div class="faq-item mb-4">
+                        <h4 class="text-primary">Posso inscrever-me sozinho ou tenho de vir com um grupo formado?</h4>
+                        <p>Pode vir sozinho sem problema. De facto, a maioria dos alunos adultos inscreve-se individualmente. Nós encarregamo-nos de o atribuir ao grupo mais adequado por nível, horário e ritmo de aprendizagem.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h4 class="text-primary">O que acontece se não se formar grupo no período que escolho?</h4>
+                        <p>Para que um grupo de adultos se forme, precisamos de um mínimo de 4 participantes. Em algumas ocasiões, especialmente na época baixa ou para níveis muito específicos, pode ser complicado atingir esse número. Se isso acontecer no horário ou nível que escolheu, não se preocupe, sempre procuraremos a melhor solução para que possa desfrutar da neve e continuar a aprender.</p>
+                        <p><strong>Proporemos alternativas reais e flexíveis:</strong></p>
+                        <ul>
+                            <li><strong>Outro grupo compatível:</strong> Procuraremos um grupo com um nível semelhante que se ajuste ao seu perfil num horário próximo.</li>
+                            <li><strong>Grupo reduzido com tarifa adaptada:</strong> Se forem 2 ou 3 participantes interessados no mesmo horário e nível, podemos oferecer a opção de formar um grupo reduzido, ajustando a tarifa para vocês.</li>
+                            <li><strong>Colaboração com escolas amigas:</strong> Se nenhuma das opções anteriores se encaixar, ajudá-lo-emos a encontrar uma escola de confiança em Baqueira com a qual colaboramos, onde sim haja um grupo que se adapte às suas necessidades.</li>
+                        </ul>
+                        <p>O nosso objetivo é que possa sempre esquiar e aprender, sem complicações. Consulte as nossas <a href="#" class="text-primary">tarifas e preços de aulas de esqui e snowboard em Baqueira</a> para mais informações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-py bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Reserve a Sua Vaga nos Nossos Grupos para Adultos</h2>
+                    <p class="lead mb-4">Aprender ou aperfeiçoar o seu esqui nunca foi tão acessível. Desfrute de um ambiente técnico e descontraído com colegas do seu nível, guiado por professores experientes e com horários que se adaptam a si.</p>
+                    
+                    <div class="row text-center mt-5">
+                        <div class="col-md-3 mb-3">
+                            <div class="cta-feature">
+                                <i class="fas fa-clock fa-2x mb-2"></i>
+                                <p>Manhã ou tarde, você escolhe</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="cta-feature">
+                                <i class="fas fa-graduation-cap fa-2x mb-2"></i>
+                                <p>Técnica real, correção e confiança</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="cta-feature">
+                                <i class="fas fa-chart-line fa-2x mb-2"></i>
+                                <p>Ritmo fluido e progressão visível</p>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3 mb-3">
+                            <div class="cta-feature">
+                                <i class="fas fa-euro-sign fa-2x mb-2"></i>
+                                <p>Preço mais acessível que particular</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="https://wa.me/34669911342" class="btn btn-light btn-lg me-3" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Reservar por WhatsApp
+                        </a>
+                        <a href="contacto.html" class="btn btn-outline-light btn-lg me-3">
+                            <i class="fas fa-envelope me-2"></i>Formulário de contacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades, progresso garantido e experiências inesquecíveis na neve.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Serviços</h5>
+                    <ul class="footer-links">
+                        <li><a href="../../pt/clases-esqui-baqueria-pt.html" style="text-decoration: none; color: inherit;">Aulas de Esqui</a></li>
+                        <li><a href="../../pt/aulas-snowboard-baqueira.html" style="text-decoration: none; color: inherit;">Aulas de Snowboard</a></li>
+                        <li><a href="../../pt/about-us.html" style="text-decoration: none; color: inherit;">Sobre nós</a></li>
+                        <li><a href="../../pt/ski-trips.html" style="text-decoration: none; color: inherit;">Viagens</a></li>
+                        <li><a href="../../pt/webcams-baqueria.html" style="text-decoration: none; color: inherit;">Câmaras</a></li>
+                        <li><a href="../../pt/ski-snowboard-equipment-hire-baqueira.html" style="text-decoration: none; color: inherit;">Aluguer de Material</a></li>
+                        <li><a href="../../pt/ski-snowboard-lessons-prices-baqueira.html" style="text-decoration: none; color: inherit;">Preços</a></li>
+                        <li><a href="../../pt/contact-bookings.html" style="text-decoration: none; color: inherit;">Contacto / Reserva</a></li>
+                        <li><a href="../../pt/blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="../../pt/about-us.html" style="text-decoration: none; color: inherit;">Sobre nós</a></li>
+                        <li><a href="../../pt/about-us.html" style="text-decoration: none; color: inherit;">A Nossa Equipa</a></li>
+                        <li><a href="../../pt/about-us.html" style="text-decoration: none; color: inherit;">Testemunhos</a></li>
+                        <li><a href="../../pt/blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="../../pt/contact-bookings.html" style="text-decoration: none; color: inherit;">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contacto</h5>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Links Legais</h5>
+                    <ul class="footer-links">
+                        <li><a href="../../pt/legal-notice.html" style="text-decoration: none; color: inherit;">Aviso Legal</a></li>
+                        <li><a href="../../pt/privacy-policy.html" style="text-decoration: none; color: inherit;">Política de Privacidade</a></li>
+                        <li><a href="../../pt/privacy-policy.html" style="text-decoration: none; color: inherit;">Política de Cookies</a></li>
+                        <li><a href="../../pt/Cancellation-policy.html" style="text-decoration: none; color: inherit;">Política de Cancelamento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">A Alpine Ski Academy S.L. é uma empresa independente. Não estamos vinculados nem somos parte de Baqueira Beret, S.A. A utilização do nome Baqueira é estritamente para localizar o local onde realizamos os nossos serviços como escola de esqui.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+
+</html>

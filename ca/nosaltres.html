@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Ski Academy: Escola d'Esquí i Snowboard a Baqueira Beret</title>
+    <meta name="description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats, progrés garantit i experiències inoblidables a la neu.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <!-- <script src="language.js"></script> -->
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="og:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="twitter:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- Top Info Bar -->
+<div class="top-info-bar">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <div class="top-info-item">
+                <i class="fas fa-phone-alt me-1"></i>
+                <span>
+                    <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a>
+                </span>
+            </div>
+            <div class="top-info-item">
+                <i class="fas fa-envelope me-1"></i>
+                <span>
+                    <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.jpg"
+                    alt="Alpine Ski Academy – Escola d'esquí i snowboard a Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Classes Esquí
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Classes particulars -->
+                            <li>
+                                <h6 class="dropdown-header">Classes Particulars</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="classes-esqui-particulars-nens-baqueira.html">Nens</a></li>
+                            <li><a class="dropdown-item" href="classes-esqui-particulars-families-baqueira.html">Famílies</a></li>
+                            <li><a class="dropdown-item" href="classes-esqui-particulars-adults-baqueira.html">Adults</a></li>
+                            <li><a class="dropdown-item" href="classes-esqui-particulars-carv-baqueira.html">Amb Carv</a></li>
+
+                            <!-- Classes especials -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="classes-esqui-freeride-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="classes-esqui-freestyle-baqueira.html">Freestyle</a></li>
+
+                            <!-- Classes en grup -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Classes en Grup</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="classes-esqui-grup-nens-baqueira.html">Grup Nens</a></li>
+                            <li><a class="dropdown-item" href="classes-esqui-grup-adults-baqueira.html">Grup Adults</a></li>
+                            <li><a class="dropdown-item" href="classes-esqui-grup-empreses-collegis-baqueira.html">Empreses/Escoles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes-snowboard-baqueira-ca.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosaltres.html">Nosaltres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria-ca.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viatges-esqui.html">Viatges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webcams-baqueria-ca.html">Càmeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lloguer-material-esqui-snowboard-baqueira-ca.html">Lloguer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preus-classes-esqui-snowboard-baqueira.html">Preus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte-reserves.html">Contacte</a>
+                    </li>
+                </ul>
+                <!-- Book Now Button -->
+                <div class="nav-cta ms-3">
+                    <a href="contacte-reserves.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Reserva
+                    </a>
+                </div>
+<!--Language switcher Dropdown -->
+<!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> CA
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+        <li><a class="dropdown-item active language-option" href="../ca.html" data-lang="ca">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg" width="20" height="15" class="me-2">Català
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../index.html" data-lang="es">
+                <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../en.html" data-lang="en">
+                <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../fr.html" data-lang="fr">
+                <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../pt.html" data-lang="pt">
+                <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+            </a></li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secció Hero Nosaltres -->
+<section class="hero-nosotros">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-4">Nosaltres – El Teu Professor d'Esquí a Baqueira</h1>
+                <p class="lead mb-5">Des de fa més de 20 anys, els nostres professors d'esquí i snowboard a Baqueira ensenyen amb passió, tècnica i un enfocament 100% personalitzat.</p>
+                <a href="#team" class="btn btn-primary btn-lg">Coneix el nostre equip</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Navegació de Molla de Pa -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nosaltres</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Secció Qui Som -->
+<section class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title">Qui Som</h2>
+                <p class="textjustify">A Alpine Ski Academy som professors d'esquí i snowboard a Baqueira amb una missió clara: ajudar-te a créixer sobre la neu, sigui quin sigui el teu nivell.</p>
+                <p class="textjustify">El nostre equip està format per professionals titulats amb anys d'experiència en l'ensenyament tècnic de l'esquí alpí i el snowboard. Però més enllà dels títols, el que ens defineix és la passió per ensenyar, el tracte proper i una metodologia adaptada a cada persona.</p>
+                <p class="textjustify">Treballem en un dels entorns més privilegiats del Pirineu: l'estació de Baqueira Beret, on impartim classes personalitzades, dinàmiques i segures, amb un enfocament progressiu i orientat a resultats.</p>
+                <p class="textjustify">Si estàs buscant un professor d'esquí a Baqueira que combini coneixement tècnic, experiència real i una connexió autèntica amb la muntanya, estàs al lloc adequat.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Nosotros/clases-divertidas-esquí-alpine-ski-academy.webp" alt="Equip Alpine Ski Academy" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció La Nostra Història -->
+<section class="why-us-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+                <h2 class="section-title">La Nostra Història sobre la Neu</h2>
+                <p class="textjustify">Com a professionals de l'esquí i el snowboard, portem ensenyant a Baqueira des del 2001. Durant aquest temps, hem viscut l'evolució de l'estació des de dins i ens hem format a les millors escoles de la vall, on vam créixer com a esquiadors i com a persones.</p>
+                <p class="textjustify">Molts de nosaltres vam començar rebent classes de grans referents de la neu. Anys després, aquesta vocació ens va portar a convertir-nos en formadors, primer en altres acadèmies i finalment creant el nostre propi projecte: Alpine Ski Academy.</p>
+                <p class="textjustify">Aquesta escola neix de l'experiència, el compromís amb l'ensenyament tècnic i el desig d'oferir un acompanyament veritablement personalitzat.</p>
+                <p class="textjustify">Baqueira no és només el nostre lloc de treball: és la nostra llar, el nostre punt de partida i l'entorn que ha marcat la nostra manera d'entendre la muntanya.</p>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="images/Nosotros/emilio-profesor-alpine-ski-academy-esquiando.webp" alt="Història Alpine Ski Academy" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Filosofia -->
+<section class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="section-title text-center">Filosofia, Visió i Metodologia</h2>
+                <p class="textjustify">A Alpine Ski Academy creiem que cada persona té una forma única d'aprendre, i per això dissenyem classes que s'adapten al ritme, nivell i objectius de cada alumne.</p>
+                <p class="textjustify">La nostra filosofia es basa en el respecte pels processos individuals, la progressió segura i la tècnica com a eina per gaudir més de la muntanya. Apliquem un ensenyament progressiu, basat en l'observació activa, el feedback constant i l'ús de recursos tècnics adaptats a cada fase de l'aprenentatge. Treballem tant amb nens que s'inicien, com amb adults que busquen confiança, o esquiadors tècnics que desitgen perfeccionar el seu nivell o preparar proves oficials.</p>
+                <p class="textjustify">No ens limitem a “fer classes”: formem esquiadors conscients, autònoms i motivats. Prioritzem l'aprenentatge experiencial, la comprensió del moviment i la presa de decisions en temps real.</p>
+                <p class="textjustify">El nostre enfocament és proper, tècnic i humà. Ens impliquem en cada procés d'aprenentatge com si fos propi. Ensenyar no és només la nostra professió: és el nostre compromís amb aquells que, com nosaltres, han fet de la neu part de la seva vida.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció El Nostre Equip -->
+<section class="team-section">
+    <div class="container">
+        <h2 class="section-title text-center">El Nostre Equip de Professors</h2>
+        <p class="text-center mb-5">El nostre equip està format per professors titulats en esquí alpí i snowboard, amb una àmplia experiència docent i una sòlida base tècnica. Tots comptem amb certificacions oficials reconegudes pel sistema educatiu esportiu espanyol i internacional (TD1, TD2, TD3), i a més exercim com a formadors de tècnics esportius en centres com SAFE Formación, on impartim els cicles de TD1 i TD2, així com l'assignatura de Mestratge d'esquí a l'INEFC (4t curs).</p>
+        
+        <div class="row">
+            <!-- Víctor Puche Fita -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-member-card">
+                    <img src="images/Nosotros/Victor-ficha-profesor-Alpine-ski-academy.webp" alt="Víctor Puche Fita" class="team-member-img">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Víctor Puche Fita</h3>
+                        <p class="team-member-specialties">Especialista en esquí alpí, freeride i formació de tècnics</p>
+                        <p class="team-member-quote">"Transmetre coneixement des de l'experiència i adaptar-lo a cada persona: aquí comença el veritable ensenyament."</p>
+                        <div class="team-member-details">
+                            <h5>Titulacions</h5>
+                            <ul>
+                                <li>Tècnic Esportiu Nivell 3 (TD3)</li>
+                                <li>Formador oficial de tècnics TD1 i TD2 – SAFE Formación</li>
+                                <li>Docent en l'assignatura de Mestratge d'esquí – INEFC (4t curs)</li>
+                            </ul>
+                            <h5>Experiència</h5>
+                            <p>Més de 20 temporades a Baqueira Beret</p>
+                            <h5>Idiomes</h5>
+                            <p>Espanyol, català, anglès, francès, italià (bàsic)</p>
+                            <h5>Tecnologia</h5>
+                            <p>Pioner en l'ús de Carv e intel•ligència artificial aplicada a l'esquí. Ha liderat rànquings nacionals en les temporades 2023–2025, amb puntuacions IQ165 e IQ166.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emilio Fernando Gil -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-member-card">
+                    <img src="images/Nosotros/Emilio-ficha-profesor-alpine-ski-academy.webp" alt="Emilio Fernando Gil" class="team-member-img">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Emilio Fernando Gil</h3>
+                        <p class="team-member-specialties">Especialista en iniciació infantil i adults, ensenyament personalitzat</p>
+                        <p class="team-member-quote">"Més que ensenyar a esquiar, la meva feina és fer que cada persona se senti capaç de gaudir-ho."</p>
+                        <div class="team-member-details">
+                            <h5>Titulacions</h5>
+                            <ul>
+                                <li>Tècnic Esportiu Nivell 3 (TD3)</li>
+                                <li>Arquitecte Tècnic</li>
+                                <li>Formació contínua en seguretat, tècnica i acompanyament pedagògic</li>
+                            </ul>
+                            <h5>Experiència</h5>
+                            <p>Més de 20 temporades ensenyant a Baqueira Beret</p>
+                            <h5>Idiomes</h5>
+                            <p>Espanyol, anglès</p>
+                            <h5>Perfil</h5>
+                            <p>Soci fundador d'Alpine Ski Academy, especialista en generar confiança i acompanyar cada persona en el seu procés d'aprenentatge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Antonia Serra Barías -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-member-card">
+                    <img src="images/Nosotros/Anto-ficha-profesora-alpine-ski-Academy.webp" alt="Antonia Serra Barías" class="team-member-img">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Antonia Serra Barías</h3>
+                        <p class="team-member-specialties">Especialista en esquí alpí i snowboard per a tots els nivells</p>
+                        <p class="team-member-quote">"Vaig créixer entre muntanyes i alumnes. Ensenyar és el fil natural que uneix la meva història amb la de cada alumne que confia en mi."</p>
+                        <div class="team-member-details">
+                            <h5>Titulacions</h5>
+                            <ul>
+                                <li>Tècnic Esportiu Nivell 1 Esquí (TD1)</li>
+                                <li>Tècnic Esportiu Nivell 1 Snowboard (TD1)</li>
+                            </ul>
+                            <h5>Experiència</h5>
+                            <p>Més de 20 temporades a Xile (1 com a professora), El Colorado. I més de 5 com a professora a Baqueira Beret.</p>
+                            <h5>Idiomes</h5>
+                            <p>Espanyol, anglès, portuguès (bàsic)</p>
+                            <h5>Perfil</h5>
+                            <p>Filla d'instructora, va créixer entre muntanyes i va descobrir des de molt petita la seva vocació per l'ensenyament a la neu. Enamorada de la Vall d'Aran.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carlos Lopez-Alonso Rivero -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-member-card">
+                    <img src="images/Nosotros/Carlos-Ficha-profesor-alpine-ski-academy.webp" alt="Carlos Lopez-Alonso Rivero" class="team-member-img">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Carlos Lopez-Alonso Rivero</h3>
+                        <p class="team-member-specialties">Especialista en esquí alpí per a tots els nivells</p>
+                        <p class="team-member-quote">"Esquio des que tinc memòria… i avui, poder ensenyar el que estimo és un privilegi que gaudeixo cada dia."</p>
+                        <div class="team-member-details">
+                            <h5>Titulacions</h5>
+                            <ul>
+                                <li>Tècnic Esportiu Nivell 2 (TD2)</li>
+                            </ul>
+                            <h5>Experiència</h5>
+                            <p>1 temporada impartint classes a l'estació d'esquí Alto Campoo, i una temporada impartint classes a Baqueira Beret.</p>
+                            <h5>Idiomes</h5>
+                            <p>Espanyol, Anglès (bàsic)</p>
+                            <h5>Perfil</h5>
+                            <p>L'esquí li ve de família: el seu pare és professor des de fa més de 40 anys. Va començar a esquiar amb 3 anys i va competir en clubs com Avalancha i Tajahierro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sergi Mercadal -->
+            <div class="col-lg-4 col-md-6">
+                <div class="team-member-card">
+                    <img src="images/Nosotros/Srgi-ficha-profesor-freestyle.webp" alt="Sergi Mercadal" class="team-member-img">
+                    <div class="team-member-info">
+                        <h3 class="team-member-name">Sergi Mercadal</h3>
+                        <p class="team-member-specialties">Especialista en freestyle i esquí alpí tècnic</p>
+                        <p class="team-member-quote">"El truc més difícil no és el que fas, sinó el que ensenyes amb seguretat i estil."</p>
+                        <div class="team-member-details">
+                            <h5>Titulacions</h5>
+                            <ul>
+                                <li>Tècnic Esportiu Nivell 2 (TD2)</li>
+                                <li>Formació contínua en freestyle, seguretat i pedagogia del risc</li>
+                            </ul>
+                            <h5>Experiència</h5>
+                            <p>Més de 10 anys com a instructor i entrenador freestyle</p>
+                            <h5>Idiomes</h5>
+                            <p>Espanyol, català, anglès</p>
+                            <h5>Perfil</h5>
+                            <p>Especialista en freestyle d'Alpine Ski Academy. Ha treballat en snowparks de referència als Alps, Andorra i el Pirineu, tant com a rider com a instructor.</p>
+                            <h5>Tecnologia</h5>
+                            <p>Usa recursos de videoanàlisi per perfeccionar rotacions i aplica protocols de seguretat per a iniciació en freestyle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Per Què Triar-nos? -->
+<section class="why-us-section">
+    <div class="container">
+        <h2 class="section-title text-center">Per Què Triar-nos?</h2>
+        <p class="text-center mb-5">Triar un professor d'esquí a Baqueira és molt més que contractar una classe: és confiar en una persona que marcarà la teva forma d'entendre la muntanya. A Alpine Ski Academy ho sabem, i per això t'oferim una proposta diferent:</p>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="feature-box">
+                    <i class="fas fa-user-graduate text-primary mb-3" style="font-size: 3rem;"></i>
+                    <h4>Professors titulats i en formació contínua</h4>
+                    <p>Comptem amb experiència real i contrastada en l'ensenyament de l'esquí i snowboard.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-box">
+                    <i class="fas fa-sliders-h text-primary mb-3" style="font-size: 3rem;"></i>
+                    <h4>Classes adaptades a tu</h4>
+                    <p>Personalitzem cada classe segons el teu nivell, ritme i objectius personals.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-box">
+                    <i class="fas fa-users text-primary mb-3" style="font-size: 3rem;"></i>
+                    <h4>Especialització per perfils</h4>
+                    <p>Treballem amb nens, famílies, adults, tècnics, iniciació o perfeccionament.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-box">
+                    <i class="fas fa-microchip text-primary mb-3" style="font-size: 3rem;"></i>
+                    <h4>Tecnologia d'avantguarda</h4>
+                    <p>Utilitzem Carv, videoanàlisi i intel•ligència artificial aplicada a l'esquí.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-box">
+                    <i class="fas fa-chalkboard-teacher text-primary mb-3" style="font-size: 3rem;"></i>
+                    <h4>Formació de formadors</h4>
+                    <p>Impartim classes a SAFE Formación i INEFC, mantenint-nos a l'avantguarda.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-box">
+                    <i class="fas fa-mountain text-primary mb-3" style="font-size: 3rem;"></i>
+                    <h4>Connexió real amb Baqueira</h4>
+                    <p>Més de 20 anys vivint i ensenyant en aquest entorn únic del Pirineu.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <p class="lead">Transmetem passió per la muntanya i per aquest esport, i un compromís total amb els nostres alumnes.</p>
+            <p class="fw-bold">Perquè a Alpine Ski Academy no només ensenyem a esquiar: ensenyem a estimar la muntanya.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Certificacions -->
+<section class="certifications-section">
+    <div class="container">
+        <h2 class="section-title text-center">Formació, Titulacions i Experiència</h2>
+        
+        <!-- Three certification cards in one row -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-center mb-4">Titulacions Oficials</h3>
+                    <ul>
+                        <li>Tècnic Esportiu Nivell 1 (TD1)</li>
+                        <li>Tècnic Esportiu Nivell 2 (TD2)</li>
+                        <li>Tècnic Esportiu Nivell 3 (TD3)</li>
+                        <li>Formadors oficials a SAFE Formación (TD1 + TD2)</li>
+                        <li>Docents en l'assignatura Mestratge d'esquí – INEFC (4t curs)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-skiing"></i>
+                    </div>
+                    <h3 class="text-center mb-4">Experiència Professional</h3>
+                    <ul>
+                        <li>Més de 20 temporades ensenyant a Baqueira Beret</li>
+                        <li>Exmembres i col•laboradors d’escoles de referencia.</li>
+                        <li>Entrenadors en clubs esportius en etapes de base</li>
+                        <li>Clients nacionals i internacionals</li>
+                        <li>Especialistes en esquí recreatiu, ensenyament tècnic i preparació per a proves d'accés i nivell professional</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-center mb-4">Formació Contínua i Especialització</h3>
+                    <ul>
+                        <li>Carv i intel•ligència artificial aplicada a l'esquí</li>
+                        <li>Videoanàlisi en temps real</li>
+                        <li>Biomecànica aplicada al gest tècnic</li>
+                        <li>Psicopedagogia de l'esport i aprenentatge experiencial</li>
+                        <li>Realització de formacions impartides per tècnics internacionals i experts de la copa del món d'esquí Alpí</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate in horizontal format in next row -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="certificate-horizontal-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="certificate-content">
+                                <h3 class="mb-3">Certificació Oficial</h3>
+                                <p class="mb-4">Els nostres instructors compten amb certificacions oficials reconegudes pel sistema educatiu esportiu espanyol i internacional, garantint la més alta qualitat en l'ensenyament de l'esquí i snowboard.</p>
+                                <div class="certificate-details">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="detail-item">
+                                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                                <span>Tècnic Esportiu Nivell 3 (TD3)</span>
+                                            </div>
+                                            <div class="detail-item">
+                                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                                <span>Formadors oficials SAFE</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="detail-item">
+                                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                                <span>Docents INEFC</span>
+                                            </div>
+                                            <div class="detail-item">
+                                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                                <span>Certificacions internacionals</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <img src="images/Nosotros/titulo-oficial-TD3-Victor-Puche-Fita ( incrustar en pequeño en la ficha o en algun lugar para aumentar el EEAT ).jpg" alt="Certificat oficial Alpine Ski Academy" class="certificate-horizontal-image">
+                            <div class="certificate-caption mt-3">
+                                <p class="mb-1 fw-bold">Certificat Oficial TD3</p>
+                                <p class="text-muted small">Màxima qualificació en ensenyament d'esquí</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Testimonis -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title text-center">Testimonis Reals</h2>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Meravellós equip de professionals [...] El millor que pots trobar a Baqueira."</p>
+                    <p class="testimonial-author">Borja Llorens (Espanya)</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professors amb infinita paciència [...] Totalment recomanables."</p>
+                    <p class="testimonial-author">Fernando Sánchez (Espanya)</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Víctor va ser brillant ensenyant als meus fills. Van passar de principiants a segurs en només uns dies."</p>
+                    <p class="testimonial-author">Gatis Freijs (Letònia)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <p class="mb-3">Vols llegir més opinions?</p>
+            <a href="#" class="btn btn-outline-primary me-2">Consulta les nostres ressenyes a Google</a>
+            <a href="#" class="btn btn-outline-primary">També estem a TripAdvisor</a>
+        </div>
+        
+        <!-- Google Reviews Widget -->
+        <div class="google-reviews-widget">
+            <!-- Aquí aniria el codi del widget de Google Reviews -->
+            <div class="text-center">
+                <h3>Les nostres ressenyes a Google</h3>
+                <p>Consulta les nostres valoracions i comentaris de clients reals</p>
+                <a href="#" class="btn btn-primary">Veure ressenyes a Google</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció PMF -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title text-center">Preguntes Freqüents</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Què cal tenir en compte per triar el millor professor d'esquí a Baqueira?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Triar bé el teu professor d'esquí a Baqueira pot marcar la diferència entre una experiència més o menys divertida… i una que de veritat t'ajudi a progressar, guanyar confiança i gaudir més de la muntanya.</p>
+                        <p>Encara que la titulació oficial (TD1, TD2 o TD3) és fonamental —ja que garanteix coneixements tècnics, seguretat i pedagogia—, no és l'únic factor que importa. Un bon professor també ha de tenir experiència en el terreny, saber llegir les condicions de l'estació, adaptar-se al clima, al material i, sobretot, a l'alumne. L'empatia, la claredat en comunicar, el compromís real amb l'aprenentatge i la capacitat de transmetre motivació són qualitats essencials.</p>
+                        <p>En definitiva, el millor professor no és només qui més sap, sinó qui millor ensenya, acompanya i s'adapta a cada persona. Això és precisament el que busquem en el nostre equip a Alpine Ski Academy: titulacions, sí, però també humanitat, vocació i dedicació.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Com triar la millor escola d'esquí a Baqueira?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Triar la millor escola d'esquí a Baqueira no depèn només del nom o la mida de l'estructura. Hi ha diversos factors clau que t'ajudaran a prendre una decisió encertada:</p>
+                        <ul>
+                            <li>Que compti amb professors titulats oficialment</li>
+                            <li>Que ofereixi un seguiment personalitzat i real de l'alumne</li>
+                            <li>Que treballi amb tecnologia aplicada a l'aprenentatge (com Carv o videoanàlisi)</li>
+                            <li>Que tingui experiència consolidada a l'estació</li>
+                            <li>Que disposi d'opinions verificades i testimonis reals</li>
+                        </ul>
+                        <p>Moltes vegades, optar per una escola petita i especialitzada suposa un gran avantatge: atenció directa, comunicació fluida, classes més mimades i un equip que realment coneix cada alumne.</p>
+                        <p>A Alpine Ski Academy creiem en aquest model: un ensenyament tècnic i rigorós, però proper, amb persones reals que acompanyen a altres persones en el seu aprenentatge sobre la neu.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Tens més dubtes o vols aprofundir?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Visita la nostra secció de continguts al blog d'Alpine Ski Academy, on publiquem consells, guies i articles tècnics sobre esquí, formació i aprenentatge a la neu.</p>
+                        <a href="#" class="btn btn-primary">Anar al blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Parlem?</h2>
+        <p>Tens dubtes sobre quin tipus de classe és la més adequada per a tu o els teus fills? Vols conèixer-nos millor abans de reservar? Necessites assessorament personalitzat?</p>
+        <p>Estarem encantats d'escoltar-te. Pots contactar-nos per email, telèfon, wats up o a través del formulari del web.</p>
+        <p class="mt-4">❄️ Perquè més que una escola, som un equip humà amb veritable passió per ensenyar.</p>
+        <div class="mt-4">
+            <a href="https://wa.me/34669911342" target="_blank"https://wa.me/34669911342" target="_blank">+34669911342</a>" class="btn btn-light me-3">
+                <i class="fas fa-phone me-2"></i>Trucar ara
+            </a>
+            <a href="mailto:<a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>" class="btn btn-outline-light" target="_blank">
+                <i class="fas fa-envelope me-2"></i>Enviar email
+            </a>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats, progrés garantit i experiències inoblidables a la neu.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Serveis</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Classes Esquí</a></li>
+                        <li><a href="classes-snowboard-baqueira-ca.html" style="text-decoration: none; color: inherit;">Classes Snowboard</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Nosaltres</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Viatges</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Càmeres</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Lloguer Material</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Preus</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contacte / Reserva</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Nosaltres</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">El nostre equip</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Testimonis</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contacte</h5>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Enllaços legals</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Avís Legal</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Privadesa</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Cookies</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Cancel·lació</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Tots els drets reservats.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. és una empresa independent. No estem vinculats ni som part de Baqueira Beret, S.A. L'ús del nom Baqueira és estrictament per localitzar el lloc on realitzem els nostres serveis com a escola d'esquí.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34123456789" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+       <script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,828 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Ski Academy: Escola d'Esquí i Snowboard a Baqueira Beret</title>
+    <meta name="description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats, progrés garantit i experiències inoblidables a la neu.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <script src="language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="og:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="twitter:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- Top Info Bar -->
+<div class="top-info-bar">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <div class="top-info-item">
+                <i class="fas fa-phone-alt me-1"></i>
+                <span>
+                    <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a>
+                </span>
+            </div>
+            <div class="top-info-item">
+                <i class="fas fa-envelope me-1"></i>
+                <span>
+                    <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.jpg"
+                    alt="Alpine Ski Academy – Escola d'esquí i snowboard a Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Classes Esquí
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Classes particulars -->
+                            <li>
+                                <h6 class="dropdown-header">Classes Particulars</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-grup-nens-baqueira.html">Nens</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-particulars-families-baqueira.html">Famílies</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-grup-adults-baqueira.html">Adults</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-particulars-carv-baqueira.html">Amb Carv</a></li>
+
+                            <!-- Classes especials -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-freeride-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-freestyle-baqueira.html">Freestyle</a></li>
+
+                            <!-- Classes en grup -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Classes en Grup</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-grup-nens-baqueira.html">Grup Nens</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-grup-adults-baqueira.html">Grup Adults</a></li>
+                            <li><a class="dropdown-item" href="clases-esqui-baqueira/ca/classes-esqui-grup-empreses-collegis-baqueira.html">Empreses/Escoles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/classes-snowboard-baqueira-ca.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/nosaltres.html">Nosaltres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/galeria-ca.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/viatges-esqui.html">Viatges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/webcams-baqueria-ca.html">Càmeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/lloguer-material-esqui-snowboard-baqueira-ca.html">Lloguer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/preus-classes-esqui-snowboard-baqueira.html">Preus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca/contacte-reserves.html">Contacte</a>
+                    </li>
+                </ul>
+                <!-- Book Now Button -->
+                <div class="nav-cta ms-3">
+                    <a href="contacto.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Reserva
+                    </a>
+                </div>
+                <!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> CA
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+        <li><a class="dropdown-item language-option" href="index.html" data-lang="es">
+                <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+            </a></li>
+        <li><a class="dropdown-item language-option" href="en.html" data-lang="en">
+                <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+            </a></li>
+        <li><a class="dropdown-item active language-option" href="ca.html" data-lang="ca">
+                <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+            </a></li>
+        <li><a class="dropdown-item language-option" href="fr.html" data-lang="fr">
+                <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+            </a></li>
+        <li><a class="dropdown-item language-option" href="pt.html" data-lang="pt">
+                <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+            </a></li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </nav>
+    <!-- Enhanced Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Instrucció d'esquí de classe mundial</span>
+                <h1 class="display-3 fw-bold mb-4">Alpine Ski Academy: La Teva Escola d'Esquí i Snowboard a Baqueira Beret</h1>
+                <p class="lead mb-5">Viu la Neu al Màxim: Classes Personalitzades, Progrés Garantit i Experiències Úniques a Baqueira</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg me-3">Consultanos el que necessitis o Reserva la Teva Classe Ara</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg">Consulta preus i tipus de classes a Baqueira</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre Alpine Ski Academy</h2>
+                    <p class="lead">Ens apassionen els esports d'hivern i ens dediquem a brindar instrucció d'esquí i snowboard de la més alta qualitat.</p>
+                    <p>Alpine Ski Academy et dóna la benvinguda a Baqueira Beret, l'escenari perfecte per a la teva pròxima gran aventura en esquí i snowboard. Si somies amb lliscar per primera vegada, perfeccionar la teva tècnica o explorar l'emocionant freeride, la nostra escola t'ofereix una experiència inoblidable.</p>
+                    <p><a href="#">Impartim classes d'esquí</a> i snowboard per a tots els nivells i edats, des de classes per a nens fins a programes avançats per a adults, assegurant una progressió real, segura i sempre amb un somriure.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Més informació sobre nosaltres</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="clase-particular-carv.webp" alt="Instructor d'esquí amb estudiant"
+                        class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us-section">
+        <div class="container">
+            <h2 class="section-title text-center">Per Què Alpine Ski Academy? La Teva Elecció per Esquiar a Baqueira</h2>
+            <p class="member-desc">A Alpine Ski Academy, no només t'ensenyem a esquiar o fer snowboard; et submergim en una experiència completa, segura i feta a la teva mida en l'incomparable marc de Baqueira Beret. Amb un compromís de millora contínua i formació constant, treballem cada dia per ser la millor escola d'esquí a Baqueira per a tu. Descobreix per què tants esquiadors confien en Alpine Ski Academy:</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <!-- First row of three boxes -->
+                        <div class="col-md-4 mb-5">
+                            <div class="feature-box">
+                                <div class="mb-4">
+                                    <i class="fas fa-certificate fa-3x text-primary"></i>
+                                </div>
+                                <h4>El Nostre Equip de Professors: Guiats per la Passió i l'Experiència</h4>
+                                <p>Confia en un equip humà excepcional liderat per <strong>formadors de professors</strong>, amb més de 20 anys d'experiència donant classes a Baqueira i milers d'hores de classes sobre els nostres esquís. Seleccionem curosament els nostres professors (TD1, TD2 i TD3) no només per la seva titulació, sinó per la seva passió, dedicació i compromís amb un ensenyament personalitzat i segur. El seu profund coneixement de Baqueira garanteix classes exitoses i divertides.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="feature-box">
+                                <div class="mb-4">
+                                    <i class="fas fa-snowflake fa-3x text-primary"></i>
+                                </div>
+                                <h4>Resultats Visibles Des de la Primera Classe</h4>
+                                <p>La nostra metodologia s'enfoca en què notis una millora significativa i guanyis confiança des del teu primer dia a la neu. Prepara't per sorprendre't amb el teu progrés i aprendre a esquiar o fer snowboard des de zero a Baqueira o perfeccionar la teva tècnica!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="feature-box">
+                                <div class="mb-4">
+                                    <i class="fas fa-mountain fa-3x text-primary"></i>
+                                </div>
+                                <h4>Atenció 100% Personalitzada</h4>
+                                <p>Cada esquiador és un món. Adaptem cada classe d'esquí, particular o en grup, als teus objectius, ritme i estil, ja siguis adult o nen, perquè aprofitis cada minut al màxim a Baqueira.</p>
+                            </div>
+                        </div>
+
+                        <!-- Second row of three boxes -->
+                        <div class="col-md-4 mb-5">
+                            <div class="feature-box">
+                                <div class="mb-4">
+                                    <i class="fas fa-users fa-3x text-primary"></i>
+                                </div>
+                                <h4>Metodologia Innovadora i Divertida</h4>
+                                <p>Oblida't de classes avorrides. Apliquem tècniques d'ensenyament moderna i efectiva, assegurant que aprendre a esquiar a Baqueira o dominar el snowboard sigui una experiència emocionant i entretinguda per a totes les edats.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="feature-box">
+                                <div class="mb-4">
+                                    <i class="fas fa-palette fa-3x text-primary"></i>
+                                </div>
+                                <h4>Classes per a Totes les Edats i Nivells</h4>
+                                <p>Des dels més petits que fan els seus primers passos amb nosaltres, fins a esquiadors experts que busquen perfeccionar la seva tècnica o iniciar-se en el freestyle o freeride. Tenim la <strong>classe d'esquí o snowboard per a nens, adolescents o adults;</strong> principiants o avançats que necessites!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="feature-box">
+                                <div class="mb-4">
+                                    <i class="fas fa-trophy fa-3x text-primary"></i>
+                                </div>
+                                <h4>Tecnologia d'Avantguarda per al Teu Progrés</h4>
+                                <p>Utilitzem vídeo-anàlisi per a correccions precises i, per a una anàlisi d'alt rendiment, emprem l'aplicació Carv, oferint-te un feedback detallat de la teva <a href="">tècnica d'esquí en temps real.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats and Info Section -->
+            <div class="stats-info-section">
+                <h3 class="stats-info-title text-center">Gaudeix Baqueira Sense Preocupacions: Serveis Exclusius per a Clients Alpine</h3>
+                <p class="member-desc">A Alpine Ski Academy, la teva experiència va més enllà de les pistes. Volem que les teves vacances d'esquí a Baqueira Beret i la Vall d'Aran siguin absolutament perfectes i sense complicacions. Per això, en reservar les teves classes amb nosaltres, accedeixes a un conjunt de serveis de consergeria personalitzats, sense cost addicional per la nostra gestió. Ens encarreguem dels detalls perquè tu només et preocupis de gaudir:</p>
+                <div class="stats-info-container">
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <span id="yearsExperience" class="stat-number">0</span>
+                            <span class="stat-label">Anys d'Experiència</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <span id="satisfiedClients" class="stat-number">0</span>
+                            <span class="stat-label">Clients Satisfets</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span id="satisfactionRate" class="stat-number">0</span>
+                            <span class="stat-label">Taxa de Satisfacció</span>
+                        </div>
+                    </div>
+
+                    <div class="info-container">
+                        <h3 class="info-title">Informació Essencial sobre Esquí</h3>
+
+                        <div class="info-item">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Reserves Gastronòmiques</h4>
+                            <p>Accés als millors restaurants de Baqueira i Vall d'Aran</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-skiing"></i>
+                            <h4>Material premium: Lloguer d'esquís i snowboard a Baqueira</h4>
+                            <p>Equip de primera qualitat amb assessorament personalitzat</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-bus"></i>
+                            <h4>Trasllats i Taxis</h4>
+                            <p>Servei de transport porta a porta per a la teva comoditat</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-camera"></i>
+                            <h4>Reportatges Fotogràfics Professionals</h4>
+                            <p>Captem els teus millors moments a la neu</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-helicopter"></i>
+                            <h4>Heliski</h4>
+                            <p>Contacte directe amb la millor empresa d'Heliski</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-baby"></i>
+                            <h4>Guarderies i Cangurs</h4>
+                            <p>Cura professional per als més petits</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Assessorament Personalitzat</h4>
+                            <p>Assessorament Personalitzat per a l'elecció del teu equip, tant de compra com de lloguer</p>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-lock"></i>
+                            <h4>Taquilles a Peu de Pistes</h4>
+                            <p>Taquilles a Peu de Pistes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Descobreix les Nostres Classes d'Esquí i Snowboard a Baqueira: Per a Tots els Gustos i Nivells</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img"
+                            style="background-image: url('images/clases-esquí-alpine-ski-academy.webp');"
+                            alt="classes-esquí-alpine-ski-academy"></div>
+                        <div class="blog-content">
+                            <h4>Classes Particulars d'Esquí a Baqueira (Nens, Adults i Famílies)</h4>
+                            <p>La forma més ràpida i personalitzada d'aprendre a esquiar a Baqueira o perfeccionar la teva tècnica. Un professor d'esquí particular dedicat en exclusiva a tu o als teus fills, o enfocat a unes classes adaptades per a tota la família. Som especialistes en classes d'esquí per a nens a Baqueira!</p>
+                            <a href="ca/blog.html" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img"
+                            style="background-image: url('images/clase-de-snowboard-baqueira-alpine-ski-academy.webp') ;"
+                            alt="Classe de snowboard en grup a Baqueira amb instructor de tècnica en una pista nevada">
+                        </div>
+                        <div class="blog-content">
+                            <h4>Classes Particulars de Snowboard a Baqueira (Nens i Adults)</h4>
+                            <p>Sent la llibertat de la taula amb un professor de snowboard particular a Baqueira. Des dels teus primers girs fins a trucs avançats.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img"
+                            style="background-image: url('images/clases-colectivas-grupo-adultos-baqueira.webp');"
+                            alt="classes-col·lectives-grup-adults-baqueira."></div>
+                        <div class="blog-content">
+                            <h4>Classes Col·lectives d'Esquí a Baqueira (Nens i Adults)</h4>
+                            <p>Aprèn i comparteix la passió per l'esquí en un ambient divertit. Les nostres classes d'esquí en grup per a nens a Baqueira o les nostres classes d'esquí per a adults, s'organitzen per nivells homogenis.</p>
+                            <a href="clases-esqui-baqueira/ca/classes-esqui-grup-adults-baqueira.html" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img" style="background-image: url('images/salto-snowparck-tail-grab.webp');"
+                            alt="salt-snowparck-tail-grab"></div>
+                        <div class="blog-content">
+                            <h4>Classes d'Esquí Freestyle a Baqueira: Domina el Snowpark!</h4>
+                            <p>Preparat per als salts i mòduls? Els nostres instructors experts en freestyle t'ensenyaran les tècniques per gaudir del snowpark de Baqueira Era Marmota amb seguretat i molta adrenalina.</p>
+                            <a href="clases-esqui-baqueira/ca/classes-esqui-freestyle-baqueira.html" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img" style="background-image: url('images/clases-de-nieve-polvo.webp');"
+                            alt="classes-de-neu-polse.webp"></div>
+                        <div class="blog-content">
+                            <h4>Classes d'Esquí Freeride a Baqueira: Aventura Fora de Pista</h4>
+                            <p>Descobreix la màgia de la neu pols amb les nostres classes d'esquí freeride a Baqueira. T'ensenyem tècnica i seguretat per explorar el backcountry amb responsabilitat, aprofitant el terreny i totes les seves variants al màxim.</p>
+                            <a href="clases-esqui-baqueira/ca/classes-esqui-freeride-baqueira.html" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img"
+                            style="background-image: url('images/esqui-empresas-team-building-baqueira.webp');"
+                            alt="esquí-empreses-team-building-baqueira"></div>
+                        <div class="blog-content">
+                            <h4>Team Building a Baqueira: Esquí, Diversió i Treball en Equip</h4>
+                            <p>Converteix la teva jornada corporativa en una experiència única a Baqueira Beret. Organitzem activitats d'esquí i snowboard adaptades per a empreses, dissenyades per enfortir vincles, potenciar la comunicació i fomentar l'esperit d'equip.</p>
+                            <a href="blog.html" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn btn-primary">Consulta Totes les Classes i Preus</a>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="blog" class="blog-section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">L'Equip Alpine: Els Teus Guies Experts a les Pistes de Baqueira</h2>
+            <p class="member-desc">L'ànima d'Alpine Ski Academy és el nostre excepcional equip. Comptem amb instructors d'esquí i snowboard a Baqueira no només altament qualificats i titulats per les federacions més prestigioses, sinó també apassionats per l'ensenyament i la muntanya. Molts han estat formats i col·laboren amb SAFE Formación, el centre de referència que garanteix els més alts estàndards de tècnica i seguretat a la neu a Baqueira. T'oferim professionalitat, un tracte proper i la confiança d'estar amb alguns dels <a href="">millors professors d'esquí a Baqueira.</a> Deixa't guiar!</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/Victor.webp" alt="Víctor">
+                        <h4>Víctor Puche Fita</h4>
+                        <p class="text-primary">Director Tècnic</p>
+                        <p class="member-desc">Director tècnic d'Alpine Ski Academy i membre de l'equip de formació SAFE Formación de l'estació de Baqueira Beret, Víctor combina la seva experiència en l'ensenyament personalitzat amb una profunda formació professional.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/Emilio.webp" alt="Emilio Fernando Gil">
+                        <h4>Emilio Fernando Gil</h4>
+                        <p class="text-primary">Tècnic Esportiu Nivell 3</p>
+                        <p class="member-desc">Emilio, soci fundador d'Alpine Ski Academy, aporta a l'equip no només una sòlida formació tècnica, sinó també una actitud sempre disponible, amable i resolutiva.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/Sergi.webp" alt="Sergi Mercadal">
+                        <h4>Sergi Mercadal</h4>
+                        <p class="text-primary">Especialista en Freestyle</p>
+                        <p class="member-desc">Sergi és l'especialista en freestyle de l'Acadèmia d'Esquí Alpí. Ha treballat en snowparks de renom als Alps, Andorra i els Pirineus, tant com a rider com a instructor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title text-center">Resolem Els Teus Dubtes Clau per Esquiar a Baqueira</h2>
+            <p class="member-desc">Sabem que planificar la teva escapada a la neu pot generar preguntes. Aquí et responem a algunes de les més importants:</p>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            No estic segur del meu nivell d'esquí/snowboard, com trio la classe adequada?
+                            <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tranquil·litat! El nostre equip expert t'ajudarà. Contacta'ns, explica'ns la teva experiència prèvia o envia'ns un vídeo de la teva última esquiada al nostre <a href="https://wa.me/34669911342" target="_blank">WhatsApp (+34 669 911 342)</a>. Amb aquesta informació, et recomanarem la classe ideal a Baqueira perquè aprofitis des del primer minut, assegurant que l'elecció sigui la més apropiada per a la teva progressió.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            Quina és la vostra política de cancel·lació per a les classes d'esquí?
+                            <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Entenem que poden sorgir imprevistos. Pots cancel·lar les teves classes sense cost algun si ens avises amb almenys 24 hores d'antelació. Així mateix, si les classes no es poden impartir per tancament total de l'estació o per motius de seguretat meteorològica, procedirem al reemborsament o buscarem una alternativa. <a href="">Consulta la nostra política de cancel·lació completa aquí.</a></p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            És obligatori usar casc per esquiar a Baqueira o a les vostres classes?
+                            <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Encara que no és obligatori per llei per a adults a pistes, a Alpine Ski Academy ho recomanem encaridament per a tothom. Per a nens, sí que l'exigim, a més de recomanar espatlleres. En classes de freestyle o freeride, el casc és igualment obligatori. La seguretat a la neu és la nostra màxima prioritat. Esquia amb cap, esquia segur!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            Oferiu descomptes o promocions especials a les classes d'esquí a Baqueira?
+                            <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A Alpine Ski Academy, apostem per una política de preus transparent i un valor excepcional. Les nostres tarifes són el resultat d'un acurat estudi de mercat anual, situant-nos competitivament. Oferim qualitat premium a un preu just, sense increments per alta demanda. Si contractes classes de 3-4 hores o jornada completa (full day), el preu per hora millora lleugerament. A més, les classes de tarda tenen una reducció de 5€/hora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Mantingues't Informat: El Nostre Blog d'Esquí i Snowboard a Baqueira</h2>
+            <p class="member-desc">Submergeix-te en el món de la neu amb el nostre blog. Troba els millors consells per millorar la teva tècnica, guies detallades sobre Baqueira Beret, novetats d'Alpine Ski Academy i molt més. Articles com les nostres recomanacions dels <a href="#" target="_blank" rel="noopener noreferrer">millors restaurants de Baqueira i la Vall d'Aran</a> entre molts d'altres que t'interessaran.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img" style="background-image: url('images/blog_cover_1.jpg');"></div>
+                        <div class="blog-content">
+                            <h4>On Menjar a Baqueira: Guia de Restaurants a la Vall d'Aran</h4>
+                            <p>Prepara el teu cos per a les pistes amb aquests exercicis dirigits que milloraran la teva força, equilibri i resistència.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img" style="background-image: url('images/blog_cover_2.webp');"></div>
+                        <div class="blog-content">
+                            <h4>Com Triar la Longitud Correcta dels Esquís per a la Teva Habilitat</h4>
+                            <p>La nostra guia completa t'ajuda a seleccionar la longitud perfecta dels teus esquís basant-se en la teva alçada, pes i nivell d'habilitat.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-img" style="background-image: url('images/blog_cover_3.webp');"></div>
+                        <div class="blog-content">
+                            <h4>Llista de Comprovació per a Viatges d'Esquí en Família: No Oblidis Aquests Articles</h4>
+                            <p>Planejant unes vacances d'esquí en família? Utilitza la nostra llista de comprovació per assegurar-te que portes tots els essencials per a un viatge sense estrès.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Llegeix més</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn btn-primary">Explora el Nostre Blog i Aprèn Més</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-center">Contacta amb Nosaltres i Reserva Fàcilment les Teves Classes a Baqueira</h2>
+            <p class="member-desc">La teva aventura a les espectaculars pistes de Baqueira Beret està a un pas. Reservar les teves classes d'esquí o snowboard amb Alpine Ski Academy és senzill i garanteix una experiència inoblidable.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Cognoms</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correu Electrònic</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telèfon</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Missatge</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envia Missatge</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.123123123123!2d0.935912315123123!3d42.7013123123123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQyJzA0LjciTiAwwrA1NicyOS4xIkU!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses"
+                            allowfullscreen="" loading="lazy" title="Ubicació d'Alpine Ski Academy a Baqueira Beret"
+                            aria-label="Mapa d'ubicació"
+                            style="border-radius: 0.5rem; border: none; width: 100%; height: 100%;">
+                        </iframe>
+                    </div>
+                    <div class="contact-info mt-4">
+                        <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> Mountain Resort Road 123, Baqueira Beret</p>
+                        <p><i class="fas fa-phone me-2 text-primary"></i>+34 123 456 789</p>
+                        <p><i class="fas fa-envelope me-2 text-primary"></i> <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></p>
+                        <p><i class="fas fa-clock me-2 text-primary"></i> Horari d'obertura: Dilluns a diumenge: 8:00 - 20:00</p>
+                        <p><i class="fas fa-snowflake me-2 text-primary"></i>Temporada de neu: desembre - abril</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section with Google Reviews API -->
+    <!-- Testimonial Section with Google Reviews Widget -->
+    <section id="testimonials" class="testimonial-section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Ressenyes de Google</h2>
+            <!-- <p class="text-center mb-5">See what our students are saying about us on Google</p> -->
+
+            <!-- Elfsight Google Reviews Widget -->
+            <div class="google-reviews-widget">
+                <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+                <script src="https://elfsightcdn.com/platform.js" async></script>
+                <div class="elfsight-app-4bc98193-7279-427e-8d94-2bff788f77ee" data-elfsight-app-lazy></div>
+            </div>
+
+            <!-- Call to Action Buttons -->
+            <div class="text-center mt-5">
+                <a href="https://g.page/r/CZRXy03Y7gWMEAI/review" class="btn btn-outline-primary me-2" target="_blank"
+                    data-key="testimonial-cta1">Llegeix més testimonis al nostre perfil de Google</a>
+                <a href="https://www.tripadvisor.es/Attraction_Review-g1078293-d26636358-Reviews-Alpine_Ski_Academy-Baqueira.html"
+                    class="btn btn-outline-primary" target="_blank" data-key="testimonial-cta2">consulta també la nostra reputació a Tripadvisor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <h2 class="section-title text-center">Partners de Confiança: Qualitat Garantida en el Teu Equip</h2>
+            <p>A Alpine Ski Academy, l'excel·lència és un estàndard. La nostra sòlida relació de més de 10 anys amb marques líder de l'esquí i snowboard com Rossignol, Dynastar, Briko i Lange es fonamenta en la confiança i el benefici mutu. Agraïm profundament el seu continu suport, una col·laboració que ens permet oferir-te accés al millor material i equipament durant les teves classes i experiències a Baqueira, assegurant rendiment, seguretat i confort en cada descens.</p>
+            <div class="row justify-content-center align-items-center">
+                <!-- Partner 1 -->
+                <div class="col-md-3 col-6">
+                    <div class="partner-item d-flex justify-content-center align-items-center">
+                        <img src="dynastar.webp" alt="Partner 1" class="partner-logo img-fluid">
+                    </div>
+                </div>
+                <!-- Partner 2 -->
+                <div class="col-md-3 col-6">
+                    <div class="partner-item d-flex justify-content-center align-items-center">
+                        <img src="lange.webp" alt="Partner 2" class="partner-logo img-fluid">
+                    </div>
+                </div>
+                <!-- Partner 3 -->
+                <div class="col-md-3 col-6">
+                    <div class="partner-item d-flex justify-content-center align-items-center">
+                        <img src="rossignol.webp" alt="Partner 3" class="partner-logo img-fluid">
+                    </div>
+                </div>
+                <!-- Partner 4 -->
+                <div class="col-md-3 col-6">
+                    <div class="partner-item d-flex justify-content-center align-items-center">
+                        <img src="briko.webp" alt="Partner 4" class="partner-logo img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats, progrés garantit i experiències inoblidables a la neu.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Serveis</h5>
+                    <ul class="footer-links">
+                        <li><a href="clases-esqui-baqueira/index.html" style="text-decoration: none; color: inherit;">Classes Esquí</a></li>
+                        <li><a href="ca/classes-snowboard-baqueira-ca.html" style="text-decoration: none; color: inherit;">Classes Snowboard</a></li>
+                        <li><a href="ca/nosaltres.html" style="text-decoration: none; color: inherit;">Nosaltres</a></li>
+                        <li><a href="ca/viatges-esqui.html" style="text-decoration: none; color: inherit;">Viatges</a></li>
+                        <li><a href="ca/webcams-baqueria-ca.html" style="text-decoration: none; color: inherit;">Càmeres</a></li>
+                        <li><a href="ca/lloguer-material-esqui-snowboard-baqueira-ca.html" style="text-decoration: none; color: inherit;">Lloguer Material</a></li>
+                        <li><a href="ca/preus-classes-esqui-snowboard-baqueira.html" style="text-decoration: none; color: inherit;">Preus</a></li>
+                        <li><a href="ca/contacte-reserves.html" style="text-decoration: none; color: inherit;">Contacte / Reserva</a></li>
+                        <li><a href="ca/blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="ca/nosaltres.html" style="text-decoration: none; color: inherit;">Nosaltres</a></li>
+                        <li><a href="ca/nosaltres.html" style="text-decoration: none; color: inherit;">El nostre equip</a></li>
+                        <li><a href="ca/nosaltres.html" style="text-decoration: none; color: inherit;">Testimonis</a></li>
+                        <li><a href="ca/blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="ca/contacte-reserves.html" style="text-decoration: none; color: inherit;">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contacte</h5>
+                   <div class="social-links mb-3">
+                        <a href="https://www.instagram.com/alpine.skiacademy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy?lang=es"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Enllaços legals</h5>
+                    <ul class="footer-links">
+                        <li><a href="legal-notice.html" style="text-decoration: none; color: inherit;">Legal Notice</a></li>
+                        <li><a href="privacy-policy.html" style="text-decoration: none; color: inherit;">Privacy Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Cookie Policy</a></li>
+                        <li><a href="Cancellation-policy.html" style="text-decoration: none; color: inherit;">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Tots els drets reservats.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. és una empresa independent. No estem vinculats ni som part de Baqueira Beret, S.A. L'ús del nom Baqueira és estrictament per localitzar el lloc on realitzem els nostres serveis com a escola d'esquí.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34123456789" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+      <script>
+    // FAQ toggle functionality
+    function toggleFaq(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+
+</html>

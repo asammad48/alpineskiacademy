@@ -1,0 +1,720 @@
+﻿
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes de esquí organizados | Alpine Ski Academy</title>
+    <meta name="description"
+        content="Descubre nuestras experiencias internacionales de esquí. Esta temporada 25-26 viajamos a St. Moritz. Reserva tu plaza o solicita un viaje a medida.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <!-- <script src="language.js"></script> -->
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="og:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="twitter:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- Top Info Bar -->
+<div class="top-info-bar">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <div class="top-info-item">
+                <i class="fas fa-phone-alt me-1"></i>
+                <span>
+                    <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a>
+                </span>
+            </div>
+            <div class="top-info-item">
+                <i class="fas fa-envelope me-1"></i>
+                <span>
+                    <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.jpg"
+                    alt="Alpine Ski Academy – Escola d'esquí i snowboard a Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Classes Esquí
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Classes particulars -->
+                            <li>
+                                <h6 class="dropdown-header">Classes Particulars</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-particulars-nens-baqueira.html">Nens</a></li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-particulars-families-baqueira.html">Famílies</a></li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-particulars-adults-baqueira.html">Adults</a></li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-particulars-carv-baqueira.html">Amb Carv</a></li>
+
+                            <!-- Classes especials -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/particulares-freeride.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/particulares-freestyle.html">Freestyle</a></li>
+
+                            <!-- Classes en grup -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Classes en Grup</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-grup-nens-baqueira.html">Grup Nens</a></li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-grup-adults-baqueira.html">Grup Adults</a></li>
+                            <li><a class="dropdown-item" href="../clases-esqui-baqueira/ca/classes-esqui-grup-empreses-collegis-baqueira.html">Empreses/Escoles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes-snowboard-baqueira-ca.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosaltres.html">Nosaltres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria-ca.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viatges-esqui.html">Viatges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webcams-baqueria-ca.html">Càmeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lloguer-material-esqui-snowboard-baqueira-ca.html">Lloguer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preus-classes-esqui-snowboard-baqueira.html">Preus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosaltres.html">Contacte</a>
+                    </li>
+                </ul>
+                <!-- Book Now Button -->
+                <div class="nav-cta ms-3">
+                    <a href="contacte-reserves.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Reserva
+                    </a>
+                </div>
+<!--Language switcher Dropdown -->
+<!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> CA
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+        <li><a class="dropdown-item active language-option" href="#" data-lang="ca">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg" width="20" height="15" class="me-2">Català
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../Viajes.html" data-lang="es">
+                <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../en/ski-trips.html" data-lang="en">
+                <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../fr/voyages-ski.html" data-lang="fr">
+                <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+            </a></li>
+        <li><a class="dropdown-item language-option" href="../pt/viajens-esqui.html" data-lang="pt">
+                <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+            </a></li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Secció Hero Viatges -->
+<section class="hero-viajes">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="date-badge">Temporada 2025-2026</div>
+                <h1 class="display-4 fw-bold mb-4">Viatges d'esquí organitzats amb Alpine Ski Academy</h1>
+                <p class="lead mb-5">Esquiar més enllà de Baqueira: una nova experiència Alpine</p>
+                <a href="#destination" class="btn btn-primary btn-lg me-3">Descobreix St. Moritz 2025</a>
+                <a href="#custom" class="btn btn-outline-light btn-lg">Viatge a mida</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Navegació de Molla de Pa -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Viatges</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Secció Intro -->
+<section class="intro-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title">Una nova dimensió de l'esquí</h2>
+                <p class="textjustify">Després de tantes temporades compartides a Baqueira, sabem que l'esquí, per a molts de vosaltres, va molt més enllà de ser un esport. És desconnexió. És intensitat. És tècnica, paisatge, emoció, salut, família. És una forma de viure l'hivern a través d'experiències que alimenten cos i ment, que es recorden tota la vida.</p>
+                <p class="textjustify">Per això neix Alpine Ski Academy Viatges: un projecte pensat per a aquells que volen seguir explorant el món a través de l'esquí, amb l'acompanyament dels professors que ja coneixen, en els llocs que sempre van somiar.</p>
+                <p class="textjustify">Cada temporada triarem una destinació emblemàtica per proposar-vos una aventura completa: tècnica, cultural, paisatgística i humana. Llocs on la cultura alpina de l'esquí es respira a cada poble, a cada remuntador, a cada baixada.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Viajes/Paisaje-suiza-viaje.webp" alt="Experiència Alpine Ski Academy" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Destinació -->
+<section class="destination-section" id="destination">
+    <div class="container">
+        <h2 class="section-title text-center">Destinació 2025: St. Moritz (Suïssa)</h2>
+        <p class="text-center mb-5">L'abril de 2025 comencem la nostra primera gran aventura fora de Baqueira amb una destinació a l'altura de l'ocasió: St. Moritz, al cor dels Alps suïssos.</p>
+        
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="destination-card">
+                    <img src="images/Viajes/paisaje-viaje-alpes-suizos.webp" alt="Panoràmica St. Moritz" class="destination-img">
+                    <div class="destination-info">
+                        <h3 class="mb-4">Informació del viatge</h3>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-calendar-alt text-primary me-2"></i>Dates del viatge</h5>
+                                <ul class="list-unstyled">
+                                    <li>🗓️ Del diumenge 6 al dissabte 12 d'abril de 2025</li>
+                                    <li>🎿 Esquí de dilluns a divendres (5 dies de forfet)</li>
+                                    <li>🚐 Desplaçament el diumenge i tornada el dissabte</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-hotel text-primary me-2"></i>Allotjament</h5>
+                                <ul class="list-unstyled">
+                                    <li>🏨 Hotels de 4 o 5 estrelles seleccionats</li>
+                                    <li>📍 Ubicació premium a St. Moritz</li>
+                                    <li>🍽️ Règim de mitja pensió</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-skiing text-primary me-2"></i>Activitats</h5>
+                                <ul class="list-unstyled">
+                                    <li>Classes tècniques i guiat diari</li>
+                                    <li>Exploració del domini Engadin – Corviglia</li>
+                                    <li>Assistència personalitzada completa</li>
+                                    <li>Activitats après-esquí i wellness</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-plane text-primary me-2"></i>Transport</h5>
+                                <ul class="list-unstyled">
+                                    <li>✈️ Vol recomanat a Ginebra</li>
+                                    <li>🚗 Opció lloguer cotxe premium</li>
+                                    <li>🚌 Recollida organitzada per Alpine</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Important:</strong> Per garantir preus òptims i organitzar-ho tot amb precisió, la inscripció ha de formalitzar-se abans de l'1 de març de 2025.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="destination-card">
+                    <img src="images/Viajes/Pista-suiza.webp" alt="Poble St. Moritz" class="destination-img">
+                    <div class="destination-info">
+                        <h3 class="mb-4">Per què St. Moritz?</h3>
+                        <ul>
+                            <li>✅ Més de 300 dies de sol a l'any</li>
+                            <li>✅ Tres estacions connectades</li>
+                            <li>✅ Entorn espectacular amb llac mític</li>
+                            <li>✅ Orientacions variades</li>
+                            <li>✅ Glacera i altitud per a neu garantida</li>
+                            <li>✅ Remuntadors d'última generació</li>
+                            <li>✅ Luxe, tradició i cultura alpina</li>
+                        </ul>
+                        <p class="mt-3">Una destinació que encaixa perfectament amb l'evolució natural dels que han esquiat amb nosaltres a Baqueira durant anys.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Punts Destacats -->
+<section class="destination-highlights">
+    <div class="container">
+        <h2 class="section-title text-center">Per què hem triat St. Moritz?</h2>
+        <p class="text-center mb-5">No ha estat una decisió a l'atzar. Hem esquiat allà, el coneixem bé i sabem que ofereix tot el que busquem per a una experiència Alpine d'alt nivell.</p>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h4>Clima Privilegiat</h4>
+                    <p>Més de 300 dies de sol a l'any, un dels climes més privilegiats dels Alps.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h4>Domini Excepcional</h4>
+                    <p>Tres estacions connectades: Corviglia, Diavolezza i Corvatsch amb orientacions variades.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h4>Neu Garantida</h4>
+                    <p>Glacera i altitud per gaudir d'excel·lents condicions de neu fins i tot a l'abril.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-chair-lift"></i>
+                    </div>
+                    <h4>Infraestructura Premium</h4>
+                    <p>Remuntadors d'última generació i pistes àmplies, llargues i perfectament cuidades.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h4>Cultura Alpina</h4>
+                    <p>Una combinació única de luxe, tradició i cultura alpina autèntica.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Experiència Completa</h4>
+                    <p>Entorn espectacular amb pistes al voltant d'un llac mític que talla la respiració.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Inclòs -->
+<section class="included-section">
+    <div class="container">
+        <h2 class="section-title text-center">Què inclou el viatge?</h2>
+        <p class="text-center mb-5">Aquest no és un paquet estàndard. És una experiència dissenyada amb cura, detall i qualitat, per gaudir de l'esquí en un entorn inigualable, sense preocupar-se de res més que viure-ho.</p>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="mb-4">Inclòs en el paquet</h3>
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div>
+                        <h5>Allotjament Premium</h5>
+                        <p>6 nits en hotel 4* o 5* a St. Moritz, en règim de mitja pensió</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-ski-lift"></i>
+                    </div>
+                    <div>
+                        <h5>Forfet Complet</h5>
+                        <p>Forfet de 5 dies per al domini Engadin – Corviglia</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div>
+                        <h5>Classes Tècniques</h5>
+                        <p>Classes diàries o sessions tècniques amb els nostres professors Alpine</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>
+                        <h5>Assistència Completa</h5>
+                        <p>Assistència i acompanyament durant tot el viatge</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div>
+                        <h5>Gestió Personalitzada</h5>
+                        <p>Gestió personalitzada de reserves i documentació</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <h3 class="mb-4">Opcionals segons necessitat</h3>
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div>
+                        <h5>Transport Premium</h5>
+                        <p>Lloguer de cotxe des de l'aeroport de Ginebra o transfer privat organitzat</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-skiing"></i>
+                    </div>
+                    <div>
+                        <h5>Material d'Esquí</h5>
+                        <p>Assessorament per al lloguer de material d'alta qualitat</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h5>Assegurances</h5>
+                        <p>Assegurança de viatge o cancel·lació personalitzada segons les teves necessitats</p>
+                    </div>
+                </div>
+                
+                <div class="included-item">
+                    <div class="included-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div>
+                        <h5>Experiències Gastronòmiques</h5>
+                        <p>Reserves en restaurants exclusius i experiències culinàries locals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció Viatge a Mida -->
+<section class="custom-trip-section" id="custom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="custom-trip-card">
+                    <h2 class="section-title">Vols un viatge a mida per a la teva família o amics?</h2>
+                    <p class="lead mb-4">També oferim la possibilitat de dissenyar viatges privats totalment personalitzats, adaptats a les teves dates, destinació i preferències.</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-map-marked-alt text-primary me-2"></i>Destinació a la teva elecció</h5>
+                            <p>Tria entre les millors destinacions d'esquí d'Europa</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-calendar-day text-primary me-2"></i>Dates flexibles</h5>
+                            <p>Organitzem el teu viatge quan millor et vingui</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-users text-primary me-2"></i>Grups privats</h5>
+                            <p>Per a famílies, amics o escapades tècniques</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-concierge-bell text-primary me-2"></i>Tot inclòs</h5>
+                            <p>Ens encarreguem de cada detall del teu viatge</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-4">Ja sigui per a una família, un grup d'amics o una escapada tècnica, ens encarreguem de tot: elecció de la destinació, gestió d'allotjament i forfet, classes privades, transfers, material, activitats i assegurances.</p>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Sol·licita la teva proposta sense compromís.</strong> Ens encantarà ajudar-te a crear el viatge perfecte.
+                    </div>
+                    
+                    <a href="contacte-reserves.html" class="btn btn-primary btn-lg">Sol·licitar viatge a mida</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció PMF -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title text-center">Preguntes freqüents sobre els viatges d'esquí</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Cal tenir un nivell alt per participar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No cal ser un esquiador expert, però sí que es recomana tenir un nivell intermedi consolidat (pistes vermelles amb autonomia).</p>
+                        <p>Si tens dubtes, consulta'ns i t'orientarem.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Puc venir sense contractar classes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les classes estan incloses en el viatge i no suposen un cost addicional.</p>
+                        <p>Si decideixes no aprofitar-les, el preu es manté, ja que és part del paquet. Tot i així, t'animem a participar: són sessions adaptades, tècniques i molt enriquidores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Secció CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>T'animes a viatjar amb nosaltres?</h2>
+        <p class="mb-4">Aquest no és un viatge qualsevol. És l'oportunitat de viure l'esquí com mai abans: en una destinació llegendària, amb el confort d'una organització professional i l'acompanyament dels professors en els quals ja confies.</p>
+        
+        <div class="alert alert-warning d-inline-block">
+            <i class="fas fa-exclamation-circle me-2"></i>
+            <strong>Places limitades:</strong> L'organització ha de tancar-se abans de l'1 de març de 2025 per garantir preus, hotels i logística.
+        </div>
+        
+        <div class="mt-4">
+            <a href="https://wa.me/34669911342" target="_blank"https://wa.me/34669911342" target="_blank">+34669911342</a>" class="btn btn-light btn-lg me-3">
+                <i class="fas fa-phone me-2"></i>Trucar per informació
+            </a>
+            <a href="mailto:<a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>" class="btn btn-outline-light btn-lg" target="_blank">
+                <i class="fas fa-envelope me-2"></i>Sol·licitar informació
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats, progrés garantit i experiències inoblidables a la neu.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Serveis</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Classes Esquí</a></li>
+                        <li><a href="classes-snowboard-baqueira-ca.html" style="text-decoration: none; color: inherit;">Classes Snowboard</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Nosaltres</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Viatges</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Càmeres</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Lloguer Material</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Preus</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contacte / Reserva</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Nosaltres</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">El nostre equip</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Testimonis</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contacte</h5>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Enllaços legals</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Avís Legal</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Privadesa</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Cookies</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Cancel·lació</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Tots els drets reservats.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. és una empresa independent. No estem vinculats ni som part de Baqueira Beret, S.A. L'ús del nom Baqueira és estrictament per localitzar el lloc on realitzem els nostres serveis com a escola d'esquí.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34123456789" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+       <script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>

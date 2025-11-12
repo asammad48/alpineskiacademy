@@ -1,0 +1,2729 @@
+
+        :root {
+            --primary: #87CEEB;
+            --primary-dark: #2a4c66;
+            --secondary: #F9F9F9;
+            --dark: #333333;
+            --light: #FFFFFF;
+        }
+        
+             * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+           
+        body {
+            /*font-family: 'Open Sans', sans-serif;*/
+            overflow-x: hidden;
+            padding-top: 76px; /* To account for fixed navbar */
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+     
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        
+        .btn-primary {
+             background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            margin-top: auto; /* Pushes button to bottom */
+            align-self: flex-start; /* Aligns button to left */
+        }
+        
+        .btn-primary:hover {
+             background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.2);
+        }
+        
+.navbar {
+    padding: 12px 0;
+    transition: all 0.3s;
+    z-index: 1020;
+}
+
+.navbar-brand img {
+    height: 40px; /* Reduced logo size */
+    transition: all 0.3s;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin: 0 6px; /* Reduced margin */
+    color: var(--dark) !important;
+    font-size: 0.9rem; /* Slightly smaller font */
+    padding: 0.4rem 0.6rem !important; /* Adjusted padding */
+}
+
+/* Language Switcher in Navbar */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Reduced margin */
+    padding-left: 10px; /* Reduced padding */
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.languagfe-switcher .btn {
+    padding: 0.3rem 0.6rem; /* Smaller button */
+    font-size: 0.85rem; /* Smaller text */
+}
+
+/* Book Now button adjustments */
+.btn-book-now {
+    padding: 0.4rem 0.8rem !important; /* Smaller button */
+    font-size: 0.9rem; /* Smaller text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Dropdown menu adjustments */
+.dropdown-menu {
+    min-width: 200px; /* Ensure proper width */
+}
+
+/* For smaller screens, further adjustments */
+@media (max-width: 1200px) {
+    .nav-link {
+        margin: 0 4px; /* Even smaller margin */
+        font-size: 0.85rem; /* Smaller font */
+    }
+    
+    .navbar-brand img {
+        height: 35px; /* Even smaller logo */
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 991px) {
+    .language-switcher {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    .nav-cta {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        margin-bottom: 10px;
+    }
+}
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto 0;
+        }
+        
+        /* Enhanced Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('esqui-baqueria-profesor-alumna.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 150px 0 100px;
+            text-align: center;
+            color: white;
+            margin-top: -76px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-buttons {
+            margin-top: 30px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .about-section {
+            background-color: var(--light);
+        }
+        
+        .why-us-section {
+            background-color: var(--secondary);
+        }
+
+
+
+.member-desc {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+        
+   
+
+
+       .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 15px;
+            padding: 25px 20px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .team-member img {
+            width: 180px;
+            height: 180px;
+             align-items: center;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid var(--primary);
+            transition: all 0.3s ease;
+            filter: grayscale(20%);
+        }
+        
+        .team-member:hover img {
+            border-color: var(--secondary);
+            transform: scale(1.05);
+            filter: grayscale(0%);
+            box-shadow: 0 0 20px rgba(78, 84, 200, 0.4);
+        }
+        
+        
+  /* Google Reviews Styles */
+/* Google Reviews Styles */
+/* Google Reviews Widget Styles */
+.google-reviews-widget {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* Responsive adjustments for the widget */
+@media (max-width: 768px) {
+    .google-reviews-widget {
+        min-height: 500px;
+    }
+    
+    .testimonial-section .btn {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+    
+    .testimonial-section .btn.me-2 {
+        margin-right: 0 !important;
+    }
+    
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%); /* Fallback color */
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    background: white;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Active state for when JavaScript reveals the answer */
+.faq-answer.active {
+    padding: 20px;
+    max-height: 500px; /* Adjust based on your content */
+}
+       
+        .blog-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+        }
+        
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px; /* Increased margin between cards */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blog-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+        
+        .blog-card:hover .blog-img {
+            transform: scale(1.05);
+        }
+        
+        .blog-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .blog-content h4 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            line-height: 1.4;
+        }
+        
+        .blog-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px; /* Increased margin above button */
+            flex-grow: 1;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            margin-top: auto; /* Pushes button to bottom */
+            align-self: flex-start; /* Aligns button to left */
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.2);
+        }
+        
+        .btn-sm {
+            padding: 8px 20px;
+            font-size: 0.9rem;
+        }
+        
+        .text-center .btn-primary {
+            padding: 12px 35px;
+            font-size: 1.1rem;
+            margin-top: 20px; /* Increased margin above CTA button */
+        }
+
+/* Trusted Partners Section */
+.partners-section {
+    background-color: var(--light);
+    padding: 50px 0;
+}
+
+.partner-item {
+    height: 120px;
+    padding: 5px;
+}
+
+.partner-logo {
+    max-width: 100%;
+    max-height: 70px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    padding: 8px;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .partner-item {
+        height: 100px;
+    }
+    
+    .partner-logo {
+        max-height: 60px;
+        padding: 5px;
+    }
+}
+        
+        /* Footer Styles */
+footer {
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: white;
+    padding: 40px 0 20px;
+    font-size: 0.9rem;
+}
+
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.footer-title:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #87CEEB;
+    margin-top: 8px;
+}
+
+.footer-description {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    color: #87CEEB;
+    width: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+}
+
+.footer-links a:hover {
+    color: #87CEEB;
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: #87CEEB;
+    transform: translateY(-3px);
+}
+
+.footer-divider {
+    margin: 10px 0 20px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.legal-notice {
+    color: #999;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 0 15px;
+    }
+    
+    .footer-title {
+        margin-top: 20px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .legal-notice {
+        text-align: left !important;
+        margin-top: 15px;
+    }
+}
+     /* Language Switcher Dropdown */
+.language-switcher .dropdown-toggle {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border-color: #dee2e6;
+    font-weight: 500;
+    color: #333;
+    background-color: white;
+}
+
+.language-switcher .dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25);
+}
+
+.language-switcher .dropdown-menu {
+    min-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.language-switcher .dropdown-item {
+    padding: 8px 15px;
+    font-weight: 500;
+}
+
+.language-switcher .dropdown-item.active,
+.language-switcher .dropdown-item:active {
+    background-color: #87CEEB;
+    color: white;
+}
+
+.language-switcher .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.language-switcher .dropdown-item.active:hover {
+    background-color: #5AA9E6;
+}
+
+/* WhatsApp Floating Icon */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-link i {
+    font-size: 32px;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Top Info Bar */
+.top-info-bar {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1035; /* Higher than navbar */
+}
+
+.top-info-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+ 
+
+
+.top-info-bar a {
+  color: white;
+  transition: color 0.3s ease;
+}
+.top-info-bar a:hover {
+  color: #c44d7f; /* Example: gold on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+.top-info-bar a i {
+  transition: color 0.3s ease;
+}
+
+.top-info-bar a:hover,
+.top-info-bar a:hover i {
+  color: #c44d7f; /* Hover color */
+}
+
+/* Adjust body padding to account for the top info bar */
+body {
+    padding-top: 106px; /* Increased from 76px to account for top bar */
+}
+
+/* Adjust hero section margin */
+.hero-section {
+    margin-top: -106px; /* Increased from -76px to account for top bar */
+}
+
+/* Make navbar slightly lower to accommodate top bar */
+.navbar {
+    top: 28px; /* Height of top info bar */
+}
+
+/* Book Now CTA Button */
+.nav-cta {
+    display: flex;
+    align-items: center;
+}
+
+.btn-book-now {
+    padding: 8px 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(90, 169, 230, 0.3);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    background: linear-gradient(145deg, #5AA9E6, #4a96d6);
+    border: none;
+}
+
+.btn-book-now:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(90, 169, 230, 0.4);
+    background: linear-gradient(145deg, #4a96d6, #5AA9E6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .nav-cta {
+        margin: 15px 0;
+        justify-content: center;
+    }
+     .blog-content h4 {
+                font-size: 1.25rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .blog-img {
+                height: 200px;
+            }
+            
+            .blog-card {
+                margin-bottom: 25px; /* Adjusted margin for smaller screens */
+            }
+}
+/* Ski Lessons Dropdown Styles */
+.navbar .dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.navbar .dropdown-item {
+    padding: 8px 20px;
+    transition: all 0.2s ease;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #87CEEB;
+    color: white;
+    padding-left: 25px;
+}
+
+.navbar .dropdown-header {
+    padding: 5px 20px;
+    color: #5AA9E6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.navbar .dropdown-divider {
+    margin: 8px 0;
+}
+
+/* Fix for navbar alignment */
+.navbar-nav .nav-link {
+    padding: 0.3rem 0.7rem !important;
+    font-size: 0.95rem;
+}
+
+.navbar-brand img {
+    height: 40px; /* Slightly smaller logo */
+}
+
+/* Make dropdown more compact */
+.navbar .dropdown-item {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+}
+
+.navbar .dropdown-header {
+    padding: 3px 15px;
+}
+        .why-us-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .why-us-section::before {
+            content: "";
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 300px;
+            height: 300px;
+            background: rgba(135, 206, 235, 0.1);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .textjustify{
+            text-align: justify;
+            font-size: 16px;
+        }
+        
+        .why-us-section::after {
+            content: "";
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 250px;
+            height: 250px;
+            background: rgba(135, 206, 235, 0.1);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 60px;
+            font-weight: 700;
+            position: relative;
+            
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+        }
+        
+        .feature-box {
+            background: white;
+            border-radius: 16px;
+            padding: 30px 25px;
+            height: 100%;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .feature-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #3498db;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(52, 152, 219, 0.2);
+        }
+        
+        .text-primary {
+            color: #3498db !important;
+        }
+        
+        .feature-box h4 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .feature-box p {
+            color: #5d6d7e;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        /* Stats and Info Section */
+        .stats-info-section {
+            padding: 60px 0 40px;
+            position: relative;
+        }
+        
+        .stats-info-title {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 50px;
+            font-weight: 700;
+            position: relative;
+            
+        }
+        
+        .stats-info-title::after {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+        }
+        
+        .stats-info-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        
+        .stats-container, .info-container {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .stat-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #3498db;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(52, 152, 219, 0.2);
+        }
+        
+        .stat-icon {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            color: #3498db;
+        }
+        
+        .stat-number {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #5d6d7e;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+        
+        /* Info Container Styles */
+.info-container {
+    background: white;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.info-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #3498db;
+}
+
+.info-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.info-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3498db;
+    font-size: 1.5rem;
+    width: 30px;
+    text-align: center;
+}
+
+.info-item h4 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.info-item p {
+    color: #5d6d7e;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+        /* Animation for counter */
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .stat-number.animated {
+            animation: countUp 1.2s ease-out forwards;
+        }
+        
+        /* Snowflake decorative elements */
+        .snowflake {
+            position: absolute;
+            color: rgba(52, 152, 219, 0.3);
+            font-size: 18px;
+            z-index: 1;
+            user-select: none;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2.4rem;
+            }
+            
+            .stats-info-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats-container, .info-container {
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .stats-info-title {
+                font-size: 2rem;
+            }
+            
+            .stat-card {
+                padding: 30px 20px;
+            }
+            
+            .stat-number {
+                font-size: 2.8rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+              .blog-section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .blog-content {
+                padding: 20px;
+            }
+            
+            .blog-content h4 {
+                font-size: 1.2rem;
+            }
+            
+            .blog-card {
+                margin-bottom: 20px; /* Adjusted margin for mobile */
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+            
+            .why-us-section {
+                padding: 60px 0;
+            }
+            
+            .feature-box {
+                padding: 25px 20px;
+            }
+            
+            .stats-info-title {
+                font-size: 1.8rem;
+            }
+            
+            .info-title {
+                font-size: 1.6rem;
+            }
+            
+            .info-item {
+                padding-left: 25px;
+            }
+            
+            .info-item i {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Hover dropdown styles */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* Language switcher specific hover styles */
+.language-switcher:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Prevent dropdown from closing when moving cursor to dropdown */
+.navbar .dropdown-menu {
+    margin-top: 0;
+    pointer-events: auto;
+}
+
+/* Adjust for mobile devices */
+@media (max-width: 991px) {
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    
+    .navbar .nav-item.dropdown.show .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    .language-switcher:hover .dropdown-menu {
+        display: none;
+    }
+    
+    .language-switcher.show .dropdown-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* Fix for language switcher dropdown position */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.language-switcher .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Positions dropdown below the button */
+    left: 0;
+    right: auto;
+    margin-top: 0.5rem;
+}
+
+/* Ensure dropdown is visible on hover */
+.language-switcher:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Adjust for mobile view */
+@media (max-width: 991px) {
+    .language-switcher .dropdown-menu {
+        position: static;
+        margin-top: 0;
+    }
+}
+
+/* Navbar hover effects - Alternative Design */
+.navbar .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.8rem !important;
+    border-radius: 4px;
+}
+
+/* Main navigation items hover effect */
+.navbar .nav-item:not(.dropdown) .nav-link:hover {
+    color: #1a4c75 !important; /* Deep blue color */
+    background-color: rgba(255, 255, 255, 0.9); /* Clean white background */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a subtle gradient underline effect on hover */
+.navbar .nav-item:not(.dropdown) .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(90deg, #1a4c75, #3498db);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.navbar .nav-item:not(.dropdown) .nav-link:hover::after {
+    width: 80%;
+}
+
+/* Dropdown items hover effect */
+.navbar .dropdown-item:hover {
+    background: linear-gradient(90deg, #1a4c75, #3498db) !important;
+    color: white !important;
+    padding-left: 25px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Language switcher button hover effect */
+.language-switcher .btn-outline-secondary:hover {
+    background: linear-gradient(90deg, #1a4c75, #3498db);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Active state for language options */
+.language-switcher .dropdown-item.active {
+    background: linear-gradient(90deg, #1a4c75, #3498db) !important;
+    color: white !important;
+}
+
+/* Book Now button enhancement */
+.btn-book-now:hover {
+    background: linear-gradient(90deg, #1a4c75, #3498db) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 12px rgba(26, 76, 117, 0.3) !important;
+}
+
+/* Add a subtle transition to all nav items */
+.navbar-nav .nav-item {
+    transition: transform 0.2s ease;
+}
+
+.navbar-nav .nav-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Style for clickable contact info in top bar */
+.top-info-bar a {
+    color: inherit; /* Use the same color as surrounding text */
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.top-info-bar a:hover {
+    color: #87CEEB; /* Your primary blue color */
+    text-decoration: underline;
+}
+
+/* Ensure proper spacing */
+.top-info-item {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.top-info-item a {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Import Classes Page Specific Styles */
+@import url('classes.css');
+
+
+/* Page Hero Section */
+.page-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/fotos-clases\ en\ grupo-niños/clases-colectivas-niños-baqueira-beret-fuera-pista.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+.min-vh-60 {
+    min-height: 60vh;
+}
+
+/* Kids Image Slider */
+.kids-slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.kids-slider .carousel-item {
+    height: 500px;
+}
+
+.kids-slider .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.kids-slider .carousel-indicators {
+    bottom: 20px;
+}
+
+.kids-slider .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+}
+
+.kids-slider .carousel-indicators button.active {
+    background-color: white;
+    border-color: #0ea5e9;
+}
+
+.kids-slider .carousel-control-prev,
+.kids-slider .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+}
+
+/* Feature Cards */
+.feature-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    color: #0ea5e9;
+}
+
+/* Schedule Cards */
+.schedule-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logistics Cards */
+.logistics-card {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 10px;
+    height: 100%;
+    border-left: 4px solid #0ea5e9;
+}
+
+/* Special Group Section */
+.special-group {
+    background: linear-gradient(135deg, #0ea5e9, #1e40af);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+.stars {
+    font-size: 1.2rem;
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* CTA Features */
+.cta-feature {
+    padding: 1rem;
+}
+
+.cta-feature i {
+    color: #f59e0b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .kids-slider .carousel-item {
+        height: 300px;
+    }
+    
+    .kids-slider .carousel-control-prev,
+    .kids-slider .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+    
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* CTA Buttons Row */
+.mt-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-5 .btn {
+    flex: 0 1 auto;
+    white-space: nowrap;
+    margin: 0 !important;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .mt-5 {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .mt-5 .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-light:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+}
+
+/* Ensure the icon also changes color on hover */
+.btn-light:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Page Hero Section - Families */
+.family-hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/Fotos-esqui-familias/familia\ clases\ particulares\ alpine\ ski\ academy.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Family Type Cards */
+.family-type-card {
+    background: white;
+    border-left: 4px solid #0ea5e9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.family-type-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Cards with Icons for Families */
+.feature-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pricing Card */
+.pricing-card {
+    border: 2px solid #0ea5e9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-primary:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.btn-primary:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* CTA Features */
+.cta-feature {
+    padding: 1rem 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-feature {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Page Hero Section - Carv */
+.carv-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/Fotos-clases-carv/profesor-esqui-alpine-ski-academy-usando-carv-baqueira.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Tech Cards - Fixed to prevent image cropping */
+.tech-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain; /* Changed from cover to contain */
+    background-color: #f8fafc; /* Added background for consistent look */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Profile Cards */
+.profile-card {
+    background: #f8fafc;
+    border-left: 4px solid #0ea5e9;
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pioneer Badge */
+.pioneer-badge {
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* Feature Cards with Icons */
+.feature-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+/* Pricing Card */
+.pricing-card {
+    border: 2px solid #0ea5e9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* CTA Features */
+.cta-feature {
+    padding: 1rem 0.5rem;
+}
+
+/* Final Carv Image Section - Fixed */
+.final-carv-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-primary:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.btn-primary:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .tech-card img {
+        max-height: 250px;
+    }
+    
+    .final-carv-image img {
+        max-height: 350px;
+    }
+    
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-feature {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Freeride Hero Section with Video */
+.freeride-hero {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.freeride-hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+/* Freeride Cards */
+.freeride-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.freeride-card:hover {
+    transform: translateY(-5px);
+}
+
+.freeride-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Safety Notice */
+.safety-notice {
+    border-left: 4px solid #f59e0b;
+}
+
+/* Level Cards */
+.level-card {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Operation Cards */
+.operation-card {
+    padding: 2rem 1rem;
+    height: 100%;
+}
+
+/* Final Features */
+.final-feature {
+    padding: 1rem 0.5rem;
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-warning:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+}
+
+.btn-warning:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .freeride-hero {
+        height: 60vh;
+        min-height: 500px;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .freeride-card img {
+        max-height: 250px;
+    }
+    
+    .min-vh-80 {
+        min-height: 60vh;
+    }
+}
+
+/* Video fallback for mobile performance */
+@media (max-width: 1024px) {
+    .hero-video {
+        display: none;
+    }
+    
+    .freeride-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url('img/Freeride-Fotos/clases-freeride-baqueira.webp');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Final CTA Buttons Spacing */
+.freeride-hero .hero-buttons,
+.final-cta-buttons {
+    margin-top: 2rem;
+}
+
+.final-cta-buttons .btn {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .final-cta-buttons .btn {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+    
+    .final-cta-buttons .btn:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Alternative: Using gap with flexbox */
+.final-cta-buttons-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.final-cta-buttons-flex .btn {
+    flex: 0 1 auto;
+}
+
+/* Freestyle Hero Section */
+.freestyle-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/Fotos-freestyle/360-freestyle-adulto-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Option 2 CSS */
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Option 3: Simple centered background */
+
+
+.min-vh-70 {
+    min-height: 70vh;
+}
+
+/* Freestyle Cards - Fixed Alignment */
+.freestyle-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.freestyle-card:hover {
+    transform: translateY(-5px);
+}
+
+.freestyle-card img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent alignment */
+    object-fit: contain; /* Changed back to cover for better appearance */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.freestyle-card h4 {
+    margin-bottom: 0.5rem;
+    min-height: 3rem; /* Fixed height for titles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freestyle-card p {
+    margin-bottom: 0;
+    flex-grow: 1; /* Allows text to take remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Image Grid Container */
+.freestyle-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start; /* Align all items to top */
+}
+
+/* Alternative: Using equal height cards */
+.freestyle-card-equal {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Consistent aspect ratio */
+.freestyle-card-equal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 15px;
+}
+
+.freestyle-card-equal h4 {
+    margin-bottom: 0.5rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freestyle-card-equal p {
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* How It Works Section - Improved Colors */
+.freestyle-how-it-works {
+    background: linear-gradient(135deg, #1e40af, #0ea5e9);
+    color: white;
+}
+
+.operation-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    text-align: center;
+}
+
+.operation-card i {
+    color: #fbbf24 !important; /* Bright amber instead of dark yellow */
+    margin-bottom: 1rem;
+}
+
+.operation-card h4 {
+    color: white !important; /* White headings for better contrast */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.operation-card p {
+    color: #e0f2fe !important; /* Light blue text for better readability */
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Safety Equipment with better colors */
+.safety-equipment {
+    background: rgba(251, 191, 36, 0.1) !important; /* Subtle amber background */
+    border: 1px solid #fbbf24 !important;
+    border-left: 4px solid #fbbf24 !important;
+}
+
+.safety-equipment h4 {
+    color: #fbbf24 !important; /* Amber heading */
+}
+
+.safety-equipment p {
+    color: #e0f2fe !important; /* Light blue text */
+}
+
+.safety-equipment strong {
+    color: white !important; /* White for emphasis */
+}
+
+
+/* Kids Private Hero Section */
+.kids-private-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/FOTOS-niños-particulares-webp/clase-iniciacion-fura-pista-niño-baqueira-alpine-ski-academy.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Kids Images Grid - FIXED NO CROPPING */
+.kids-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.kids-card-equal {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kids-card-equal:hover {
+    transform: translateY(-5px);
+}
+
+.kids-card-equal img {
+    width: 100%;
+    height: auto; /* CHANGED: Auto height for no cropping */
+    max-height: 300px;
+    object-fit: contain; /* CHANGED: Contain instead of cover */
+    background-color: #f8fafc; /* Added background for consistency */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.kids-card-equal h4 {
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+    min-height: auto; /* REMOVED: Fixed height */
+}
+
+.kids-card-equal p {
+    margin-bottom: 0;
+    color: #64748b;
+}
+
+/* Method Cards - FIXED COLORS */
+.method-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    text-align: center;
+}
+
+.method-card i {
+    color: #ffffff !important; /* CHANGED: White icons on blue */
+    margin-bottom: 1rem;
+}
+
+.method-card h4 {
+    color: #ffffff !important; /* CHANGED: White headings */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.method-card p {
+    color: #e0f2fe !important; /* CHANGED: Light blue text */
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Age Levels Grid */
+.age-levels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.age-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #0ea5e9;
+    transition: transform 0.3s ease;
+}
+
+.age-card:hover {
+    transform: translateY(-5px);
+}
+
+.age-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* Equipment Cards */
+.equipment-card {
+    background: #f8fafc;
+    border-left: 4px solid #0ea5e9;
+    height: 100%;
+}
+
+.equipment-card h3 {
+    margin-bottom: 1rem;
+    color: #1e40af;
+}
+
+.equipment-card li {
+    padding: 0.25rem 0;
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+/* Highlight Quote - FIXED COLORS */
+.highlight-quote {
+    border: 2px solid #0ea5e9; /* CHANGED: Blue border instead of yellow */
+    background: rgba(14, 165, 233, 0.1); /* CHANGED: Light blue background */
+}
+
+.highlight-quote p {
+    color: #1e40af !important; /* CHANGED: Dark blue text */
+    margin-bottom: 0;
+}
+
+/* Feature Highlights - FIXED COLORS */
+.feature-highlight {
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+.feature-highlight i {
+    color: #0ea5e9; /* CHANGED: Blue icons */
+}
+
+.feature-highlight p {
+    color: #e0f2fe; /* Light text on dark background */
+    margin-bottom: 0;
+}
+
+/* Final CTA Buttons */
+.final-cta-buttons-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.final-cta-buttons-flex .btn {
+    flex: 0 1 auto;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    color: #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+.faq-item h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+.testimonial-card h3 {
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* WhatsApp Button */
+.btn-warning:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+}
+
+.btn-warning:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .kids-private-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .kids-card-equal img {
+        max-height: 250px;
+    }
+    
+    .age-levels-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .final-cta-buttons-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .final-cta-buttons-flex .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Adults Private Hero Section */
+.adults-private-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/Fotos-Clases-Particulares-adultos/clase-esqui-particular-nivel-alto-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Adults Carousel - NO CROPPING */
+.adults-carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.adults-carousel .carousel-item {
+    height: 500px;
+}
+
+.adults-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* NO CROPPING */
+    background-color: #f8fafc; /* Consistent background */
+}
+
+.adults-carousel .carousel-indicators {
+    bottom: 20px;
+}
+
+.adults-carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+}
+
+.adults-carousel .carousel-indicators button.active {
+    background-color: white;
+    border-color: #0ea5e9;
+}
+
+.adults-carousel .carousel-control-prev,
+.adults-carousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+}
+
+/* Groups Hero Section */
+.groups-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/fotos-team-building-colegios/esqui-empresas-team-building-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Groups Images Grid */
+.groups-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.groups-card-equal {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.groups-card-equal:hover {
+    transform: translateY(-5px);
+}
+
+.groups-card-equal img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.groups-card-equal h4 {
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+}
+
+.groups-card-equal p {
+    margin-bottom: 0;
+    color: #475569;
+}
+
+/* Process Cards */
+.process-card {
+    padding: 2rem 1rem;
+    height: 100%;
+}
+
+.process-number {
+    width: 50px;
+    height: 50px;
+    background: #fbbf24;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.process-card h4 {
+    margin-bottom: 1rem;
+}
+
+.process-card p {
+    color: #e0f2fe;
+    margin-bottom: 0;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    color: #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* Feature Items */
+.feature-item {
+    padding: 1rem 0.5rem;
+}
+
+.feature-item i {
+    color: #0ea5e9;
+}
+
+.feature-item p {
+    margin-bottom: 0;
+    color: #475569;
+}
+
+/* Final CTA Buttons */
+/* Final CTA Buttons Alignment Fix */
+.final-cta-buttons-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.final-cta-buttons-flex .btn {
+    flex: 0 1 auto;
+    min-height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-width: 2px;
+    line-height: 1.2;
+}
+
+/* Ensure both buttons have exact same styling */
+.final-cta-buttons-flex .btn-primary,
+.final-cta-buttons-flex .btn-outline-primary {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+/* Specific fix for outline button */
+.final-cta-buttons-flex .btn-outline-primary {
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+}
+
+.final-cta-buttons-flex .btn-outline-primary:hover {
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+    color: white;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .final-cta-buttons-flex {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .final-cta-buttons-flex .btn {
+        width: 100%;
+        max-width: 280px;
+        min-height: 50px;
+    }
+}
+
+/* WhatsApp Button */
+.btn-primary:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.btn-primary:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .groups-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .groups-images-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-card-equal img {
+        max-height: 200px;
+    }
+}
+
+/* Classes Page Specific Styles - FIXED VERSION */
+.classes-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/clase-esqui-particular-baqueira-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+    margin-top: -106px;
+}
+
+    .fa-whatsapp:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+}
+     
