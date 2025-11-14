@@ -112,7 +112,7 @@
   <!-- Header with Navigation and Language Switcher -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/fr/">
             <img src="logo-alpine-ski-academy-blanco.webp"
                 alt="Alpine Ski Academy – École de ski et snowboard à Baqueira">
         </a>
@@ -122,7 +122,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="/fr/cours-de-ski-baqueira/" id="skiLessonsDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Cours de Ski
                     </a>
@@ -131,17 +131,17 @@
                         <li>
                             <h6 class="dropdown-header">Cours Particuliers</h6>
                         </li>
-                        <li><a class="dropdown-item" href="#">Enfants</a></li>
-                        <li><a class="dropdown-item" href="#">Familles</a></li>
-                        <li><a class="dropdown-item" href="#">Adultes</a></li>
-                        <li><a class="dropdown-item" href="#">Avec Carv</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-particuliers-enfants-baqueira/">Enfants</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-particuliers-familles-baqueira/">Familles</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-particuliers-adultes-baqueira/">Adultes</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-technologie-carv-baqueira/">Avec Carv</a></li>
 
                         <!-- Cours spéciaux -->
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Freeride</a></li>
-                        <li><a class="dropdown-item" href="#">Freestyle</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-de-freeride-baqueira/">Freeride</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-de-freestyle-baqueira/">Freestyle</a></li>
 
                         <!-- Cours en groupe -->
                         <li>
@@ -150,39 +150,39 @@
                         <li>
                             <h6 class="dropdown-header">Cours en Groupe</h6>
                         </li>
-                        <li><a class="dropdown-item" href="#">Groupe Enfants</a></li>
-                        <li><a class="dropdown-item" href="#">Groupe Adultes</a></li>
-                        <li><a class="dropdown-item" href="#">Entreprises/Écoles</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-collectifs-enfants-baqueira/">Groupe Enfants</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-collectifs-adultes-baqueira/">Groupe Adultes</a></li>
+                        <li><a class="dropdown-item" href="/fr/cours-entreprises-ecoles-baqueira/">Entreprises/Écoles</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Snowboard</a>
+                    <a class="nav-link" href="/fr/cours-de-snowboard-baqueira/">Snowboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Nous</a>
+                    <a class="nav-link" href="/fr/a-propos-de-nous/">Nous</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Galerie</a>
+                    <a class="nav-link" href="/fr/voyages-de-ski/">Voyages</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#team">Voyages</a>
+                    <a class="nav-link" href="/fr/cameras-baqueira/">Caméras</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Caméras</a>
+                    <a class="nav-link" href="/fr/location-de-materiel-baqueira/">Location</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#faq">Location</a>
+                    <a class="nav-link" href="/fr/prix-et-tarifs-baqueira/">Tarifs</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/fr/blog/">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#blog">Tarifs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="/fr/contact-reservations/">Contact</a>
                 </li>
             </ul>
             <!-- Book Now Button -->
             <div class="nav-cta ms-3">
-                <a href="#contact" class="btn btn-primary btn-book-now">
+                <a href="/fr/contact-reservations/" class="btn btn-primary btn-book-now">
                     <i class="fas fa-calendar-check me-1"></i>Réserver
                 </a>
             </div>
@@ -193,20 +193,20 @@
         <i class="fas fa-globe me-1"></i> FR
     </button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-         <li><a class="dropdown-item active language-option" href="fr.html" data-lang="fr">
+         <li><a class="dropdown-item active language-option" href="/fr/" data-lang="fr">
             <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
         </a></li>
-        <li><a class="dropdown-item language-option" href="es.html" data-lang="es">
+        <li><a class="dropdown-item language-option" href="/es/" data-lang="es">
             <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
         </a></li>
-        <li><a class="dropdown-item language-option" href="en.html" data-lang="en">
+        <li><a class="dropdown-item language-option" href="/en/" data-lang="en">
             <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
         </a></li>
-        <li><a class="dropdown-item language-option" href="#" data-lang="ca">
+        <li><a class="dropdown-item language-option" href="/ca/" data-lang="ca">
             <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
         </a></li>
        
-        <li><a class="dropdown-item language-option" href="#" data-lang="pt">
+        <li><a class="dropdown-item language-option" href="/pt/" data-lang="pt">
             <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
         </a></li>
     </ul>
@@ -231,43 +231,41 @@
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Services</h5>
                     <ul class="footer-links">
-                         <li><a href="#">Cours de Ski</a></li>
-                        <li><a href="#">Cours de Snowboard</a></li>
-                        <li><a href="#">À Propos</a></li>
-                        <li><a href="#">Voyages</a></li>
-                        <li><a href="#">Caméras</a></li>
-                        <li><a href="#">Location de Matériel</a></li>
-                        <li><a href="#">Tarifs</a></li>
-                        <li><a href="#">Contact / Réservation</a></li>
-                        <li><a href="#">Blog</a></li>
+                         <li><a href="/fr/cours-de-ski-baqueira/">Cours de Ski</a></li>
+                        <li><a href="/fr/cours-de-snowboard-baqueira/">Cours de Snowboard</a></li>
+                        <li><a href="/fr/a-propos-de-nous/">À Propos</a></li>
+                        <li><a href="/fr/voyages-de-ski/">Voyages</a></li>
+                        <li><a href="/fr/cameras-baqueira/">Caméras</a></li>
+                        <li><a href="/fr/location-de-materiel-baqueira/">Location de Matériel</a></li>
+                        <li><a href="/fr/prix-et-tarifs-baqueira/">Tarifs</a></li>
+                        <li><a href="/fr/contact-reservations/">Contact / Réservation</a></li>
+                        <li><a href="/fr/blog/">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Entreprise</h5>
                     <ul class="footer-links">
-                        <li><a href="#">À Propos de Nous</a></li>
-                        <li><a href="#">Notre équipe</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/fr/a-propos-de-nous/">À Propos de Nous</a></li>
+                        <li><a href="/fr/blog/">Blog</a></li>
+                        <li><a href="/fr/contact-reservations/">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 mb-4">
                     <h5 class="footer-title">Contact</h5>
                     <div class="social-links mb-3">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/alpine.skiacademy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy?lang=es"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342"><i class="fab fa-whatsapp"></i></a>
                     </div>
 
                     <h5 class="footer-title mt-4">Liens légaux</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Mentions Légales</a></li>
-                        <li><a href="#">Politique de Confidentialité</a></li>
-                        <li><a href="#">Politique de Cookies</a></li>
-                        <li><a href="#">Politique d'Annulation</a></li>
+                        <li><a href="/fr/mentions-legales/">Mentions Légales</a></li>
+                        <li><a href="/fr/politique-de-confidentialite/">Politique de Confidentialité</a></li>
+                        <li><a href="/fr/politique-de-cookies/">Politique de Cookies</a></li>
+                        <li><a href="/fr/politique-dannulation/">Politique d'Annulation</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,19 +1,21 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto e Reservas | Alpine Ski Academy Baqueira – Aulas de Esqui </title>
+    <title>Contacto e Reservas | Aulas de Esqui em Baqueira Beret – Alpine Ski Academy</title>
     <meta name="description"
-    content="Pronto para reservar a sua aula de esqui em Baqueira? Contacte a Alpine Ski Academy via WhatsApp, formulário ou e-mail. Vamos ajudá-lo a escolher a melhor opção para si ou para o seu grupo e a planear a sua aventura na neve.">
+        content="Contacte a Alpine Ski Academy e reserve as suas aulas de esqui ou snowboard em Baqueira Beret. Aconselhamo-lo pessoalmente a escolher o horário, nível">
+    <link rel="canonical" href="https://www.alpineskiacademy.com/pt/contato-reservas.html">
     <!-- Bootstrap & jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!--Custom JS files -->
-    <script src="script.js"></script>
-    <script src="animation.js"></script>
-    <!-- <script src="language.js"></script> -->
+    <script src="../script.js"></script>
+    <script src="../animation.js"></script>
+    <script src="../language.js"></script>
+    <script src="../js/contact-form-handler.js"></script>
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
     {
@@ -43,7 +45,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:url" content="https://alpineskiacademy.com/pt/">
     <meta property="og:title" content="Alpine Ski Academy - Escola de Esqui e Snowboard em Baqueira Beret">
     <meta property="og:description"
         content="A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.">
@@ -51,21 +53,21 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/pt/">
     <meta property="twitter:title" content="Alpine Ski Academy - Escola de Esqui e Snowboard em Baqueira Beret">
     <meta property="twitter:description"
         content="A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.">
     <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
 
     <!-- Preload -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="../styles.css" as="style">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -87,33 +89,36 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
 </head>
 
 <body>
 
-    <!-- Top Info Bar -->
-    <div class="top-info-bar">
-        <div class="container">
-            <div class="d-flex justify-content-end">
-                <div class="top-info-item">
-                    <i class="fas fa-phone-alt me-1"></i>
-                    <span><a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
-                </div>
-                <div class="top-info-item">
-                    <i class="fas fa-envelope me-1"></i>
-                    <span><a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
-                </div>
+<!-- Top Info Bar -->
+<div class="top-info-bar">
+    <div class="container">
+        <div class="d-flex justify-content-end">
+            <div class="top-info-item">
+                <i class="fas fa-phone-alt me-1"></i>
+                <span>
+                    <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a>
+                </span>
+            </div>
+            <div class="top-info-item">
+                <i class="fas fa-envelope me-1"></i>
+                <span>
+                    <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>
+                </span>
             </div>
         </div>
     </div>
-
-  <!-- Header with Navigation and Language Switcher -->
+</div>
+    <!-- Header with Navigation and Language Switcher -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="logo1.jpg"
+        <a class="navbar-brand" href="/pt/">
+            <img src="../logo1.jpg"
                 alt="Alpine Ski Academy – Escola de esqui e snowboard em Baqueira">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -122,94 +127,94 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="/pt/aulas-de-esqui-baqueira/" id="skiLessonsDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Aulas de Esqui
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
-                        <!-- Aulas particulares -->
+                        <!-- Clases particulares -->
                         <li>
                             <h6 class="dropdown-header">Aulas Particulares</h6>
                         </li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/clases-esqui-particulares-ninos-baqueira.html">Crianças</a></li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-privadas-familias-baqueira.html">Famílias</a></li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-particulares-adultos-baqueira.html">Adultos</a></li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-privadas-carv-baqueira.html">Com Carv</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-particulares-criancas-baqueira/">Crianças</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-particulares-familias-baqueira/">Famílias</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-particulares-adultos-baqueira/">Adultos</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-tecnologia-carv-baqueira/">Com Carv</a></li>
 
-                        <!-- Aulas especiais -->
+                        <!-- Clases especiales -->
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-freeride-baqueira.html">Freeride</a></li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-freestyle-baqueira.html">Freestyle</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-de-freeride-baqueira/">Freeride</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-de-freestyle-baqueira/">Freestyle</a></li>
 
-                        <!-- Aulas em grupo -->
+                        <!-- Clases en grupo -->
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li>
                             <h6 class="dropdown-header">Aulas em Grupo</h6>
                         </li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-grupo-criancas-baqueira.html">Grupo Crianças</a></li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-grupo-adultos-baqueira.html">Grupo Adultos</a></li>
-                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/pt/aulas-esqui-grupo-empresas-escolas-baqueira.html">Empresas/Escolas</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-grupo-criancas-baqueira/">Grupo de Crianças</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-grupo-adultos-baqueira/">Grupo de Adultos</a></li>
+                        <li><a class="dropdown-item" href="/pt/aulas-empresas-escolas-baqueira/">Empresas/Escolas</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aulas-snowboard-baqueira.html">Snowboard</a>
+                    <a class="nav-link" href="/pt/aulas-de-snowboard-baqueira/">Snowboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="quem-somos.html">Nós</a>
+                    <a class="nav-link" href="/pt/sobre-nos/">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
+                    <a class="nav-link" href="/pt/viagens-de-esqui/">Viagens</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="viajens-esqui.html">Viagens</a>
+                    <a class="nav-link" href="/pt/cameras-baqueira/">Câmeras</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="webcams-baqueria.html">Câmaras</a>
+                    <a class="nav-link" href="/pt/aluguel-de-equipamento-baqueira/">Aluguel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aluguer-material-esqui-snowboard-baqueira.html">Aluguer</a>
+                    <a class="nav-link" href="/pt/precos-e-tarifas-baqueira/">Preços</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/pt/blog/">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="precos-aulas-esqui-snowboard-baqueira.html">Preços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto-reservas.html">Contacto</a>
+                    <a class="nav-link" href="/pt/contato-reservas/">Contato</a>
                 </li>
             </ul>
             <!-- Book Now Button -->
             <div class="nav-cta ms-3">
-                <a href="contacto-reservas.html" class="btn btn-primary btn-book-now">
-                    <i class="fas fa-calendar-check me-1"></i>Reservar
+                <a href="/pt/contato-reservas/" class="btn btn-primary btn-book-now">
+                    <i class="fas fa-calendar-check me-1"></i>Reserva
                 </a>
             </div>
             <!--Language switcher Dropdown -->
-<div class="language-switcher dropdown">
-    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" 
-            data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fas fa-globe me-1"></i> PT
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-        <li><a class="dropdown-item active language-option" href="contacto-reservas.html" data-lang="pt">
-            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
-        </a></li>
-        <li><a class="dropdown-item language-option" href="../contacto.html" data-lang="es">
-            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
-        </a></li>
-        <li><a class="dropdown-item language-option" href="../en/contact-reservations.html" data-lang="en">
-            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
-        </a></li>
-        <li><a class="dropdown-item language-option" href="../fr/contact-reservations.html" data-lang="fr">
-            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
-        </a></li>
-        <li><a class="dropdown-item language-option" href="../ca/contacte-reserves.html" data-lang="ca">
-            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
-        </a></li>
-    </ul>
-</div>
+            <div class="language-switcher dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe me-1"></i> PT
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item language-option" href="/es/contacto.html" data-lang="es">
+                            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" alt="Bandeira de Espanha" class="me-2">Español
+                        </a></li>
+                    <li><a class="dropdown-item language-option" href="/en/contact-bookings.html" data-lang="en">
+                            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" alt="Bandeira do Reino Unido" class="me-2">English
+                        </a></li>
+                    <li><a class="dropdown-item language-option" href="/ca/contacte-reserves.html" data-lang="ca">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg" width="20" height="15" alt="Bandeira da Catalunha" class="me-2">Català
+                        </a></li>
+                    <li><a class="dropdown-item language-option" href="/fr/contact-reservations.html" data-lang="fr">
+                            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" alt="Bandeira de França" class="me-2">Français
+                        </a></li>
+                    <li><a class="dropdown-item active language-option" href="/pt/contacto-reservas.html" data-lang="pt">
+                            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" alt="Bandeira de Portugal" class="me-2">Português
+                        </a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
@@ -221,8 +226,8 @@
             <div class="col-lg-8 mx-auto">
                 <h1 class="display-4 fw-bold mb-4">Contacto e Reservas – Alpine Ski Academy</h1>
                 <p class="lead mb-5">Estamos aqui para o ajudar a planear a experiência de esqui perfeita</p>
-                <a href="#whatsapp" class="btn btn-primary btn-lg me-3">Contactar por WhatsApp</a>
-                <a href="#formulario" class="btn btn-outline-light btn-lg">Preencher Formulário</a>
+                <a href="https://wa.me/34669911342" class="btn btn-primary btn-lg me-3" target="_blank">Contactar por WhatsApp</a>
+                <a href="#formulario" class="btn btn-outline-light btn-lg">Preencher Formulário de Contacto</a>
             </div>
         </div>
     </div>
@@ -233,8 +238,8 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home me-1"></i>Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home me-1"></i>Início</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto / Reservas</li>
             </ol>
         </nav>
     </div>
@@ -245,12 +250,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <h2 class="section-title">Quer reservar a sua aula particular ou resolver alguma dúvida?</h2>
-                <p class="textjustify">Quer reservar a sua aula particular, juntar-se a um grupo, consultar preços ou resolver uma dúvida sobre a sua próxima aventura em Baqueira? Estamos aqui para o ajudar a planear a experiência de esqui perfeita!</p>
-                <p class="textjustify">Pode contactar-nos diretamente via WhatsApp ou preencher o nosso formulário. Responderemos o mais rapidamente possível, com atenção personalizada e recomendações claras que se ajustem às suas necessidades e nível.</p>
+                <h2 class="section-title">Quer reservar a sua aula particular ou esclarecer alguma dúvida?</h2>
+                <p class="textjustify">Quer reservar a sua aula particular, juntar-se a um grupo, consultar preços ou esclarecer uma dúvida sobre a sua próxima aventura em Baqueira? Estamos aqui para o ajudar a planear a experiência de esqui perfeita!</p>
+                <p class="textjustify">Pode contactar-nos diretamente por WhatsApp ou preencher o nosso formulário. Responderemos o mais breve possível, com atenção personalizada e recomendações claras que se ajustem às suas necessidades e nível.</p>
             </div>
             <div class="col-lg-6">
-                <img src="images/contacto/maquina-pisa-nieves.webp" alt="Professor da Alpine Ski Academy a ajudar um cliente" class="img-fluid rounded shadow">
+                <img src="../images/contacto/maquina-pisa-nieves.webp" alt="Professor da Alpine Ski Academy a ajudar um cliente" class="img-fluid rounded shadow">
             </div>
         </div>
     </div>
@@ -265,12 +270,12 @@
                 <div class="contact-card whatsapp-card" id="whatsapp">
                     <i class="fab fa-whatsapp contact-icon"></i>
                     <h2>Contacto Direto por WhatsApp (O mais rápido!)</h2>
-                    <p class="mb-4">A forma mais eficiente de falar connosco é via WhatsApp. Obtenha uma resposta quase instantânea e um aconselhamento totalmente personalizado.</p>
+                    <p class="mb-4">A forma mais eficiente de falar connosco é por WhatsApp. Obtenha uma resposta quase instantânea e um aconselhamento totalmente personalizado.</p>
                     
                     <div class="text-start mb-4">
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-bolt text-success me-2 mt-1"></i>
-                            <span><strong>Resposta rápida:</strong> Atendemos as suas consultas instantaneamente. (Somos todos professores e das 9:00 às 17:00 estamos a esquiar, mas assim que lemos a mensagem, respondemos o mais rapidamente possível)</span>
+                            <span><strong>Resposta rápida:</strong> Atendemos às suas consultas instantaneamente. (Somos todos professores e das 9:00 às 17:00 estamos a esquiar, mas assim que lemos a mensagem, respondemos o mais rápido possível)</span>
                         </div>
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-user-check text-success me-2 mt-1"></i>
@@ -282,12 +287,12 @@
                         </div>
                         <div class="d-flex align-items-start">
                             <i class="fas fa-calendar-check text-success me-2 mt-1"></i>
-                            <span><strong>Confirmação imediata de horários e opções:</strong> Reserve o seu lugar no momento, especialmente em época alta!</span>
+                            <span><strong>Confirmação imediata de horários e opções:</strong> Reserve o seu lugar no momento, especialmente na época alta!</span>
                         </div>
                     </div>
                     
                     <a href="https://wa.me/34669911342" class="btn btn-success btn-lg w-100" target="_blank">
-                        <i class="fab fa-whatsapp me-2"></i>Escreva-nos por WhatsApp
+                        <i class="fab fa-whatsapp me-2"></i>Contactar por WhatsApp Agora
                     </a>
                 </div>
             </div>
@@ -297,7 +302,7 @@
                 <div class="contact-card form-card" id="formulario">
                     <i class="fas fa-edit contact-icon"></i>
                     <h2>Formulário de Contacto</h2>
-                    <p class="mb-4">Prefere que o liguemos ou que lhe escrevamos por e-mail? Preencha este formulário e entraremos em contacto consigo o mais rapidamente possível.</p>
+                    <p class="mb-4">Prefere que lhe liguemos ou escrevamos por email? Preencha este formulário e entraremos em contacto consigo o mais breve possível.</p>
                     
                     <div class="contact-form">
                         <form id="contactForm">
@@ -346,7 +351,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="mensaje" class="form-label">Mensagem adicional</label>
-                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Conte-nos mais sobre o que procura..."></textarea>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Diga-nos mais sobre o que procura..."></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 btn-lg">Enviar Consulta</button>
                         </form>
@@ -358,22 +363,22 @@
             <div class="col-lg-4 mb-4">
                 <div class="contact-card email-card">
                     <i class="fas fa-envelope contact-icon"></i>
-                    <h2>Também Pode Escrever-nos por E-mail</h2>
-                    <p class="mb-4">Verificamos o e-mail várias vezes ao dia e respondemos rapidamente. É uma opção ideal se precisar de anexar informação mais detalhada, como, por exemplo, para coordenar reservas de grupos ou empresas.</p>
+                    <h2>Também Pode Escrever-nos por Correio</h2>
+                    <p class="mb-4">Verificamos o correio várias vezes ao dia e respondemos rapidamente. É uma opção ideal se precisar de anexar informações mais detalhadas, como, por exemplo, para coordenar reservas de grupos ou empresas.</p>
                     
                     <div class="text-center mb-4">
-                        <a href="mailto:<a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>" class="h4 text-decoration-none" target="_blank">
-                            ✉️ <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>
+                        <a href="mailto:reservas@alpineskiacademy.com" class="h4 text-decoration-none" target="_blank">
+                            ✉️ reservas@alpineskiacademy.com
                         </a>
                     </div>
                     
                     <div class="alert alert-info">
                         <i class="fas fa-info-circle me-2"></i>
-                        <strong>Ideal para:</strong> Grupos grandes, empresas, documentação anexa e consultas detalhadas que requerem planeamento extenso.
+                        <strong>Ideal para:</strong> Grupos grandes, empresas, documentação anexa e consultas detalhadas que requerem um planeamento extenso.
                     </div>
                     
-                    <a href="mailto:<a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>" class="btn btn-outline-danger btn-lg w-100" target="_blank">
-                        <i class="fas fa-envelope me-2"></i>Enviar Email
+                    <a href="mailto:reservas@alpineskiacademy.com" class="btn btn-outline-danger btn-lg w-100" target="_blank">
+                        <i class="fas fa-envelope me-2"></i>Enviar Correio Eletrónico
                     </a>
                 </div>
             </div>
@@ -385,7 +390,7 @@
 <section class="info-section">
     <div class="container">
         <h2 class="section-title text-center">Que Informação Incluir para uma Resposta Rápida?</h2>
-        <p class="text-center mb-5">Para podermos oferecer-lhe uma resposta o mais útil e precisa possível, recomendamos que inclua os seguintes detalhes na sua consulta:</p>
+        <p class="text-center mb-5">Para lhe podermos oferecer uma resposta o mais útil e precisa possível, recomendamos que inclua os seguintes detalhes na sua consulta:</p>
         
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -394,7 +399,7 @@
                         <i class="fas fa-calendar-alt"></i>
                     </div>
                     <div>
-                        <h5>Data(s) desejada(s)</h5>
+                        <h3>Data(s) desejada(s)</h3>
                         <p class="mb-0">Ajude-nos a verificar a disponibilidade para as datas que tem em mente.</p>
                     </div>
                 </div>
@@ -404,7 +409,7 @@
                         <i class="fas fa-users"></i>
                     </div>
                     <div>
-                        <h5>Número de pessoas</h5>
+                        <h3>Número de pessoas</h3>
                         <p class="mb-0">Vem sozinho, em casal, com amigos ou em família? Isto ajuda-nos a organizar a aula perfeita.</p>
                     </div>
                 </div>
@@ -414,8 +419,8 @@
                         <i class="fas fa-skiing"></i>
                     </div>
                     <div>
-                        <h5>Tipo de aula</h5>
-                        <p class="mb-0">Procura aulas particulares de esqui como freestyle, freeride ou carve, aulas de snowboard, ou aulas em grupo?</p>
+                        <h3>Tipo de aula</h3>
+                        <p class="mb-0">Procura aulas particulares de esqui como freestyle, freeride ou carve, <a href="aulas-de-snowboard.html">aulas de snowboard</a>, ou aulas em grupo?</p>
                     </div>
                 </div>
                 
@@ -424,7 +429,7 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div>
-                        <h5>Nível de esqui ou experiência prévia</h5>
+                        <h3>Nível de esqui ou experiência prévia</h3>
                         <p class="mb-0">Isto ajuda-nos a colocá-lo no grupo ou aula particular adequada para maximizar a sua aprendizagem.</p>
                     </div>
                 </div>
@@ -434,8 +439,8 @@
                         <i class="fas fa-clock"></i>
                     </div>
                     <div>
-                        <h5>Horário preferido</h5>
-                        <p class="mb-0">Prefere aulas de manhã ou de tarde? A sua preferência ajuda-nos a organizar os horários.</p>
+                        <h3>Horário preferido</h3>
+                        <p class="mb-0">Prefere aulas de manhã ou à tarde? A sua preferência ajuda-nos a organizar os horários.</p>
                     </div>
                 </div>
             </div>
@@ -448,20 +453,20 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <img src="images/contacto/tuc-de-mil-beret.webp" alt="Professores da Alpine Ski Academy nas pistas de Baqueira" class="img-fluid rounded shadow">
+                <img src="../images/contacto/tuc-de-mil-beret.webp" alt="Professores da Alpine Ski Academy nas pistas de Baqueira" class="img-fluid rounded shadow">
             </div>
             <div class="col-lg-6">
                 <div class="hours-card">
-                    <h2 class="section-title">Horários de Atendimento e Época</h2>
-                    <p class="mb-4">Não importa quando nos contactar, estamos sempre à sua disposição!</p>
+                    <h2 class="section-title">Horários de Atendimento e Temporada</h2>
+                    <p class="mb-4">Não importa quando nos contacta, estamos sempre à sua disposição!</p>
                     
                     <div class="hours-item">
                         <div class="hours-icon">
                             <i class="fas fa-snowflake"></i>
                         </div>
                         <div>
-                            <h5>Durante a época de esqui (inverno)</h5>
-                            <p class="mb-0">Atendemos todos os dias das 8:30 às 23:30 h.</p>
+                            <h3>Durante a temporada de esqui (inverno)</h3>
+                            <p class="mb-0">Atendemos todos os dias das 7:30 às 23:30 h.</p>
                         </div>
                     </div>
                     
@@ -470,8 +475,8 @@
                             <i class="fas fa-skiing"></i>
                         </div>
                         <div>
-                            <h5>Horário de aulas em pistas</h5>
-                            <p class="mb-0">Durante as horas (9:00-17:00) de esqui pode ser que demoremos um pouco mais a responder se estivermos em aula (somos professores e esquiamos todos os dias) mas tenha a certeza de que numa ou duas horas responderemos ao e-mail ou ao WhatsApp.</p>
+                            <h3>Horário de aulas nas pistas</h3>
+                            <p class="mb-0">Durante as horas de esqui (9:00-17:00), podemos demorar um pouco mais a responder se estivermos em aula (somos professores e esquiamos todos os dias), mas pode ter a certeza de que, dentro de uma ou duas horas, responderemos ao email ou ao WhatsApp.</p>
                         </div>
                     </div>
                     
@@ -480,8 +485,8 @@
                             <i class="fas fa-umbrella-beach"></i>
                         </div>
                         <div>
-                            <h5>Fora de época</h5>
-                            <p class="mb-0">Respondemos também por WhatsApp e e-mail, embora com menor frequência. Prepare as suas próximas férias de esqui com antecedência!</p>
+                            <h3>Fora de temporada</h3>
+                            <p class="mb-0">Respondemos também por WhatsApp e correio, embora com menor frequência. Prepare as suas próximas férias de esqui com antecedência!</p>
                         </div>
                     </div>
                 </div>
@@ -494,29 +499,39 @@
 <section class="faq-section">
     <div class="container">
         <h2 class="section-title text-center">Perguntas Frequentes Rápidas (FAQ)</h2>
-        <p class="text-center mb-5">Recolhemos algumas das perguntas mais comuns para o ajudar rapidamente:</p>
+        <p class="text-center mb-5">Reunimos algumas das perguntas mais comuns para o ajudar rapidamente:</p>
         
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Com quanto tempo de antecedência devo reservar?</span>
+                        <span>Com quanta antecedência devo reservar?</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Quanto antes reservar, melhor! Especialmente em feriados, pontes e épocas altas. Algumas faixas horárias e tipos de aulas esgotam com semanas de antecedência.</p>
-                        <p>Recomendamos reservar com pelo menos 2-3 semanas de antecedência para garantir a disponibilidade, especialmente se tiver datas específicas em mente.</p>
+                        <p>Quanto mais cedo reservar, melhor! Especialmente em feriados, pontes e épocas altas. Algumas faixas horárias e tipos de aulas esgotam com semanas de antecedência.</p>
+                        <p>Recomendamos que reserve com pelo menos 2-3 semanas de antecedência para garantir a disponibilidade, especialmente se tiver datas específicas em mente.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Posso reservar várias aulas ao mesmo tempo?</span>
+                        <span>Posso reservar várias aulas de uma vez?</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Sim, claro. Aconselhamo-lo a organizar um planeamento personalizado por dias e níveis, assegurando um progresso contínuo.</p>
-                        <p>De facto, recomendamos reservar várias aulas consecutivas para maximizar a sua aprendizagem e aproveitar ao máximo a sua estadia em Baqueira.</p>
+                        <p>Sim, claro. Aconselhamo-lo a organizar um planeamento personalizado por dias e níveis, garantindo uma progressão contínua.</p>
+                        <p>De facto, recomendamos que reserve várias aulas consecutivas para maximizar a sua aprendizagem e aproveitar ao máximo a sua estadia em Baqueira.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>De onde lhe respondemos?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Estamos estrategicamente situados em Baqueira 1500, uma escola de esqui com presença direta nas pistas.</p>
+                        <p>Isto permite-nos oferecer-lhe um conhecimento real e atualizado do estado da neve, das pistas e das condições do dia.</p>
                     </div>
                 </div>
             </div>
@@ -530,15 +545,15 @@
         <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <div class="hours-card">
-                    <h2 class="section-title">De Onde Respondemos?</h2>
-                    <p class="mb-4">📍 Na Alpine Ski Academy estamos sempre a esquiar por Baqueira, com presença direta nas pistas. Isto permite-nos oferecer-lhe um conhecimento real e atualizado do estado da neve, das pistas e das condições do dia.</p>
+                    <h2 class="section-title">De Onde Lhe Respondemos?</h2>
+                    <p class="mb-4">📍 Na Alpine Ski Academy, estamos sempre a esquiar por Baqueira, com presença direta nas pistas. Isto permite-nos oferecer-lhe um conhecimento real e atualizado do estado da neve, das pistas e das condições do dia.</p>
                     
                     <div class="hours-item">
                         <div class="hours-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
-                            <h5>Ubicação em pistas</h5>
+                            <h3>Localização nas pistas</h3>
                             <p class="mb-0">Encontrar-nos-á nos principais pontos de encontro de Baqueira Beret: Ruda, 1500, Tanau e 1800.</p>
                         </div>
                     </div>
@@ -548,8 +563,8 @@
                             <i class="fas fa-snowflake"></i>
                         </div>
                         <div>
-                            <h5>Conhecimento em tempo real</h5>
-                            <p class="mb-0">Ao estarmos diariamente nas pistas, podemos oferecer-lhe informação atualizada sobre condições de neve, melhores rotas e pistas recomendadas de acordo com o seu nível.</p>
+                            <h3>Conhecimento em tempo real</h3>
+                            <p class="mb-0">Ao estarmos diariamente nas pistas, podemos oferecer-lhe informações atualizadas sobre as condições da neve, as melhores rotas e as pistas recomendadas de acordo com o seu nível.</p>
                         </div>
                     </div>
                     
@@ -558,71 +573,68 @@
                             <i class="fas fa-walking"></i>
                         </div>
                         <div>
-                            <h5>Flexibilidade de encontro</h5>
+                            <h3>Flexibilidade de encontro</h3>
                             <p class="mb-0">Adaptamo-nos para nos encontrarmos consigo no ponto que mais lhe convier dentro do domínio esquiável de Baqueira Beret.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="images/contacto/telehuevo-baqueira-ruda-1800.webp" alt="Mapa com pontos de encontro em Baqueira Beret" class="img-fluid rounded shadow">
+                <img src="../images/contacto/telehuevo-baqueira-ruda-1800.webp" alt="Mapa com pontos de encontro em Baqueira Beret" class="img-fluid rounded shadow">
             </div>
         </div>
     </div>
 </section>
 
- <!-- Footer section  -->
+    <!-- Footer section  -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                   <h5 class="footer-title" href = "/pt/">Alpine Ski Academy</h5>
                     <p class="footer-description">A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades, progresso garantido e experiências inesquecíveis na neve.</p>
                     <div class="footer-contact">
-                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
-                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                        <p><a href="https://wa.me/34669911342" target="_blank" style="text-decoration: none; color: inherit;"><i class="fas fa-phone me-2"></i> +34 669 911 342</a></p>
+                        <p><a href="mailto:reservas@alpineskiacademy.com" target="_blank" style="text-decoration: none; color: inherit;"><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</a></p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Serviços</h5>
                     <ul class="footer-links">
-                        <li><a href="../clases-esqui-baqueira/pt/aulas-particulares-adultos-baqueira.html" style="text-decoration: none; color: inherit;">Aulas de Esqui</a></li>
-                        <li><a href="aulas-snowboard-baqueira.html" style="text-decoration: none; color: inherit;">Aulas de Snowboard</a></li>
-                        <li><a href="quem-somos.html" style="text-decoration: none; color: inherit;">Sobre Nós</a></li>
-                        <li><a href="viajens-esqui.html" style="text-decoration: none; color: inherit;">Viagens</a></li>
-                        <li><a href="webcams-baqueria.html" style="text-decoration: none; color: inherit;">Câmaras</a></li>
-                        <li><a href="aluguer-material-esqui-snowboard-baqueira.html" style="text-decoration: none; color: inherit;">Aluguer de Material</a></li>
-                        <li><a href="precos-aulas-esqui-snowboard-baqueira.html" style="text-decoration: none; color: inherit;">Preços</a></li>
-                        <li><a href="contacto-reservas.html" style="text-decoration: none; color: inherit;">Contacto / Reserva</a></li>
-                        <li><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="/pt/aulas-de-esqui-baqueira/" style="text-decoration: none; color: inherit;">Aulas de Esqui</a></li>
+                        <li><a href="/pt/aulas-de-snowboard-baqueira/" style="text-decoration: none; color: inherit;">Aulas de Snowboard</a></li>
+                        <li><a href="/pt/cameras-baqueira/" style="text-decoration: none; color: inherit;">Câmeras</a></li>
+                        <li><a href="/pt/aluguel-de-equipamento-baqueira/" style="text-decoration: none; color: inherit;">Aluguel de Equipamento</a></li>
+                        <li><a href="/pt/precos-e-tarifas-baqueira/" style="text-decoration: none; color: inherit;">Preços</a></li>
+                        <li><a href="/pt/contato-reservas/" style="text-decoration: none; color: inherit;">Contato / Reserva</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Empresa</h5>
                     <ul class="footer-links">
-                        <li><a href="quem-somos.html" style="text-decoration: none; color: inherit;">Sobre Nós</a></li>
-                        <li><a href="quem-somos.html" style="text-decoration: none; color: inherit;">A nossa equipa</a></li>
-                        <li><a href="#testimonials" style="text-decoration: none; color: inherit;">Testemunhos</a></li>
-                        <li><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></li>
-                        <li><a href="contacto-reservas.html" style="text-decoration: none; color: inherit;">Contacto</a></li>
+                        <li><a href="/pt/sobre-nos/" style="text-decoration: none; color: inherit;">Sobre Nós</a></li>
+                          <li><a href="/pt/viagens-de-esqui/" style="text-decoration: none; color: inherit;">Viagens</a></li>
+                        <li><a href="/pt/precos-e-tarifas-baqueira/" style="text-decoration: none; color: inherit;">Preços</a></li>
+                        <li><a href="/pt/blog/" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="/pt/contato-reservas/" style="text-decoration: none; color: inherit;">Contato</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 mb-4">
-                    <h5 class="footer-title">Contacto</h5>
+                    <h5 class="footer-title">Contato</h5>
                     <div class="social-links mb-3">
-                        <a href="https://www.instagram.com/alpine.skiacademy/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61575925712742"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.tiktok.com/@alpine.skiacademy"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA"><i class="fab fa-youtube"></i></a>
-                        <a href="https://wa.me/34669911342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/alpine.skiacademy/" style="text-decoration: none; color: inherit;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742" style="text-decoration: none; color: inherit;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy?lang=es" style="text-decoration: none; color: inherit;"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA" style="text-decoration: none; color: inherit;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342" target="_blank" style="text-decoration: none; color: inherit;"><i class="fab fa-whatsapp"></i></a>
                     </div>
 
-                    <h5 class="footer-title mt-4">Links Legais</h5>
+                    <h5 class="footer-title mt-4">Links legais</h5>
                     <ul class="footer-links">
-                        <li><a href="aviso-legal-pt.html" style="text-decoration: none; color: inherit;">Aviso Legal</a></li>
-                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Privacidade</a></li>
-                        <li><a href="#" style="text-decoration: none; color: inherit;">Política de Cookies</a></li>
-                        <li><a href="Política-de-cancelamento.html" style="text-decoration: none; color: inherit;">Política de Cancelamento</a></li>
+                        <li><a href="/pt/aviso-legal/" style="text-decoration: none; color: inherit;">Aviso Legal</a></li>
+                        <li><a href="/pt/politica-de-privacidade/" style="text-decoration: none; color: inherit;">Política de Privacidade</a></li>
+                        <li><a href="/pt/politica-de-cookies/" style="text-decoration: none; color: inherit;">Política de Cookies</a></li>
+                        <li><a href="/pt/politica-de-cancelamento/" style="text-decoration: none; color: inherit;">Política de Cancelamento</a></li>
                     </ul>
                 </div>
             </div>
@@ -631,11 +643,14 @@
                     <hr class="footer-divider">
                 </div>
                 <div class="col-md-6">
-                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Todos os direitos reservados.
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Todos os direitos
+                        reservados.
                     </p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="legal-notice">A Alpine Ski Academy S.L. é uma empresa independente. Não estamos vinculados nem somos parte de Baqueira Beret, S.A. A utilização do nome Baqueira é estritamente para localizar o local onde realizamos os nossos serviços como escola de esqui.</p>
+                    <p class="legal-notice">Alpine Ski Academy S.L. é uma empresa independente. Não estamos vinculados
+                        nem fazemos parte da Baqueira Beret, S.A. O uso do nome Baqueira é estritamente para
+                        localizar o local onde prestamos nossos serviços como escola de esqui.</p>
                 </div>
             </div>
         </div>
@@ -666,6 +681,7 @@
     // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 </script>
+
 </body>
 
 </html>
