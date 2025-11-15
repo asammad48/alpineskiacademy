@@ -1399,2290 +1399,27 @@ body {
     align-items: center;
 }
 
-/* Additional CSS for Nosotros page */
-.hero-nosotros {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Nosotros/profesor-esqui-alpine-ski-academy-usando-carv-baqueira-beret.webp');
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0 100px;
-    text-align: center;
-    color: white;
-    margin-top: -76px;
-}
 
-.team-section {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-}
+/* Import Classes Page Specific Styles */
+@import url('classes.css');
 
-.team-member-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-    height: 100%;
-}
 
-.team-member-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.team-member-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.team-member-info {
-    padding: 25px;
-}
-
-.team-member-name {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.team-member-specialties {
-    color: #3498db;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.team-member-quote {
-    font-style: italic;
-    color: #5d6d7e;
-    border-left: 3px solid #3498db;
-    padding-left: 15px;
-    margin: 15px 0;
-}
-
-.team-member-details {
-    margin-top: 20px;
-}
-
-.team-member-details h5 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.team-member-details ul {
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-.team-member-details li {
-    margin-bottom: 5px;
-}
-
-.certifications-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-}
-
-.certification-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    transition: all 0.3s ease;
-}
-
-.certification-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.certification-icon {
-    font-size: 3rem;
-    color: #3498db;
-    margin-bottom: 20px;
-}
-
-.testimonials-section {
-    padding: 80px 0;
-}
-
-.testimonial-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    height: 100%;
-}
-
-.testimonial-text {
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #5d6d7e;
-}
-
-.testimonial-author {
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-.testimonial-rating {
-    color: #f1c40f;
-    margin-bottom: 10px;
-}
-
-.cta-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-    color: white;
-    text-align: center;
-}
-
-.cta-section h2 {
-    margin-bottom: 20px;
-}
-
-.cta-section p {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-}
-
-.google-reviews-widget {
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
-}
-
-@media (max-width: 768px) {
-    .google-reviews-widget {
-        min-height: 500px;
-    }
-}
-
-/* Certificate Image Styles */
-.certificate-image-container {
-    background: white;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-.certificate-image-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.certificate-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.certificate-image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.certificate-caption {
-    padding: 0 10px;
-}
-
-/* Responsive adjustments for certificate section */
-@media (max-width: 992px) {
-    .certificate-image {
-        max-width: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    .certificate-image-container {
-        margin-top: 30px;
-    }
-    
-    .certificate-image {
-        max-width: 200px;
-    }
-}
-
-
-/* Horizontal Certificate Styles */
-.certificate-horizontal-container {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.certificate-horizontal-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.certificate-horizontal-image {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.certificate-horizontal-image:hover {
-    transform: scale(1.03);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.certificate-content h3 {
-    color: #2c3e50;
-    font-weight: 700;
-}
-
-.certificate-content p {
-    color: #5d6d7e;
-    line-height: 1.6;
-}
-
-.certificate-details {
-    margin-top: 20px;
-}
-
-.detail-item {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.detail-item i {
-    font-size: 1.1rem;
-}
-
-.detail-item span {
-    color: #2c3e50;
-    font-weight: 500;
-}
-
-/* Responsive adjustments for horizontal certificate */
-@media (max-width: 992px) {
-    .certificate-horizontal-image {
-        max-width: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .certificate-horizontal-container {
-        padding: 20px;
-    }
-    
-    .certificate-horizontal-image {
-        max-width: 180px;
-        margin-top: 20px;
-    }
-    
-    .certificate-content {
-        text-align: center;
-    }
-    
-    .detail-item {
-        justify-content: center;
-    }
-}
-
-
-/* Breadcrumb Styles */
-.breadcrumb-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 15px 0;
-    margin-top: 76px; /* Account for fixed navbar */
-    border-bottom: 1px solid #dee2e6;
-}
-
-.breadcrumb {
-    margin-bottom: 0;
-    background: transparent;
-    padding: 0;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    content: ">";
-    color: #6c757d;
-}
-
-.breadcrumb-item a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.breadcrumb-item a:hover {
-    color: #2c3e50;
-    text-decoration: underline;
-}
-
-.breadcrumb-item.active {
-    color: #2c3e50;
-    font-weight: 600;
-}
-
-.breadcrumb-item i {
-    font-size: 0.9rem;
-}
-
-/* Adjust hero section margin to account for breadcrumb */
-.hero-nosotros {
-    margin-top: 0; /* Remove negative margin since breadcrumb handles spacing */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .breadcrumb-section {
-        padding: 12px 0;
-    }
-    
-    .breadcrumb {
-        font-size: 0.9rem;
-    }
-}
-
- /* Additional CSS for Viajes page */
-        .hero-viajes {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Viajes/Pista-suiza.webp');
-            background-size: cover;
-            background-position: center;
-            padding: 150px 0 100px;
-            text-align: center;
-            color: white;
-            margin-top: -76px;
-        }
-        
-        .intro-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .destination-section {
-            padding: 80px 0;
-        }
-        
-        .destination-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            margin-bottom: 30px;
-            height: 100%;
-        }
-        
-        .destination-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .destination-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-        
-        .destination-info {
-            padding: 25px;
-        }
-        
-        .destination-highlights {
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-            padding: 80px 0;
-        }
-        
-        .highlight-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .highlight-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .highlight-icon {
-            font-size: 3rem;
-            color: #3498db;
-            margin-bottom: 20px;
-        }
-        
-        .included-section {
-            padding: 80px 0;
-        }
-        
-        .included-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        
-        .included-icon {
-            color: #3498db;
-            font-size: 1.5rem;
-            margin-right: 15px;
-            margin-top: 5px;
-            min-width: 30px;
-        }
-        
-        .custom-trip-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-        }
-        
-        .custom-trip-card {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            text-align: center;
-        }
-        
-        .faq-section {
-            padding: 80px 0;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .faq-question {
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-answer {
-            background: white;
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .date-badge {
-            background: #e74c3c;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 0;
-            margin-top: 76px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 0;
-            background: transparent;
-            padding: 0;
-        }
-        
-        .breadcrumb-item + .breadcrumb-item::before {
-            content: ">";
-            color: #6c757d;
-        }
-        
-        .breadcrumb-item a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .breadcrumb-item a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .breadcrumb-item.active {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .breadcrumb-item i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .breadcrumb-section {
-                padding: 12px 0;
-            }
-            
-            .breadcrumb {
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Additional CSS for Snowboard page */
-        .hero-snowboard {
-            position: relative;
-            padding: 150px 0 100px;
-            text-align: center;
-            color: white;
-            margin-top: -76px;
-            overflow: hidden;
-        }
-        
-        .hero-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
-        
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-            z-index: -1;
-        }
-        
-        .intro-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .methodology-section {
-            padding: 80px 0;
-        }
-        
-        .methodology-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .methodology-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .methodology-icon {
-            font-size: 3rem;
-            color: #3498db;
-            margin-bottom: 20px;
-        }
-        
-      /* Updated Classes Section CSS */
-.classes-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-}
-
-.class-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.class-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.class-img-container {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-}
-
-.class-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.class-card:hover .class-img {
-    transform: scale(1.05);
-}
-
-.class-info {
-    padding: 25px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.class-info h3 {
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
-
-.class-info p {
-    margin-bottom: 15px;
-    color: #5d6d7e;
-    flex-grow: 1;
-}
-
-.class-info .btn {
-    align-self: flex-start;
-    margin-top: auto;
-}
-
-/* Responsive adjustments for class cards */
-@media (max-width: 992px) {
-    .class-img-container {
-        height: 220px;
-    }
-}
-
-@media (max-width: 768px) {
-    .class-img-container {
-        height: 200px;
-    }
-    
-    .class-info {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .class-img-container {
-        height: 180px;
-    }
-    
-    .class-info {
-        padding: 15px;
-    }
-}
-        
-        .process-section {
-            padding: 80px 0;
-        }
-        
-        .process-step {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-        
-        .step-number {
-            background: #3498db;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 20px;
-            flex-shrink: 0;
-        }
-        
-        .testimonials-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .testimonial-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-            height: 100%;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #5d6d7e;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        
-        .testimonial-rating {
-            color: #f1c40f;
-            margin-bottom: 10px;
-        }
-        
-        .faq-section {
-            padding: 80px 0;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .faq-question {
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-answer {
-            background: white;
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 0;
-            margin-top: 76px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 0;
-            background: transparent;
-            padding: 0;
-        }
-        
-        .breadcrumb-item + .breadcrumb-item::before {
-            content: ">";
-            color: #6c757d;
-        }
-        
-        .breadcrumb-item a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .breadcrumb-item a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .breadcrumb-item.active {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .breadcrumb-item i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .breadcrumb-section {
-                padding: 12px 0;
-            }
-            
-            .breadcrumb {
-                font-size: 0.9rem;
-            }
-            
-            .process-step {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .step-number {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-snowboard {
-                padding: 120px 0 80px;
-            }
-        }
-
-         /* Additional CSS for Alquiler page */
-        .hero-alquiler {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/alquiler/Alquiler-de-esquis-en-baqueira-ruda.webp');
-            background-size: cover;
-            background-position: center;
-            padding: 150px 0 100px;
-            text-align: center;
-            color: white;
-            margin-top: -76px;
-        }
-        
-        .intro-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .service-section {
-            padding: 80px 0;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .service-icon {
-            font-size: 3rem;
-            color: #3498db;
-            margin-bottom: 20px;
-        }
-        
-        /* Fixed Material Section CSS */
-.material-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-}
-
-.material-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.material-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.material-img-container {
-    width: 100%;
-    min-height: 200px;
-    max-height: 250px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f8f9fa;
-    padding: 20px;
-}
-
-.material-img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    transition: transform 0.5s ease;
-}
-
-.material-card:hover .material-img {
-    transform: scale(1.05);
-}
-
-.material-info {
-    padding: 25px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.material-info h3 {
-    margin-bottom: 15px;
-    color: #2c3e50;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.material-info ul {
-    margin-bottom: 15px;
-    color: #5d6d7e;
-    flex-grow: 1;
-    padding-left: 20px;
-}
-
-.material-info li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
-
-/* Responsive adjustments for material cards */
-@media (max-width: 992px) {
-    .material-img-container {
-        min-height: 180px;
-        max-height: 220px;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .material-img-container {
-        min-height: 160px;
-        max-height: 200px;
-        padding: 12px;
-    }
-    
-    .material-info {
-        padding: 20px;
-    }
-    
-    .material-info h3 {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .material-img-container {
-        min-height: 140px;
-        max-height: 180px;
-        padding: 10px;
-    }
-    
-    .material-info {
-        padding: 15px;
-    }
-    
-    .material-info h3 {
-        font-size: 1.25rem;
-    }
-    
-    .material-info ul {
-        padding-left: 15px;
-    }
-}
-        
-        .organization-section {
-            padding: 80px 0;
-        }
-        
-        .organization-step {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-        
-        .step-number {
-            background: #3498db;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 20px;
-            flex-shrink: 0;
-        }
-        
-        .faq-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .faq-question {
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-answer {
-            background: white;
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 0;
-            margin-top: 76px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 0;
-            background: transparent;
-            padding: 0;
-        }
-        
-        .breadcrumb-item + .breadcrumb-item::before {
-            content: ">";
-            color: #6c757d;
-        }
-        
-        .breadcrumb-item a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .breadcrumb-item a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .breadcrumb-item.active {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .breadcrumb-item i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .breadcrumb-section {
-                padding: 12px 0;
-            }
-            
-            .breadcrumb {
-                font-size: 0.9rem;
-            }
-            
-            .organization-step {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .step-number {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-            
-            .material-img-container {
-                height: 180px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-alquiler {
-                padding: 120px 0 80px;
-            }
-            
-            .material-img-container {
-                height: 160px;
-            }
-            
-            .material-info {
-                padding: 20px;
-            }
-        }
-
-
-    
-   /* Additional CSS for Precios page */
-      .hero-precios {
-    background-color: #2c3e50; /* Fallback solid color */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Precios/Victor-ficha-profesor-Alpine-ski-academy.webp');
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0 100px;
-    text-align: center;
-    color: white;
-}
-        .intro-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        /* Fixed Pricing Section CSS */
-.pricing-section {
-    padding: 80px 0;
-}
-
-.pricing-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    transition: all 0.3s ease;
-    text-align: center;
-    position: relative;
-    border: 2px solid transparent;
-    display: flex;
-    flex-direction: column;
-}
-
-.pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    border-color: #3498db;
-}
-
-.pricing-card.featured {
-    border-color: #3498db;
-    transform: scale(1.02);
-}
-
-.pricing-header {
-    margin-bottom: 25px;
-    flex-shrink: 0;
-}
-
-.pricing-header h3 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 8px;
-    min-height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pricing-header .text-muted {
-    font-size: 0.95rem;
-    min-height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pricing-price {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 5px;
-    line-height: 1;
-}
-
-.pricing-period {
-    color: #5d6d7e;
-    font-size: 1rem;
-    margin-bottom: 25px;
-    min-height: 1.5rem;
-}
-
-.pricing-features {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 25px 0;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.pricing-features li {
-    margin-bottom: 12px;
-    color: #5d6d7e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.4;
-    min-height: 1.5rem;
-}
-
-.pricing-features li i {
-    color: #3498db;
-    margin-right: 8px;
-    flex-shrink: 0;
-}
-
-.pricing-card .btn {
-    margin-top: auto;
-    flex-shrink: 0;
-}
-
-/* Ensure all cards have same height */
-.pricing-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1200px) {
-    .pricing-header h3 {
-        font-size: 1.3rem;
-        min-height: 2.8rem;
-    }
-    
-    .pricing-price {
-        font-size: 2.2rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .pricing-card {
-        padding: 25px 20px;
-    }
-    
-    .pricing-header h3 {
-        font-size: 1.25rem;
-        min-height: 2.6rem;
-    }
-    
-    .pricing-price {
-        font-size: 2rem;
-    }
-    
-    .pricing-features li {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .pricing-card.featured {
-        transform: none;
-    }
-    
-    .pricing-header h3 {
-        min-height: auto;
-    }
-    
-    .pricing-header .text-muted {
-        min-height: auto;
-    }
-}
-        .specialties-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-        }
-        
-        .specialty-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .specialty-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .specialty-icon {
-            font-size: 3rem;
-            color: #3498db;
-            margin-bottom: 20px;
-        }
-        
-        .included-section {
-            padding: 80px 0;
-        }
-        
-        .included-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 25px;
-        }
-        
-        .included-icon {
-            color: #3498db;
-            font-size: 1.5rem;
-            margin-right: 15px;
-            margin-top: 5px;
-            min-width: 30px;
-        }
-        
-        .transparency-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .faq-section {
-            padding: 80px 0;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .faq-question {
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-answer {
-            background: white;
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 0;
-            background: transparent;
-            padding: 0;
-        }
-        
-        .breadcrumb-item + .breadcrumb-item::before {
-            content: ">";
-            color: #6c757d;
-        }
-        
-        .breadcrumb-item a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .breadcrumb-item a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .breadcrumb-item.active {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .breadcrumb-item i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .breadcrumb-section {
-                padding: 12px 0;
-            }
-            
-            .breadcrumb {
-                font-size: 0.9rem;
-            }
-            
-            .pricing-card.featured {
-                transform: none;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-precios {
-                padding: 120px 0 80px;
-            }
-        }
-                  /* Additional CSS for Camaras page */
-        .hero-camaras {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/camaras/victor-perfil-panramica.webp');
-            background-image: url('ski.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 150px 0 100px;
-            text-align: center;
-            color: white;
-        }
-        
-        .intro-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-
-         /* PROPER CAMERAS SECTION - MATCHING PREVIOUS BRILLIANT WORK */
-.cameras-section {
-    padding: 80px 0;
-    background: #f8f9fa;
-}
-
-.cameras-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.camera-card {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s ease;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #f0f0f0;
-}
-
-.camera-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.camera-img-container {
-    width: 100%;
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-.camera-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.camera-card:hover .camera-img {
-    transform: scale(1.08);
-}
-
-.camera-info {
-    padding: 35px 30px 30px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.camera-status {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 25px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    display: inline-block;
-    width: fit-content;
-    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
-}
-
-.camera-info h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin: 0;
-    line-height: 1.3;
-    min-height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-.camera-description {
-    color: #5d6d7e;
-    line-height: 1.7;
-    font-size: 1.05rem;
-    margin: 0;
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-start;
-}
-
-.camera-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
-    border-top: 2px solid #f8f9fa;
-    margin-top: 10px;
-}
-
-.update-time {
-    color: #6c757d;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.camera-action {
-    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
-}
-
-.camera-action:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .cameras-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-    }
-}
-
-@media (max-width: 768px) {
-    .cameras-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .camera-img-container {
-        height: 250px;
-    }
-    
-    .camera-info {
-        padding: 30px 25px 25px;
-        gap: 18px;
-    }
-    
-    .camera-info h3 {
-        font-size: 1.4rem;
-        min-height: 3rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .cameras-section {
-        padding: 60px 0;
-    }
-    
-    .camera-img-container {
-        height: 220px;
-    }
-    
-    .camera-info {
-        padding: 25px 20px 20px;
-        gap: 15px;
-    }
-    
-    .camera-info h3 {
-        font-size: 1.3rem;
-    }
-    
-    .camera-footer {
-        flex-direction: column;
-        gap: 15px;
-        align-items: stretch;
-        text-align: center;
-    }
-}
-/* Responsive fixes */
-@media (max-width: 1200px) {
-    .camera-card {
-        flex: 1 0 calc(50% - 15px) !important;
-        max-width: calc(50% - 15px) !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .camera-card {
-        flex: 1 0 100% !important;
-        max-width: 100% !important;
-        min-height: 450px !important;
-    }
-    
-    .camera-img-container {
-        height: 180px !important;
-        min-height: 180px !important;
-        max-height: 180px !important;
-    }
-}
-
-/* NUCLEAR OPTION - If above doesn't work, use this: */
-.cameras-nuclear-fix {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 30px !important;
-    width: 100% !important;
-}
-
-.cameras-nuclear-fix .camera-card {
-    display: grid !important;
-    grid-template-rows: 200px 1fr auto !important;
-    height: 500px !important;
-    margin: 0 !important;
-}
-
-@media (max-width: 1200px) {
-    .cameras-nuclear-fix {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .cameras-nuclear-fix {
-        grid-template-columns: 1fr !important;
-    }
-}
-        .info-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-        }
-        
-        .info-card {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            height: 100%;
-        }
-        
-        .info-icon {
-            font-size: 3rem;
-            color: #3498db;
-            margin-bottom: 20px;
-        }
-        
-        .cta-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 0;
-            background: transparent;
-            padding: 0;
-        }
-        
-        .breadcrumb-item + .breadcrumb-item::before {
-            content: ">";
-            color: #6c757d;
-        }
-        
-        .breadcrumb-item a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .breadcrumb-item a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .breadcrumb-item.active {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .breadcrumb-item i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .breadcrumb-section {
-                padding: 12px 0;
-            }
-            
-            .breadcrumb {
-                font-size: 0.9rem;
-            }
-            
-            .camera-img-container {
-                height: 250px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-camaras {
-                padding: 120px 0 80px;
-            }
-            
-            .camera-img-container {
-                height: 200px;
-            }
-            
-            .camera-info {
-                padding: 20px;
-            }
-        }
-
-
-        
-          /* Additional CSS for Contacto page */
-        .hero-contacto {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/contacto/victor-en-clase-con-ninos.webp');
-            background-size: cover;
-            background-position: center;
-            padding: 150px 0 100px;
-            text-align: center;
-            color: white;
-        }
-        
-        .intro-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .contact-methods-section {
-            padding: 80px 0;
-        }
-        
-        .contact-card {
-            background: white;
-            border-radius: 15px;
-            padding: 40px 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-            transition: all 0.3s ease;
-            text-align: center;
-            border-top: 5px solid #3498db;
-        }
-        
-        .contact-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .contact-icon {
-            font-size: 3.5rem;
-            margin-bottom: 25px;
-            display: block;
-        }
-        
-        .whatsapp-card {
-            border-top-color: #25D366;
-        }
-        
-        .whatsapp-card .contact-icon {
-            color: #25D366;
-        }
-        
-        .form-card {
-            border-top-color: #3498db;
-        }
-        
-        .form-card .contact-icon {
-            color: #3498db;
-        }
-        
-        .email-card {
-            border-top-color: #e74c3c;
-        }
-        
-        .email-card .contact-icon {
-            color: #e74c3c;
-        }
-        
-        .info-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-        }
-        
-        .info-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 25px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-        }
-        
-        .info-icon {
-            color: #3498db;
-            font-size: 1.5rem;
-            margin-right: 15px;
-            margin-top: 5px;
-            min-width: 30px;
-        }
-        
-        .hours-section {
-            padding: 80px 0;
-        }
-        
-        .hours-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 100%;
-        }
-        
-        .hours-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .hours-icon {
-            color: #3498db;
-            font-size: 1.5rem;
-            margin-right: 15px;
-            min-width: 30px;
-        }
-        
-        .faq-section {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .faq-question {
-            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
-            color: white;
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .faq-question i {
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-answer {
-            background: white;
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        .location-section {
-            padding: 80px 0;
-        }
-        
-        .form-section {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #e6f7ff 0%, #f0f9ff 100%);
-        }
-        
-        .contact-form {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-control, .form-select {
-            border-radius: 10px;
-            padding: 12px 15px;
-            border: 2px solid #e9ecef;
-            transition: all 0.3s ease;
-        }
-        
-        .form-control:focus, .form-select:focus {
-            border-color: #3498db;
-            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
-        }
-        
-        .breadcrumb-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 15px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        
-        .breadcrumb {
-            margin-bottom: 0;
-            background: transparent;
-            padding: 0;
-        }
-        
-        .breadcrumb-item + .breadcrumb-item::before {
-            content: ">";
-            color: #6c757d;
-        }
-        
-        .breadcrumb-item a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .breadcrumb-item a:hover {
-            color: #2c3e50;
-            text-decoration: underline;
-        }
-        
-        .breadcrumb-item.active {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .breadcrumb-item i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .breadcrumb-section {
-                padding: 12px 0;
-            }
-            
-            .breadcrumb {
-                font-size: 0.9rem;
-            }
-            
-            .contact-card {
-                padding: 30px 20px;
-                margin-bottom: 30px;
-            }
-            
-            .contact-form {
-                padding: 30px 20px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-contacto {
-                padding: 120px 0 80px;
-            }
-        }
-
-
-        /* Gallery Hero Section */
-.gallery-hero {
+/* Page Hero Section */
+.page-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('images/Galeria/free-ride-baqueira-beret-bosque.webp');
+                url('img/fotos-clases\ en\ grupo-niños/clases-colectivas-niños-baqueira-beret-fuera-pista.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     padding: 8rem 0 4rem;
     margin-top: 76px;
 }
 
-.min-vh-50 {
-    min-height: 50vh;
+.min-vh-60 {
+    min-height: 60vh;
 }
 
-/* Section Spacing */
-.section-py {
-    padding: 5rem 0;
-}
-
-/* Section Titles */
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #1e293b;
-    position: relative;
-}
-
-.section-title:after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: #0ea5e9;
-    margin: 15px auto;
-    border-radius: 2px;
-}
-
-.section-subtitle {
-    font-size: 1.2rem;
-    color: #64748b;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Gallery Carousel - Fixed to prevent image cropping */
-.gallery-carousel .carousel-item {
-    height: 500px;
-}
-
-.gallery-carousel .carousel-item img {
-    object-fit: contain; /* Changed from 'cover' to 'contain' to prevent cropping */
-    height: 100%;
-    width: 100%;
-    background-color: #f8fafc; /* Added background for letterboxing */
-}
-
-.gallery-carousel .carousel-caption {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 600px;
-}
-
-/* Alternative solution if you prefer full-width images without distortion */
-/* 
-.gallery-carousel .carousel-item {
-    height: auto;
-    max-height: 500px;
-}
-
-.gallery-carousel .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-}
-*/
-
-/* Responsive adjustment */
-@media (max-width: 768px) {
-    .gallery-carousel .carousel-item {
-        height: 300px;
-    }
-}
-
-/* Parallax Section */
-.parallax-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('images/Galeria/huta-park-baqueira-beret.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 6rem 0;
-    color: white;
-    text-align: center;
-}
-
-/* Gallery Cards */
-.gallery-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%;
-}
-
-.gallery-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-card-image {
-    height: 250px;
-    overflow: hidden;
-}
-
-.gallery-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.gallery-card:hover .gallery-card-image img {
-    transform: scale(1.1);
-}
-
-.gallery-card-body {
-    padding: 2rem;
-}
-
-.gallery-card-body h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #1e40af;
-}
-
-.gallery-card-body p {
-    color: #64748b;
-    line-height: 1.6;
-}
-
-/* Image Carousel - Fixed to prevent cropping */
-.image-carousel {
+/* Kids Image Slider */
+.kids-slider {
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 15px;
@@ -3690,43 +1427,36 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.image-carousel .carousel-item {
+.kids-slider .carousel-item {
     height: 500px;
 }
 
-.image-carousel .carousel-item img {
-    object-fit: contain; /* Changed from cover to contain to prevent cropping */
+.kids-slider .carousel-item img {
+    object-fit: cover;
     height: 100%;
     width: 100%;
-    background-color: #f8fafc; /* Background for letterboxing */
 }
 
-.image-carousel .carousel-caption {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px 20px;
-    border-radius: 8px;
+.kids-slider .carousel-indicators {
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 500px;
 }
 
-.image-carousel .carousel-caption h5 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+.kids-slider .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
 }
 
-.image-carousel .carousel-caption p {
-    font-size: 0.95rem;
-    margin-bottom: 0;
-    opacity: 0.9;
+.kids-slider .carousel-indicators button.active {
+    background-color: white;
+    border-color: #0ea5e9;
 }
 
-/* Carousel Controls Styling */
-.image-carousel .carousel-control-prev,
-.image-carousel .carousel-control-next {
+.kids-slider .carousel-control-prev,
+.kids-slider .carousel-control-next {
     width: 50px;
     height: 50px;
     background: rgba(0, 0, 0, 0.5);
@@ -3736,494 +1466,1264 @@ body {
     margin: 0 20px;
 }
 
-.image-carousel .carousel-control-prev {
-    left: 20px;
+/* Feature Cards */
+.feature-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
 }
 
-.image-carousel .carousel-control-next {
-    right: 20px;
+.feature-card:hover {
+    transform: translateY(-5px);
 }
 
-/* Remove the blue indicators completely */
-.image-carousel .carousel-indicators {
-    display: none; /* This completely hides the indicators */
+.feature-icon {
+    color: #0ea5e9;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .image-carousel .carousel-item {
-        height: 300px;
-    }
-    
-    .image-carousel .carousel-caption {
-        padding: 10px 15px;
-        bottom: 10px;
-    }
-    
-    .image-carousel .carousel-caption h5 {
-        font-size: 1.1rem;
-    }
-    
-    .image-carousel .carousel-caption p {
-        font-size: 0.85rem;
-    }
-    
-    .image-carousel .carousel-control-prev,
-    .image-carousel .carousel-control-next {
-        width: 40px;
-        height: 40px;
-        margin: 0 10px;
-    }
+/* Schedule Cards */
+.schedule-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
 }
+
+.schedule-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logistics Cards */
+.logistics-card {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 10px;
+    height: 100%;
+    border-left: 4px solid #0ea5e9;
+}
+
+/* Special Group Section */
+.special-group {
+    background: linear-gradient(135deg, #0ea5e9, #1e40af);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+.stars {
+    font-size: 1.2rem;
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* CTA Features */
+.cta-feature {
+    padding: 1rem;
+}
+
+.cta-feature i {
+    color: #f59e0b;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .gallery-hero {
+    .page-hero {
         padding: 6rem 0 3rem;
         margin-top: 76px;
     }
     
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .gallery-carousel .carousel-item {
+    .kids-slider .carousel-item {
         height: 300px;
     }
     
-    .gallery-card-image {
-        height: 200px;
+    .kids-slider .carousel-control-prev,
+    .kids-slider .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
     }
     
-    .gallery-card-body {
-        padding: 1.5rem;
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
 
-/* Livecam CTA Section Styles */
-.ver-camara {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-.camara-cta-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    height: 100%;
+/* CTA Buttons Row */
+.mt-5 {
     display: flex;
-    flex-direction: column;
-}
-
-.camara-cta-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-.camara-img-container {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-}
-
-.camara-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.camara-cta-card:hover .camara-img {
-    transform: scale(1.05);
-}
-
-.camara-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 12px 15px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 100%);
-}
-
-.live-indicator {
-    background: rgba(220, 53, 69, 0.9);
-    color: white;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
     align-items: center;
 }
 
-.live-indicator i {
-    font-size: 0.5rem;
-    animation: pulse 2s infinite;
+.mt-5 .btn {
+    flex: 0 1 auto;
+    white-space: nowrap;
+    margin: 0 !important;
 }
 
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
-
-.camara-content {
-    padding: 24px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.camara-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: #2c3e50;
-}
-
-.camara-description {
-    color: #6c757d;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    flex-grow: 1;
-}
-
-.btn-camara {
-    width: 100%;
-    padding: 10px 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    margin-top: auto;
-}
-
-.btn-camara:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    .ver-camara {
-        padding: 60px 0;
-    }
-}
-
+/* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
-    .camara-img-container {
-        height: 180px;
+    .mt-5 {
+        flex-direction: column;
+        gap: 0.5rem;
     }
     
-    .camara-content {
-        padding: 20px;
+    .mt-5 .btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
-        .page-title {
-            text-align: center;
-            margin: 40px;
-            color: var(--dark);
-        }
-        
-        .page-title h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .page-title p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Blog Grid */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-        
-        @media (max-width: 992px) {
-            .blog-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Blog Card */
-        .blog-card {
-            background: var(--light);
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-        }
-        
-        .blog-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .blog-content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        
-        .blog-title {
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-            color: var(--dark);
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        
-        .blog-excerpt {
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            flex-grow: 1;
-        }
-        
-        .blog-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-        }
-        
-        .blog-date {
-            font-size: 0.85rem;
-            color: #888;
-        }
-        
-        .read-more {
-            color: var(--primary-dark);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        
-        .read-more:hover {
-            color: var(--primary);
-        }
-        
-        /* Pagination */
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        
-        .pagination-list {
-            display: flex;
-            list-style: none;
-        }
-        
-        .pagination-item {
-            margin: 0 5px;
-        }
-        
-        .pagination-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: var(--light);
-            color: var(--dark);
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .pagination-link.active,
-        .pagination-link:hover {
-            background-color: var(--primary);
-            color: var(--light);
-        }
- 
-        /* Additional CSS for Blog page */
-.hero-blog {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Blog/paisaje-baqueira-beret-nevado-escuela-alpine-ski-academy.webp');
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0 100px;
-    text-align: center;
-    color: white;
-    margin-top: -76px;
+
+/* WhatsApp Button Hover Effect */
+.btn-light:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
 }
 
-.page-title {
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--dark);
-        }
-        
-        .page-title h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .page-title p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Blog Grid */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-        
-        @media (max-width: 992px) {
-            .blog-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Blog Card */
-        .blog-card {
-            background: var(--light);
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-        }
-        
-        .blog-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .blog-content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        
-        .blog-title {
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-            color: var(--dark);
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        
-        .blog-excerpt {
-            color: #666;
-            margin-bottom: 15px;
-            line-height: 1.6;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            flex-grow: 1;
-        }
-        
-        .blog-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-        }
-        
-        .blog-date {
-            font-size: 0.85rem;
-            color: #888;
-        }
-        
-        .read-more {
-            color: var(--primary-dark);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        
-        .read-more:hover {
-            color: var(--primary);
-        }
-        
-        /* Pagination */
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        
-        .pagination-list {
-            display: flex;
-            list-style: none;
-        }
-        
-        .pagination-item {
-            margin: 0 5px;
-        }
-        
-        .pagination-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: var(--light);
-            color: var(--dark);
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .pagination-link.active,
-        .pagination-link:hover {
-            background-color: var(--primary);
-            color: var(--light);
-        }
+/* Ensure the icon also changes color on hover */
+.btn-light:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Page Hero Section - Families */
+.family-hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/Fotos-esqui-familias/familia\ clases\ particulares\ alpine\ ski\ academy.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Family Type Cards */
+.family-type-card {
+    background: white;
+    border-left: 4px solid #0ea5e9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.family-type-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Cards with Icons for Families */
+.feature-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pricing Card */
+.pricing-card {
+    border: 2px solid #0ea5e9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-primary:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.btn-primary:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* CTA Features */
+.cta-feature {
+    padding: 1rem 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-feature {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Page Hero Section - Carv */
+.carv-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/Fotos-clases-carv/profesor-esqui-alpine-ski-academy-usando-carv-baqueira.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Tech Cards - Fixed to prevent image cropping */
+.tech-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain; /* Changed from cover to contain */
+    background-color: #f8fafc; /* Added background for consistent look */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Profile Cards */
+.profile-card {
+    background: #f8fafc;
+    border-left: 4px solid #0ea5e9;
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pioneer Badge */
+.pioneer-badge {
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* Feature Cards with Icons */
+.feature-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+/* Pricing Card */
+.pricing-card {
+    border: 2px solid #0ea5e9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* CTA Features */
+.cta-feature {
+    padding: 1rem 0.5rem;
+}
+
+/* Final Carv Image Section - Fixed */
+.final-carv-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-primary:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.btn-primary:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .tech-card img {
+        max-height: 250px;
+    }
+    
+    .final-carv-image img {
+        max-height: 350px;
+    }
+    
+    .btn-lg {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-feature {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Freeride Hero Section with Video */
+.freeride-hero {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.freeride-hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+/* Freeride Cards */
+.freeride-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.freeride-card:hover {
+    transform: translateY(-5px);
+}
+
+.freeride-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Safety Notice */
+.safety-notice {
+    border-left: 4px solid #f59e0b;
+}
+
+/* Level Cards */
+.level-card {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Operation Cards */
+.operation-card {
+    padding: 2rem 1rem;
+    height: 100%;
+}
+
+/* Final Features */
+.final-feature {
+    padding: 1rem 0.5rem;
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+/* WhatsApp Button Hover Effect */
+.btn-warning:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+}
+
+.btn-warning:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .freeride-hero {
+        height: 60vh;
+        min-height: 500px;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .freeride-card img {
+        max-height: 250px;
+    }
+    
+    .min-vh-80 {
+        min-height: 60vh;
+    }
+}
+
+/* Video fallback for mobile performance */
+@media (max-width: 1024px) {
+    .hero-video {
+        display: none;
+    }
+    
+    .freeride-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                    url('img/Freeride-Fotos/clases-freeride-baqueira.webp');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Final CTA Buttons Spacing */
+.freeride-hero .hero-buttons,
+.final-cta-buttons {
+    margin-top: 2rem;
+}
+
+.final-cta-buttons .btn {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .final-cta-buttons .btn {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+    
+    .final-cta-buttons .btn:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Alternative: Using gap with flexbox */
+.final-cta-buttons-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.final-cta-buttons-flex .btn {
+    flex: 0 1 auto;
+}
+
+/* Freestyle Hero Section */
+.freestyle-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/Fotos-freestyle/360-freestyle-adulto-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Option 2 CSS */
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Option 3: Simple centered background */
+
+
+.min-vh-70 {
+    min-height: 70vh;
+}
+
+/* Freestyle Cards - Fixed Alignment */
+.freestyle-card {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.freestyle-card:hover {
+    transform: translateY(-5px);
+}
+
+.freestyle-card img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent alignment */
+    object-fit: contain; /* Changed back to cover for better appearance */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.freestyle-card h4 {
+    margin-bottom: 0.5rem;
+    min-height: 3rem; /* Fixed height for titles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freestyle-card p {
+    margin-bottom: 0;
+    flex-grow: 1; /* Allows text to take remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Image Grid Container */
+.freestyle-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start; /* Align all items to top */
+}
+
+/* Alternative: Using equal height cards */
+.freestyle-card-equal {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Consistent aspect ratio */
+.freestyle-card-equal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 15px;
+}
+
+.freestyle-card-equal h4 {
+    margin-bottom: 0.5rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freestyle-card-equal p {
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* How It Works Section - Improved Colors */
+.freestyle-how-it-works {
+    background: linear-gradient(135deg, #1e40af, #0ea5e9);
+    color: white;
+}
+
+.operation-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    text-align: center;
+}
+
+.operation-card i {
+    color: #fbbf24 !important; /* Bright amber instead of dark yellow */
+    margin-bottom: 1rem;
+}
+
+.operation-card h4 {
+    color: white !important; /* White headings for better contrast */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.operation-card p {
+    color: #e0f2fe !important; /* Light blue text for better readability */
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Safety Equipment with better colors */
+.safety-equipment {
+    background: rgba(251, 191, 36, 0.1) !important; /* Subtle amber background */
+    border: 1px solid #fbbf24 !important;
+    border-left: 4px solid #fbbf24 !important;
+}
+
+.safety-equipment h4 {
+    color: #fbbf24 !important; /* Amber heading */
+}
+
+.safety-equipment p {
+    color: #e0f2fe !important; /* Light blue text */
+}
+
+.safety-equipment strong {
+    color: white !important; /* White for emphasis */
+}
+
+
+/* Kids Private Hero Section */
+.kids-private-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/FOTOS-niños-particulares-webp/clase-iniciacion-fura-pista-niño-baqueira-alpine-ski-academy.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Kids Images Grid - FIXED NO CROPPING */
+.kids-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.kids-card-equal {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kids-card-equal:hover {
+    transform: translateY(-5px);
+}
+
+.kids-card-equal img {
+    width: 100%;
+    height: auto; /* CHANGED: Auto height for no cropping */
+    max-height: 300px;
+    object-fit: contain; /* CHANGED: Contain instead of cover */
+    background-color: #f8fafc; /* Added background for consistency */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.kids-card-equal h4 {
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+    min-height: auto; /* REMOVED: Fixed height */
+}
+
+.kids-card-equal p {
+    margin-bottom: 0;
+    color: #64748b;
+}
+
+/* Method Cards - FIXED COLORS */
+.method-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    text-align: center;
+}
+
+.method-card i {
+    color: #ffffff !important; /* CHANGED: White icons on blue */
+    margin-bottom: 1rem;
+}
+
+.method-card h4 {
+    color: #ffffff !important; /* CHANGED: White headings */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.method-card p {
+    color: #e0f2fe !important; /* CHANGED: Light blue text */
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Age Levels Grid */
+.age-levels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.age-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #0ea5e9;
+    transition: transform 0.3s ease;
+}
+
+.age-card:hover {
+    transform: translateY(-5px);
+}
+
+.age-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* Equipment Cards */
+.equipment-card {
+    background: #f8fafc;
+    border-left: 4px solid #0ea5e9;
+    height: 100%;
+}
+
+.equipment-card h3 {
+    margin-bottom: 1rem;
+    color: #1e40af;
+}
+
+.equipment-card li {
+    padding: 0.25rem 0;
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+/* Highlight Quote - FIXED COLORS */
+.highlight-quote {
+    border: 2px solid #0ea5e9; /* CHANGED: Blue border instead of yellow */
+    background: rgba(14, 165, 233, 0.1); /* CHANGED: Light blue background */
+}
+
+.highlight-quote p {
+    color: #1e40af !important; /* CHANGED: Dark blue text */
+    margin-bottom: 0;
+}
+
+/* Feature Highlights - FIXED COLORS */
+.feature-highlight {
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+.feature-highlight i {
+    color: #0ea5e9; /* CHANGED: Blue icons */
+}
+
+.feature-highlight p {
+    color: #e0f2fe; /* Light text on dark background */
+    margin-bottom: 0;
+}
+
+/* Final CTA Buttons */
+.final-cta-buttons-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.final-cta-buttons-flex .btn {
+    flex: 0 1 auto;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    color: #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* FAQ Items */
+.faq-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+.faq-item h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0ea5e9;
+}
+
+.testimonial-card h3 {
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* WhatsApp Button */
+.btn-warning:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: white !important;
+}
+
+.btn-warning:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .kids-private-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .kids-card-equal img {
+        max-height: 250px;
+    }
+    
+    .age-levels-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .final-cta-buttons-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .final-cta-buttons-flex .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Adults Private Hero Section */
+.adults-private-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/Fotos-Clases-Particulares-adultos/clase-esqui-particular-nivel-alto-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Adults Carousel - NO CROPPING */
+.adults-carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.adults-carousel .carousel-item {
+    height: 500px;
+}
+
+.adults-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* NO CROPPING */
+    background-color: #f8fafc; /* Consistent background */
+}
+
+.adults-carousel .carousel-indicators {
+    bottom: 20px;
+}
+
+.adults-carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+}
+
+.adults-carousel .carousel-indicators button.active {
+    background-color: white;
+    border-color: #0ea5e9;
+}
+
+.adults-carousel .carousel-control-prev,
+.adults-carousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+}
+
+/* Groups Hero Section */
+.groups-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/fotos-team-building-colegios/esqui-empresas-team-building-baqueira.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0 4rem;
+    margin-top: 76px;
+}
+
+/* Groups Images Grid */
+.groups-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.groups-card-equal {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.groups-card-equal:hover {
+    transform: translateY(-5px);
+}
+
+.groups-card-equal img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.groups-card-equal h4 {
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+}
+
+.groups-card-equal p {
+    margin-bottom: 0;
+    color: #475569;
+}
+
+/* Process Cards */
+.process-card {
+    padding: 2rem 1rem;
+    height: 100%;
+}
+
+.process-number {
+    width: 50px;
+    height: 50px;
+    background: #fbbf24;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.process-card h4 {
+    margin-bottom: 1rem;
+}
+
+.process-card p {
+    color: #e0f2fe;
+    margin-bottom: 0;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    padding: 2rem 1rem;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    color: #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #475569;
+    margin-bottom: 0;
+}
+
+/* Feature Items */
+.feature-item {
+    padding: 1rem 0.5rem;
+}
+
+.feature-item i {
+    color: #0ea5e9;
+}
+
+.feature-item p {
+    margin-bottom: 0;
+    color: #475569;
+}
+
+/* Final CTA Buttons */
+/* Final CTA Buttons Alignment Fix */
+.final-cta-buttons-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.final-cta-buttons-flex .btn {
+    flex: 0 1 auto;
+    min-height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-width: 2px;
+    line-height: 1.2;
+}
+
+/* Ensure both buttons have exact same styling */
+.final-cta-buttons-flex .btn-primary,
+.final-cta-buttons-flex .btn-outline-primary {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+/* Specific fix for outline button */
+.final-cta-buttons-flex .btn-outline-primary {
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+}
+
+.final-cta-buttons-flex .btn-outline-primary:hover {
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+    color: white;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .final-cta-buttons-flex {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .final-cta-buttons-flex .btn {
+        width: 100%;
+        max-width: 280px;
+        min-height: 50px;
+    }
+}
+
+/* WhatsApp Button */
+.btn-primary:hover {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.btn-primary:hover .fab.fa-whatsapp {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .groups-hero {
+        padding: 6rem 0 3rem;
+        margin-top: 76px;
+    }
+    
+    .groups-images-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .groups-card-equal img {
+        max-height: 200px;
+    }
+}
+
+/* Classes Page Specific Styles - FIXED VERSION */
+.classes-hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/clase-esqui-particular-baqueira-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+    margin-top: -106px;
+}
+
+    .fa-whatsapp:hover {
+    background: linear-gradient(135deg, #128C7E 0%, #25D366 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+}
+     

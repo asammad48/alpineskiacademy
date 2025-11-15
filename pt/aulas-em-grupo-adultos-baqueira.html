@@ -616,7 +616,7 @@
     function toggleFAQ(element) {
         const answer = element.nextElementSibling;
         const icon = element.querySelector('i');
-
+        
         if (answer.classList.contains('active')) {
             answer.classList.remove('active');
             icon.style.transform = 'rotate(0deg)';
@@ -625,7 +625,7 @@
             icon.style.transform = 'rotate(180deg)';
         }
     }
-
+    
     // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 </script>
