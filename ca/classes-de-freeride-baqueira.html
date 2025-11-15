@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes de Freeride a Baqueira | Fora Pista amb Seguretat</title>
+    <meta name="description"
+        content="Inicia't en el freeride a Baqueira amb les nostres classes. Tècnica, seguretat i exploració de línies de neu pols amb confiança.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="../script.js"></script>
+    <script src="../animation.js"></script>
+    <script src="../language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+        "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/ca/">
+    <meta property="og:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="og:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/ca/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escola d'Esquí i Snowboard a Baqueira Beret">
+    <meta property="twitter:description"
+        content="La teva escola d'esquí i snowboard a Baqueira Beret. Classes personalitzades per a tots els nivells i edats.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="../styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span> <a href="mailto:reservas@alpineskiacademy.com"
+                            target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../ca/">
+                <img src="../logo1.jpg" alt="Alpine Ski Academy – Escola d'esquí i snowboard a Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="classes-desqui-baqueira.html"
+                            id="skiLessonsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Classes d'Esquí
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Classes Particulars -->
+                            <li>
+                                <h6 class="dropdown-header">Classes Particulars</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="classes-particulars-nens-baqueira.html">Nens</a></li>
+                            <li><a class="dropdown-item"
+                                    href="classes-particulars-families-baqueira.html">Famílies</a></li>
+                            <li><a class="dropdown-item" href="classes-particulars-adults-baqueira.html">Adults</a>
+                            </li>
+                            <li><a class="dropdown-item" href="classes-tecnologia-carv-baqueira.html">Amb Carv</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Classes Especialitzades -->
+                            <li>
+                                <h6 class="dropdown-header">Classes Especialitzades</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="classes-de-freeride-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="classes-de-freestyle-baqueira.html">Freestyle</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Classes en Grup -->
+                            <li>
+                                <h6 class="dropdown-header">Classes en Grup</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="classes-grup-nens-baqueira.html">Grup de Nens</a></li>
+                            <li><a class="dropdown-item" href="classes-grup-adults-baqueira.html">Grup d'Adults</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="classes-empreses-col-legis-baqueira.html">Empreses/Col·legis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes-de-snowboard-baqueira.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosaltres.html">Nosaltres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viatges-desqui.html">Viatges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cameres-baqueira.html">Càmeres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lloguer-de-material-baqueira.html">Lloguer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preus-i-tarifes-baqueira.html">Preus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte-reserves.html">Contacte</a>
+                    </li>
+                </ul>
+                <!-- Botó Reservar Ara -->
+                <div class="nav-cta ms-3">
+                    <a href="contacte-reserves.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Reservar Ara
+                    </a>
+                </div>
+                <!-- Selector d'Idioma -->
+                <div class="language-switcher dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe me-1"></i> CA
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="../en/freeride-ski-lessons-baqueira.html">
+                                <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+                            </a></li>
+                        <li><a class="dropdown-item" href="../clases-de-freeride-baqueira.html">
+                                <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+                            </a></li>
+                        <li><a class="dropdown-item active" href="classes-de-freeride-baqueira.html">
+                                <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+                            </a></li>
+                        <li><a class="dropdown-item" href="../fr/cours-de-ski-freeride-baqueira.html">
+                                <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+                            </a></li>
+                        <li><a class="dropdown-item" href="../pt/aulas-de-freeride-baqueira.html">
+                                <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Secció Hero amb Vídeo -->
+    <section class="freeride-hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="../img/Freeride-Fotos/profesor-alpine-ski-academy-baqeira-freeride.mp4" type="video/mp4">
+            El teu navegador no suporta l'etiqueta de vídeo.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-80">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-5 fw-bold mb-4">Classes de Freeride a Baqueira</h1>
+                    <p class="lead mb-4">Viu la Muntanya Fora de Pista amb Seguretat i Estil</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/34669911342" class="btn btn-primary btn-lg me-3" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Reserva la Teva Classe de Freeride
+                        </a>
+                        <a href="../preus.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-euro-sign me-2"></i>Consulta les Nostres Tarifes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Fil d'Ariadna -->
+    <section class="breadcrumb-section py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inici</a></li>
+                    <li class="breadcrumb-item"><a href="classes-desqui-baqueira.html">Classes d'Esquí</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Freeride</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Secció d'Introducció -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <p class="lead text-center mb-5">Endinsa't en l'esquí fora de pista amb les nostres classes de
+                        freeride a Baqueira. A Alpine Ski Academy, combinem tècnica, seguretat i exploració perquè
+                        descobreixis les millors línies de neu pols amb total confiança.</p>
+
+                    <p class="text-center">Tots els recorreguts es realitzen dins del domini esquiable de l'estació, en
+                        zones obertes i segures, prèviament homologades o recomanades per l'equip de pisters de Baqueira
+                        Beret, responsables de la seguretat a les pistes.</p>
+
+                    <div class="alert alert-info mt-4">
+                        <p class="mb-0"><strong>Nota important:</strong> Si desitges explorar zones més remotes,
+                            itineraris no senyalitzats o realitzar travesses i descensos d'alta muntanya, et posarem en
+                            contacte amb guies professionals o serveis especialitzats d'heliesquí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graella d'Imatges de Freeride -->
+    <section class="section-py bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/clase-esquí-fuera-pista-baqueira-alpine-ski-academy.webp"
+                            alt="Classe d'esquí fora de pista a Baqueira amb Alpine Ski Academy"
+                            class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Tècnica en Neu Pols</h4>
+                        <p>Aprenentatge especialitzat en condicions reals de freeride</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/clases-de-nieve-polvo.webp" alt="Classes de neu pols a Baqueira"
+                            class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Neu Pols</h4>
+                        <p>Gaudeix de les millors condicions de neu verge</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/fuera-pista-baqueira-Alpine-ski-academy.webp"
+                            alt="Fora de pista a Baqueira amb Alpine Ski Academy" class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Exploració Segura</h4>
+                        <p>Zones autoritzades dins del domini esquiable</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/nieve-polvo-cielo-azul.webp"
+                            alt="Neu pols sota cel blau a Baqueira" class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Condicions Ideals</h4>
+                        <p>Dies perfectes per gaudir del freeride</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/profersor-alpine-ski-academi-nieve--virgen.webp"
+                            alt="Professor d'Alpine Ski Academy en neu verge" class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Professors Experts</h4>
+                        <p>Tècnics TD3 especialitzats en freeride</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Per Què Escollir-nos -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Per Què Escollir una Classe de Freeride amb Alpine Ski Academy?
+                    </h2>
+                    <p class="text-center mb-5">El freeride no és només baixar per neu verge. És saber llegir el terreny,
+                        anticipar la teva línia, dominar la teva tècnica en condicions canviants i, sobretot, fer-ho amb
+                        seguretat. A l'escola d'esquí Alpine Ski Academy, et guiem en cada pas del teu desenvolupament
+                        fora de pista amb un enfocament professional, progressiu i adaptat al teu nivell.</p>
+
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="benefit-card text-center">
+                                <i class="fas fa-graduation-cap fa-2x text-primary mb-3"></i>
+                                <h3 class="text-primary">Professors Especialistes en Freeride TD3</h3>
+                                <p>Els nostres professors tenen la màxima titulació en esquí alpí i experiència
+                                    específica en freeride.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="benefit-card text-center">
+                                <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                                <h3 class="text-primary">Entorn Controlat i Segur</h3>
+                                <p>Totes les classes es realitzen dins del domini esquiable, en zones autoritzades i
+                                    segures.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="benefit-card text-center">
+                                <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                                <h3 class="text-primary">Progressió Tècnica Pas a Pas</h3>
+                                <p>Metodologia progressiva i adaptada al teu nivell, des de la iniciació fins al
+                                    perfeccionament avançat.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="benefit-card text-center">
+                                <i class="fas fa-map-marked-alt fa-2x text-primary mb-3"></i>
+                                <h3 class="text-primary">Coneixement del Terreny i Zones Clau</h3>
+                                <p>Coneixem les millors línies i condicions segons la temporada i l'estat de la neu.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Avís d'Equip de Seguretat -->
+                    <div class="safety-notice mt-5 p-4 rounded-3 bg-warning text-dark">
+                        <h4 class="text-dark mb-3"><i class="fas fa-exclamation-triangle me-2"></i>Equip de Seguretat
+                            Recomanat</h4>
+                        <p class="mb-0">Recomanem encaridament l'ús d'ARVA, pala, sonda i motxilla ABS com a equip de
+                            seguretat bàsic per a qualsevol classe de freeride, fins i tot dins del domini esquiable. La
+                            motxilla ABS, en particular, pot ser decisiva en cas d'allau. Fomentem la presa de decisions
+                            conscient i responsable com a part essencial de la pràctica del freeride.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció de Nivells -->
+    <section class="section-py bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Classes de Freeride per a Tots els Nivells</h2>
+                    <p class="text-center mb-5">Des de les Teves Primeres Línies Fora de Pista fins a la Neu Pols Profunda
+                    </p>
+
+                    <div class="level-card p-4 rounded-3 mb-4 border-start border-success border-4">
+                        <div class="level-badge bg-success text-white mb-3">🟢 Iniciació al Freeride</div>
+                        <h3 class="text-primary">Primer Contacte amb la Neu Verge</h3>
+                        <p>Per a esquiadors amb bon domini en pistes vermelles. Aprendràs a adaptar la teva tècnica a la
+                            neu pols, a millorar el teu equilibri, a gestionar la distribució de pesos i a anticipar el
+                            terreny. Utilitzem zones de transició accessibles i segures.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="text-dark">Objectiu:</h5>
+                                <p>Familiaritzar-se amb l'entorn, adaptar-se a la neu variable i guanyar confiança fora
+                                    de pista.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-dark">Equipament suggerit:</h5>
+                                <p>Esquís de freeride, casc obligatori, proteccions, motxilla ABS i kit de seguretat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="level-card p-4 rounded-3 mb-4 border-start border-primary border-4">
+                        <div class="level-badge bg-primary text-white mb-3">🔵 Nivell Intermedi</div>
+                        <h3 class="text-primary">Tècnica Sòlida i Control en Neu Profunda</h3>
+                        <p>Per a qui ja té experiència en neu verge i vol millorar la seva eficàcia, línia i fluïdesa.
+                            Ensenyem i reforcem una postura correcta per a terreny variable, i millorem el centratge del
+                            cos sobre els esquís.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="text-dark">Objectiu:</h5>
+                                <p>Consolidar la tècnica, la seguretat i l'autonomia.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-dark">Metodologia:</h5>
+                                <p>Coaching en descens, visualització, correccions, múltiples línies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="level-card p-4 rounded-3 border-start border-danger border-4">
+                        <div class="level-badge bg-danger text-white mb-3">🔴 Nivell Avançat</div>
+                        <h3 class="text-primary">Fluïdesa, Anticipació i Elecció de Línia</h3>
+                        <p>Per a riders que busquen fluïdesa, velocitat i elecció de línies avançades dins del domini
+                            esquiable. Treballem l'ús del terreny, el gir en pendents fortes, l'adaptació a l'exposició,
+                            les línies fluides i la consciència de grup.</p>
+                        <p class="fw-bold text-danger">Requisits: Alt domini tècnic, bona condició física i mentalitat
+                            responsable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Més Imatges de Freeride -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/clases-particulares-nieve-virgen-Baqueira-beret-.webp"
+                            alt="Classes particulars en neu verge a Baqueira Beret" class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Atenció Personalitzada</h4>
+                        <p>Classes particulars adaptades al teu nivell i objectius</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="freeride-card text-center">
+                        <img src="../img/Freeride-Fotos/pareja-feliz-en-clases-fuera-de-pista.webp"
+                            alt="Parella feliç en classes fora de pista" class="img-fluid rounded-3 mb-3">
+                        <h4 class="text-primary">Experiències Compartides</h4>
+                        <p>Gaudeix del freeride en grup o amb la teva parella</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Com Funciona -->
+    <section class="section-py bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center text-white">Com Funcionen les Nostres Classes de Freeride a
+                        Baqueira</h2>
+                    <p class="text-center mb-5">Seguretat, Tècnica i Adaptació a l'Entorn</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="operation-card text-center">
+                                <i class="fas fa-clock fa-2x text-warning mb-3"></i>
+                                <h4 class="text-warning">Durada i Format</h4>
+                                <p>Classes de mínim 2h (recomanat 3h o més). Format individual o en grup reduït amb
+                                    nivell homogeni. Horaris flexibles adaptats a les condicions.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="operation-card text-center">
+                                <i class="fas fa-map-marker-alt fa-2x text-warning mb-3"></i>
+                                <h4 class="text-warning">Punt de Trobada</h4>
+                                <p>Determinat per les condicions del dia: Baqueira 1500, 1800, Jorge Jordana, TSD Era
+                                    Cabana. Sempre dins del domini esquiable.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="operation-card text-center">
+                                <i class="fas fa-shield-alt fa-2x text-warning mb-3"></i>
+                                <h4 class="text-warning">Seguretat</h4>
+                                <p>Zones autoritzades, professors TD3, equip de seguretat recomanat. Mai creuem cordes
+                                    ni accedim a zones tancades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció de Testimonis -->
+    <section class="section-py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">Opinions sobre l'Experiència de Freeride</h2>
+
+                    <div class="testimonial-card p-4 rounded-3 mb-4">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <h3 class="text-primary">Jan Rindschwentner – Espanya</h3>
+                        <p class="mb-0">"Vam tenir una tarda fantàstica fent fora de pista amb en Victor. Ens va trobar
+                            algunes línies encara sense traçar i ens va donar feedback valuós per millorar tant dins com
+                            fora de pista."</p>
+                    </div>
+
+                    <div class="testimonial-card p-4 rounded-3">
+                        <div class="stars mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <h3 class="text-primary">Nacho Alam – Espanya</h3>
+                        <p class="mb-0">"No només són grans professionals, sinó també persones increïbles. Fa anys que
+                            esquiem amb ells. La seva experiència a la muntanya es nota de veritat."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció de Preguntes Freqüents -->
+    <section class="section-py bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Preguntes Freqüents sobre Classes de Freeride a Baqueira</h2>
+
+                    <div class="faq-item mb-4">
+                        <h3 class="text-primary">❄️ Quin nivell tècnic necessito per fer freeride amb Alpine Ski Academy?
+                        </h3>
+                        <p class="mb-0">Per iniciar-te a les nostres classes de freeride, necessites esquiar amb soltesa
+                            per pistes vermelles, mantenint el control de la velocitat i executant girs en paral·lel
+                            dinàmics.</p>
+                        <p class="mt-2">No cal haver esquiat abans en neu verge, però sí tenir una tècnica de base
+                            sòlida en pista: bona posició, capacitat d'adaptació al terreny i domini del centratge del
+                            cos. Si ja esquies per pistes negres amb fluïdesa, pots optar a classes de nivell intermedi o
+                            avançat.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-primary">🎿 És obligatori portar ARVA, pala, sonda i motxilla ABS?</h3>
+                        <p class="mb-0">Encara que les nostres classes es desenvolupen exclusivament dins del domini
+                            esquiable, recomanem encaridament l'ús d'ARVA, pala, sonda i motxilla ABS en totes les
+                            sessions de freeride.</p>
+                        <p class="mt-2">Aquests elements augmenten la teva seguretat i formen part de l'equipament
+                            estàndard en terreny no trepitjat. Si no en disposes, et podem orientar per llogar-los o
+                            adquirir-los. La formació específica s'ha de fer amb guies professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció Final de CTA -->
+    <section class="section-py bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Descobreix el Freeride a Baqueira</h2>
+                    <p class="lead mb-4">Línies Úniques amb Seguretat i Estil</p>
+                    <p class="mb-5">El freeride és una manera de sentir la muntanya. És llibertat, respecte per la
+                        natura, tècnica i una connexió més profunda amb cada traçada que deixes a la neu verge. A Alpine
+                        Ski Academy, t'acompanyem en aquest viatge amb experiència, criteri i passió.</p>
+
+                    <div class="row text-center mb-5">
+                        <div class="col-md-6 mb-4">
+                            <div class="final-feature">
+                                <i class="fas fa-map-marked-alt fa-2x text-warning mb-2"></i>
+                                <p>Zones autoritzades dins del domini esquiable</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="final-feature">
+                                <i class="fas fa-user-tie fa-2x text-warning mb-2"></i>
+                                <p>Professors especialitzats TD3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="final-cta-buttons-flex">
+                        <a href="https://wa.me/34669911342" class="btn btn-warning btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Reserva la Teva Aventura de Freeride
+                        </a>
+                        <a href="nosaltres.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-users me-2"></i>Coneix els Nostres Professors
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secció de Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">Oferint instrucció d'esquí i snowboard de primer nivell des de 2005.
+                        Els nostres instructors certificats t'ajudaran a dominar les pistes amb confiança.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669
+                                911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Serveis</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes-desqui-baqueira.html">Classes d'Esquí</a></li>
+                        <li><a href="classes-de-snowboard-baqueira.html">Classes de Snowboard</a></li>
+                        <li><a href="nosaltres.html">Nosaltres</a></li>
+                        <li><a href="viatges-desqui.html">Viatges</a></li>
+                        <li><a href="cameres-baqueira.html">Càmeres</a></li>
+                        <li><a href="lloguer-de-material-baqueira.html">Lloguer de Material</a></li>
+                        <li><a href="preus-i-tarifes-baqueira.html">Preus</a></li>
+                        <li><a href="contacte-reserves.html">Contacte/Reserves</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="nosaltres.html">Sobre Nosaltres</a></li>
+                        <li><a href="nosaltres.html">El Nostre Equip</a></li>
+                        <li><a href="nosaltres.html">Testimonis</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacte-reserves.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Connecta amb Nosaltres</h5>
+                    <div class="social-links mb-3">
+                        <a href="https://www.instagram.com/alpine.skiacademy/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy?lang=es" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Enllaços Legals</h5>
+                    <ul class="footer-links">
+                        <li><a href="avis-legal.html">Avís Legal</a></li>
+                        <li><a href="politica-de-privacitat.html">Política de Privacitat</a></li>
+                        <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+                        <li><a href="politica-de-cancelacio.html">Política de Cancel·lació</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy S.L. Tots els drets
+                        reservats.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. és una empresa independent. No estem vinculats ni
+                        formem part de Baqueira Beret, S.A. L'ús del nom Baqueira és estrictament per localitzar el lloc
+                        on prestem els nostres serveis.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Icona Flotant de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34123456789" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>

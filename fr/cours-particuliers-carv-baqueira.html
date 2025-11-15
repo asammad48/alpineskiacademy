@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skier avec Carv à Baqueira | Cours Techniques avec Analyse en Temps Réel</title>
+    <meta name="description"
+        content="🎿 Cours particuliers à Baqueira avec Carv : capteurs, métriques et analyse en temps réel. Améliorez votre ski avec une précision professionnelle.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <script src="language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "Votre école de ski et de snowboard à Baqueira Beret. Cours personnalisés pour tous les niveaux et tous les âges.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+        "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - École de Ski et de Snowboard à Baqueira Beret">
+    <meta property="og:description"
+        content="Votre école de ski et de snowboard à Baqueira Beret. Cours personnalisés pour tous les niveaux et tous les âges.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - École de Ski et de Snowboard à Baqueira Beret">
+    <meta property="twitter:description"
+        content="Votre école de ski et de snowboard à Baqueira Beret. Cours personnalisés pour tous les niveaux et tous les âges.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span> <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../logo1.jpg"
+                    alt="Alpine Ski Academy – École de ski et de snowboard à Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cours de Ski
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Cours Particuliers -->
+                            <li>
+                                <h6 class="dropdown-header">Cours Particuliers</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="cours-particuliers-enfants-baqueira.html">Enfants</a></li>
+                            <li><a class="dropdown-item" href="cours-particuliers-familles-baqueira.html">Familles</a></li>
+                            <li><a class="dropdown-item" href="cours-particuliers-adultes-baqueira.html">Adultes</a></li>
+                            <li><a class="dropdown-item" href="cours-particuliers-carv-baqueira.html">Avec Carv</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Cours Spécialisés -->
+                            <li>
+                                <h6 class="dropdown-header">Cours Spécialisés</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="cours-de-freeride-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="cours-de-freestyle-baqueira.html">Freestyle</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Cours Collectifs -->
+                            <li>
+                                <h6 class="dropdown-header">Cours Collectifs</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="cours-collectifs-enfants-baqueira.html">Groupe Enfants</a></li>
+                            <li><a class="dropdown-item" href="cours-collectifs-adultes-baqueira.html">Groupe Adultes</a></li>
+                            <li><a class="dropdown-item" href="cours-collectifs-entreprises-ecoles-baqueira.html">Entreprises/Écoles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cours-de-snowboard-baqueira.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a-propos-de-nous.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="voyages-de-ski.html">Voyages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cameras-baqueira.html">Caméras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location-de-materiel-baqueira.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prix-et-tarifs-baqueira.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-reservations.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Bouton Réserver -->
+                <div class="nav-cta ms-3">
+                    <a href="contact-reservations.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Réserver
+                    </a>
+                </div>
+                <!-- Sélecteur de Langue -->
+                <div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> FR
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+        <li><a class="dropdown-item language-option" href="../en/private-ski-lessons-carv-baqueira.html" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../clases-tecnologia-carv-baqueira.html" data-lang="es">
+            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../ca/classes-particulares-tecnologia-carv-baqueira.html" data-lang="ca">
+            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+        </a></li>
+        <li><a class="dropdown-item active language-option" href="#" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../pt/aulas-particulares-tecnologia-carv-baqueira.html" data-lang="pt">
+            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+        </a></li>
+    </ul>
+</div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Section Héros -->
+<section class="carv-hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-60">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h1 class="display-5 fw-bold mb-4">Cours de Ski avec Technologie Carv à Baqueira</h1>
+                <p class="lead mb-4">Analyse Réelle, Amélioration Réelle</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Fil d'Ariane -->
+<section class="breadcrumb-section py-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="cours-de-ski-baqueira.html">Cours de Ski</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Avec Carv</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Section d'Introduction -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p class="lead text-center mb-5">Envie de faire passer votre technique au niveau supérieur avec des données objectives, des métriques précises et un retour d'information professionnel en temps réel ? Chez Alpine Ski Academy, nous sommes des pionniers dans l'utilisation de Carv, le premier système d'analyse biomécanique pour le ski au monde.</p>
+
+                <p class="text-center">Dans nos cours particuliers avec Carv, nous combinons toute notre expérience en tant que moniteurs qualifiés avec cette technologie de pointe pour que vous puissiez vraiment comprendre comment vous skiez, pourquoi vous avez des déséquilibres et comment vous améliorer véritablement.</p>
+
+                <p class="text-center">Avec des capteurs dans vos chaussures, vous recevrez des informations détaillées sur l'angulation, la pression, les temps de transition, le carving, la symétrie, la posture et bien plus encore. Le tout interprété et corrigé par un moniteur expert qui connaît parfaitement le ski et l'outil.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Images de la Technologie Carv -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/analis-gobal-carv.jpg" alt="Moniteur de l'Alpine Ski Academy utilisant la technologie Carv à Baqueira" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">La Technologie Carv en Action</h4>
+                    <p>Nos moniteurs utilisent Carv pour une analyse en temps réel pendant les cours</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/carv-app.jpg" alt="Application Carv montrant les métriques de ski" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">Analyse Détaillée</h4>
+                    <p>Métriques précises de chaque virage dans l'application Carv</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/analis-gobal-carv.jpg" alt="Analyse globale de la technique avec Carv" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">Analyse Globale</h4>
+                    <p>Évaluation complète de votre technique de ski</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/metricas-curva-carv.jpg" alt="Métriques de virage analysées avec Carv" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">Métriques de Virage</h4>
+                    <p>Analyse détaillée de chaque virage et courbe</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/iq-carv-profesor-alpine-ski-academy-baqueira (1).jpg" alt="Technique de ski perfectionnée avec Carv" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">Perfectionnement Technique</h4>
+                    <p>Améliorez votre technique avec des données objectives</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Pourquoi Choisir -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center">Pourquoi Choisir un Cours avec la Technologie Carv ?</h2>
+                <p class="text-center mb-5">Le système Carv n'est pas un simple accessoire. C'est un outil d'analyse technique de haut niveau qui, associé à l'expertise d'un bon moniteur, permet des améliorations tangibles en moins de temps. Chez Alpine Ski Academy, nous ne l'utilisons pas seulement, nous le maîtrisons.</p>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Données en Temps Réel Pendant que Vous Skiez</h3>
+                            <p>Avec les capteurs glissés dans vos chaussures, Carv mesure chaque aspect de votre virage en direct : pression, timings, inclinaison, symétrie, phase de virage, transition… Il fournit une base objective pour l'analyse et l'amélioration.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-user-graduate fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Feedback Professionnel + Interprétation Experte</h3>
+                            <p>Voir les métriques ne suffit pas. Nos moniteurs sont formés pour interpréter ces données et les transformer en exercices concrets adaptés à vous, en temps réel.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-trophy fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Idéal pour le Carving, le Perfectionnement ou la Préparation aux Examens</h3>
+                            <p>Si vous avez un niveau avancé ou si vous cherchez à affiner votre technique avec un objectif professionnel (TD1, stages, compétition ou ski de précision), ce cours vous donne un avantage unique.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-video fa-2x text-primary mb-3"></i>
+                            <h3 class="text-primary">Métriques, Vidéo et Suivi</h3>
+                            <p>En plus de l'analyse Carv, nous pouvons inclure la vidéo pour comparer la perception à la réalité. Ensuite, vous aurez accès à vos métriques, graphiques et progrès pour pouvoir les revoir et continuer à vous améliorer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Plus d'Images Carv -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/clase-esqui-nivel-carv-avanzado-baqueira.jpg" alt="Cours de ski de niveau avancé avec Carv à Baqueira" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">Cours Avancés</h4>
+                    <p>Perfectionnement technique pour les skieurs de niveau avancé</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tech-card text-center">
+                    <img src="../img/Fotos-clases-carv/tecnica-esqui-clases-carv-baqueira.jpg" alt="Moniteur avec Carv IQ 166 de l'Alpine Ski Academy" class="img-fluid rounded-3 mb-3">
+                    <h4 class="text-primary">Experts Certifiés</h4>
+                    <p>Moniteurs avec un QI Carv de 166 - Référence internationale</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section À Qui S'adresse ce Cours -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center">À Qui S'adresse ce Cours ?</h2>
+                <p class="text-center mb-5">Les cours avec la technologie Carv не sont pas pour tout le monde. Ils sont conçus pour les skieurs exigeants qui veulent aller au-delà du "sentiment de s'améliorer" et cherchent à progresser avec précision, méthode et données réelles. Si vous vous reconnaissez dans l'un de ces profils, ce cours est pour vous :</p>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="profile-card p-4 rounded-3">
+                            <h3 class="text-primary">Skieurs Avancés qui Veulent Maîtriser le Carving</h3>
+                            <p class="mb-0">Vous recherchez des virages plus propres, plus efficaces et plus puissants ? Carv vous donne les métriques exactes pour comprendre comment mieux appliquer la pression, quand tourner et comment atteindre la symétrie et le contrôle dans chaque courbe.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="profile-card p-4 rounded-3">
+                            <h3 class="text-primary">Perfectionnistes et Techniciens</h3>
+                            <p class="mb-0">Si vous êtes quelqu'un qui analyse votre ski, pose des questions, s'enregistre et cherche constamment à s'améliorer… ce cours vous donnera un nouveau niveau de compréhension. Nous passons de l'intuition à la preuve technique.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="profile-card p-4 rounded-3">
+                            <h3 class="text-primary">Préparation au TD1 / Stages / Moniteurs</h3>
+                            <p class="mb-0">Nous utilisons Carv comme un outil d'évaluation et de formation pour les moniteurs, les entraîneurs et les candidats aux qualifications techniques. C'est une ressource brillante pour peaufiner les critères techniques requis dans les tests officiels.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="profile-card p-4 rounded-3">
+                            <h3 class="text-primary">Skieurs qui Utilisent Déjà Carv et Veulent en Tirer le Meilleur Parti</h3>
+                            <p class="mb-0">Si vous avez Carv mais ne savez pas comment l'interpréter, ou si vous utilisez l'application et voulez passer au niveau supérieur, avec nous, vous apprendrez à lire, analyser et appliquer les métriques avec une réelle perspicacité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Pionniers de l'Alpine Ski Academy -->
+<section class="section-py bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+                <div class="pioneer-badge mb-4">
+                    <i class="fas fa-award fa-3x text-warning"></i>
+                </div>
+                <h2 class="display-5 fw-bold mb-4">Alpine Ski Academy : Pionniers et Leaders Internationaux dans l'Utilisation de Carv</h2>
+                <p class="lead mb-4">Nous avons été l'un des premiers centres en Espagne à intégrer activement Carv dans nos cours particuliers. Aujourd'hui, nous faisons partie de la communauté technique la plus avancée et sélective au monde.</p>
+                <p class="h4 fw-bold">Nos moniteurs sont certifiés avec un QI Carv de 166, ce qui nous positionne comme une référence internationale dans l'utilisation de cette technologie appliquée à l'enseignement du ski. Nous avons une réelle expérience dans son intégration pédagogique, son analyse technique et son utilisation dans des cours de perfectionnement de haut niveau.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dernière Image Carv -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <img src="../img/Fotos-clases-carv/profesor-esqui-alpine-ski-academy-usando-carv-baqueira-beret.jpg" alt="Moniteur de l'Alpine Ski Academy utilisant Carv à Baqueira Beret" class="img-fluid rounded-3 mb-4">
+                <h4 class="text-primary">Technologie de Pointe à Baqueira Beret</h4>
+                <p>Nos moniteurs utilisent Carv sur les meilleures pistes de Baqueira Beret pour vous fournir l'analyse technique la plus avancée</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section FAQ -->
+<section class="section-py">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="section-title text-center">Questions Fréquentes sur les Cours avec Carv</h2>
+
+                <div class="faq-item mb-4">
+                    <h3 class="text-primary">❓ Ai-je besoin de mon propre Carv pour suivre ce cours ?</h3>
+                    <p class="mb-0">Non. Nous vous fournirons le capteur Carv pendant le cours—nous l'installons directement dans vos chaussures, qui sont compatibles sans exception.</p>
+                    <p class="mt-2">Si vous avez déjà votre propre Carv, l'expérience sera encore plus complète : nous travaillerons avec vos données précédentes et configurerons les paramètres pour optimiser chaque analyse.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="text-primary">❓ Quelle différence Carv apporte-t-il par rapport à un cours technique traditionnel ?</h3>
+                    <p class="mb-0">Carv fournit des données qu'aucun œil humain ne peut enregistrer en temps réel.</p>
+                    <p class="mt-2">Pendant le cours, nous mesurerons et analyserons avec vous des variables telles que : – Parallélisme et forme du virage – Prise de carre précoce et quantité d'angle – Progressivité dans l'inclinaison – Symétrie entre les virages gauche et droit – Équilibre antéropostérieur – Forces G générées dans chaque virage</p>
+                    <p>Ces informations, interprétées par nos moniteurs experts en Carv, se transforment en un retour d'information immédiat et des exercices personnalisés qui vous permettent de vous améliorer avec une précision sans précédent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section CTA -->
+<section class="section-py bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">Réservez Votre Cours avec Carv et Faites Passer Votre Ski au Niveau Supérieur</h2>
+                <p class="lead mb-4">Si vous cherchez à progresser avec précision, à comprendre en profondeur votre technique et à travailler avec un outil utilisé par les entraîneurs, les formateurs et les athlètes de haut niveau… ce cours est fait pour vous.</p>
+                <p class="mb-5">Chez Alpine Ski Academy, nous combinons technologie, pédagogie et expérience réelle pour que votre amélioration ne soit pas seulement un sentiment, mais un fait mesuré.</p>
+
+                <div class="row text-center mb-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="cta-feature">
+                            <i class="fas fa-brain fa-2x text-primary mb-2"></i>
+                            <p>Moniteur avec QI Carv 166</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="cta-feature">
+                            <i class="fas fa-chart-bar fa-2x text-primary mb-2"></i>
+                            <p>Métriques objectives et analyse en temps réel</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="cta-feature">
+                            <i class="fas fa-calendar-alt fa-2x text-primary mb-2"></i>
+                            <p>Horaires flexibles et expérience premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card p-4 rounded-3 bg-white border-primary mb-4">
+                    <div class="mt-4">
+                        <a href="https://wa.me/34669911342" class="btn btn-primary btn-lg me-3" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Réservez votre cours Carv via WhatsApp
+                        </a>
+                        <hr>
+                        <a href="contact-reservations.html" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Formulaire de contact
+                        </a>
+                    </div>
+                    <p class="mt-3 mb-0">Profitez de nos <a href="prix-et-tarifs-baqueira.html" class="text-primary fw-bold">tarifs spéciaux pour les cours avec Carv</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">Offrant un enseignement de ski et de snowboard de classe mondiale depuis 2005. Nos moniteurs certifiés vous aideront à maîtriser les pistes en toute confiance.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="cours-de-ski-baqueira.html">Cours de Ski</a></li>
+                        <li><a href="cours-de-snowboard-baqueira.html">Cours de Snowboard</a></li>
+                        <li><a href="a-propos-de-nous.html">À Propos</a></li>
+                        <li><a href="voyages-de-ski.html">Voyages</a></li>
+                        <li><a href="cameras-baqueira.html">Caméras</a></li>
+                        <li><a href="location-de-materiel-baqueira.html">Location de Matériel</a></li>
+                        <li><a href="prix-et-tarifs-baqueira.html">Tarifs</a></li>
+                        <li><a href="contact-reservations.html">Contact/Réservations</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Entreprise</h5>
+                    <ul class="footer-links">
+                        <li><a href="a-propos-de-nous.html">À Propos de Nous</a></li>
+                        <li><a href="a-propos-de-nous.html">Notre Équipe</a></li>
+                        <li><a href="a-propos-de-nous.html">Témoignages</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact-reservations.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Restez Connectés</h5>
+                    <div class="social-links mb-3">
+                        <a href="https://www.instagram.com/alpine.skiacademy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Liens Légaux</h5>
+                    <ul class="footer-links">
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-de-confidentialite.html">Politique de Confidentialité</a></li>
+                        <li><a href="politique-de-cookies.html">Politique de Cookies</a></li>
+                        <li><a href="politique-dannulation.html">Politique d'Annulation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy S.L. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. est une entreprise indépendante. Nous ne sommes pas liés à ou partie de Baqueira Beret, S.A. L'utilisation du nom Baqueira est strictement pour localiser l'endroit où nous effectuons nos services.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+<script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>
