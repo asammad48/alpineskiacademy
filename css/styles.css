@@ -1273,13 +1273,6 @@ body {
             }
         }
 
-        /* Hover dropdown styles */
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
 
 .navbar .dropdown-menu {
     display: block;
