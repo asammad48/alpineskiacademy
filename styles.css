@@ -140,7 +140,6 @@
     
     /* Fix dropdown menu visibility on mobile */
     .nav-item.dropdown .dropdown-menu {
-        position: static !important; /* Normal document flow */
         float: none !important;
         width: 100% !important;
         margin-top: 0 !important;
@@ -266,7 +265,6 @@
     
     /* Fix dropdown menu visibility on mobile - Let Bootstrap handle display */
     .nav-item.dropdown .dropdown-menu {
-        position: static !important; /* Normal document flow */
         float: none !important;
         width: 100% !important;
         margin-top: 0 !important;
