@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcams de Baqueira em Direto | Alpine Ski Academy</title>
+    <meta name="description"
+        content="Consulte as webcams de Baqueira Beret em direto e planeie as suas aulas de esqui com a Alpine Ski Academy. Veja o estado atual das pistas e da neve.">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="../script.js"></script>
+    <script src="../animation.js"></script>
+    <script src="../language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+        "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/pt/">
+    <meta property="og:title" content="Alpine Ski Academy - Escola de Esqui e Snowboard em Baqueira Beret">
+    <meta property="og:description"
+        content="A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/pt/">
+    <meta property="twitter:title" content="Alpine Ski Academy - Escola de Esqui e Snowboard em Baqueira Beret">
+    <meta property="twitter:description"
+        content="A sua escola de esqui e snowboard em Baqueira Beret. Aulas personalizadas para todos os níveis e idades.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="../styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span> <a href="mailto:reservas@alpineskiacademy.com"
+                            target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Navigation and Language Switcher -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../pt/">
+                <img src="../logo1.jpg" alt="Alpine Ski Academy – Escola de esqui e snowboard em Baqueira">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="aulas-de-esqui-baqueira.html" id="skiLessonsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Aulas de Esqui
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                            <!-- Aulas Particulares -->
+                            <li>
+                                <h6 class="dropdown-header">Aulas Particulares</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="aulas-particulares-criancas-baqueira.html">Crianças</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="aulas-particulares-familias-baqueira.html">Famílias</a></li>
+                            <li><a class="dropdown-item" href="aulas-particulares-adultos-baqueira.html">Adultos</a>
+                            </li>
+                            <li><a class="dropdown-item" href="aulas-tecnologia-carv-baqueira.html">Com Carv</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Aulas Especializadas -->
+                            <li>
+                                <h6 class="dropdown-header">Aulas Especializadas</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="aulas-de-freeride-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="aulas-de-freestyle-baqueira.html">Freestyle</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Aulas em Grupo -->
+                            <li>
+                                <h6 class="dropdown-header">Aulas em Grupo</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="aulas-em-grupo-criancas-baqueira.html">Grupo de
+                                    Crianças</a></li>
+                            <li><a class="dropdown-item" href="aulas-em-grupo-adultos-baqueira.html">Grupo de
+                                    Adultos</a></li>
+                            <li><a class="dropdown-item"
+                                    href="aulas-para-empresas-escolas-baqueira.html">Empresas/Escolas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aulas-de-snowboard-baqueira.html">Snowboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viagens-de-esqui.html">Viagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cameras-baqueira.html">Câmaras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aluguel-de-equipamento-baqueira.html">Aluguer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="precos-e-tarifas-baqueira.html">Preços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato-reservas.html">Contato</a>
+                    </li>
+                </ul>
+                <!-- Botão Reservar Agora -->
+                <div class="nav-cta ms-3">
+                    <a href="contato-reservas.html" class="btn btn-primary btn-book-now">
+                        <i class="fas fa-calendar-check me-1"></i>Reservar Agora
+                    </a>
+                </div>
+                <!-- Seletor de Idioma -->
+                <div class="language-switcher dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe me-1"></i> PT
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="../en/webcams-baqueira.html">
+                            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+                        </a></li>
+                        <li><a class="dropdown-item" href="../camaras-baqueira.html">
+                            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+                        </a></li>
+                        <li><a class="dropdown-item" href="../ca/cameres-baqueira.html">
+                            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+                        </a></li>
+                        <li><a class="dropdown-item" href="../fr/cameras-baqueira.html">
+                            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+                        </a></li>
+                        <li><a class="dropdown-item active" href="cameras-baqueira.html">
+                            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero-camaras">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold mb-4">Webcams das Pistas de Baqueira Beret em Direto</h1>
+                    <p class="lead mb-5">Observe o estado atual da neve e das pistas em tempo real</p>
+                    <a href="#cameras" class="btn btn-primary btn-lg me-3">Ver Câmaras em Direto</a>
+                    <a href="#info" class="btn btn-outline-light btn-lg">Mais Informações</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegação Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../pt/"><i class="fas fa-home me-1"></i>Início</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Webcams</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Seção de Introdução -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p>Na Alpine Ski Academy, oferecemos acesso às webcams em direto de Baqueira Beret para que possa
+                        consultar o estado atual das pistas e da neve antes das suas aulas de esqui. Embora não
+                        façamos a gestão da estância, as nossas aulas decorrem nas suas instalações, e estas câmaras
+                        ajudá-lo-ão a planear melhor a sua experiência na neve.</p>
+
+                    <div class="alert alert-info mt-4">
+                        <p class="mb-0">Quer conhecer tudo o que a Alpine Ski Academy lhe oferece em Baqueira?</p>
+                        <p class="mb-0 fw-bold">👉 <a href="index.html" class="alert-link">Visite a nossa página
+                                principal</a> e descubra todos os nossos serviços.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CÂMARAS PROFISSIONAIS -->
+    <section class="cameras-section" id="cameras">
+        <div class="container">
+            <h2 class="section-title text-center">Câmaras em Tempo Real de Baqueira Beret</h2>
+            <p class="text-center mb-5 lead">Consulte o estado atual das pistas antes da sua visita</p>
+
+            <div class="cameras-grid">
+                <!-- Câmara 1 -->
+                <div class="camera-card">
+                    <div class="camera-img-container">
+                        <img src="../images/camaras/Carlos-fuera-de-pista-bassive.webp"
+                            alt="Webcam em direto do teleférico Era Cabana em Baqueira Beret" class="camera-img">
+                    </div>
+                    <div class="camera-info">
+                        <span class="camera-status">EM DIRETO</span>
+                        <h3>Teleférico Era Cabana</h3>
+                        <p class="camera-description">Vista em tempo real a partir do teleférico Era Cabana, que mostra
+                            o estado das pistas na zona central de Baqueira. Perfeita para avaliar a condição da neve e
+                            a afluência de esquiadores.</p>
+                        <div class="camera-footer">
+                            <span class="update-time">Atualizado há 5 min</span>
+                            <a href="#" class="camera-action">Ecrã Completo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Câmara 2 -->
+                <div class="camera-card">
+                    <div class="camera-img-container">
+                        <img src="../images/camaras/Jose-divirtiendose-en-clase.webp"
+                            alt="Estado atual das pistas na zona de Orri de Baqueira" class="camera-img">
+                    </div>
+                    <div class="camera-info">
+                        <span class="camera-status">EM DIRETO</span>
+                        <h3>Zona de Orri</h3>
+                        <p class="camera-description">Câmara situada na zona de Orri, que oferece uma vista panorâmica
+                            de pistas intermédias e avançadas. Ideal para verificar o estado da neve nesta área popular
+                            entre esquiadores técnicos.</p>
+                        <div class="camera-footer">
+                            <span class="update-time">Atualizado há 3 min</span>
+                            <a href="#" class="camera-action">Ecrã Completo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Câmara 3 -->
+                <div class="camera-card">
+                    <div class="camera-img-container">
+                        <img src="../images/camaras/victor-perfil-panramica.webp"
+                            alt="Câmara em direto na cota 1800 de Baqueira Beret" class="camera-img">
+                    </div>
+                    <div class="camera-info">
+                        <span class="camera-status">EM DIRETO</span>
+                        <h3>Cota 1800</h3>
+                        <p class="camera-description">Vista a partir da cota 1800 de Baqueira Beret, que mostra as
+                            condições numa das zonas mais altas da estância. Perfeita para avaliar a visibilidade e o
+                            estado da neve em altitude.</p>
+                        <div class="camera-footer">
+                            <span class="update-time">Atualizado há 7 min</span>
+                            <a href="#" class="camera-action">Ecrã Completo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <div class="alert alert-light border" style="max-width: 800px; margin: 0 auto;">
+                    <p class="mb-0 text-muted">
+                        <i class="fas fa-info-circle me-2 text-primary"></i>
+                        As imagens são atualizadas automaticamente a cada 10 minutos. Em caso de mau tempo ou
+                        manutenção, algumas câmaras podem estar temporariamente fora de serviço.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Informações -->
+    <section class="info-section" id="info">
+        <div class="container">
+            <h2 class="section-title text-center">Planeie a Sua Experiência na Neve</h2>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h4>Estado da Neve</h4>
+                        <p>Consulte as câmaras para avaliar o estado real da neve antes de reservar as suas aulas. Poderá ver se há neve em pó, compactada ou primavera.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <h4>Condições Meteorológicas</h4>
+                        <p>Observe a visibilidade, a intensidade do sol e as condições climáticas em tempo real para planear o equipamento adequado para o seu dia de esqui.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Afluência de Esquiadores</h4>
+                        <p>As câmaras permitem-lhe estimar a afluência de público nas diferentes zonas da estância, ajudando-o a escolher os melhores horários para as suas aulas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Livecam CTA -->
+    <section class="ver-camara">
+        <div class="container">
+            <h2 class="section-title text-center">Webcams em Direto</h2>
+            <p class="text-center mb-5 lead">Observe o estado atual das pistas em tempo real</p>
+
+            <div class="row g-4">
+                <!-- CTA 1 - El Bosque -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="camara-cta-card">
+                        <div class="camara-img-container">
+                            <img src="../images/camaras/el_bosque.png"
+                                alt="Webcam em direto de El Bosque em Baqueira Beret" class="camara-img">
+                            <div class="camara-overlay">
+                                <span class="live-indicator">
+                                    <i class="fas fa-circle me-1"></i>EM DIRETO
+                                </span>
+                            </div>
+                        </div>
+                        <div class="camara-content">
+                            <h3 class="camara-title">Livecam - El Bosque</h3>
+                            <p class="camara-description">Vista panorâmica das pistas de El Bosque, zona ideal para
+                                famílias e esquiadores iniciantes.</p>
+                            <a href="https://www.baqueira.es/livecam-el-bosque" class="btn btn-primary btn-camara">
+                                <i class="fas fa-camera me-2"></i>Ver Câmara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA 2 - Teso -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="camara-cta-card">
+                        <div class="camara-img-container">
+                            <img src="../images/camaras/teso.png" alt="Webcam em direto de Teso em Baqueira Beret"
+                                class="camara-img">
+                            <div class="camara-overlay">
+                                <span class="live-indicator">
+                                    <i class="fas fa-circle me-1"></i>EM DIRETO
+                                </span>
+                            </div>
+                        </div>
+                        <div class="camara-content">
+                            <h3 class="camara-title">Livecam - Teso</h3>
+                            <p class="camara-description">Câmara situada na zona de Teso, que mostra pistas de nível
+                                intermédio e avançado.</p>
+                            <a href="https://www.baqueira.es/livecam-teso-dera-mina"
+                                class="btn btn-primary btn-camara">
+                                <i class="fas fa-camera me-2"></i>Ver Câmara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA 3 - Orri -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="camara-cta-card">
+                        <div class="camara-img-container">
+                            <img src="../images/camaras/blanhibar.jpg" alt="Webcam em direto de Blanhibar em Baqueira Beret"
+                                class="camara-img">
+                            <div class="camara-overlay">
+                                <span class="live-indicator">
+                                    <i class="fas fa-circle me-1"></i>EM DIRETO
+                                </span>
+                            </div>
+                        </div>
+                        <div class="camara-content">
+                            <h3 class="camara-title">Livecam - Blanhibar</h3>
+                            <p class="camara-description">Vista da zona de Blanhibar, perfeita para avaliar as condições
+                                de neve em pistas técnicas.</p>
+                            <a href="https://baqueira.roundshot.com/blanhiblar/" class="btn btn-primary btn-camara">
+                                <i class="fas fa-camera me-2"></i>Ver Câmara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA 4 - Baciver -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="camara-cta-card">
+                        <div class="camara-img-container">
+                            <img src="../images/camaras/baciver.jpeg" alt="Webcam em direto de Baciver em Baqueira Beret"
+                                class="camara-img">
+                            <div class="camara-overlay">
+                                <span class="live-indicator">
+                                    <i class="fas fa-circle me-1"></i>EM DIRETO
+                                </span>
+                            </div>
+                        </div>
+                        <div class="camara-content">
+                            <h3 class="camara-title">Livecam - Baciver</h3>
+                            <p class="camara-description">Câmara na zona de Baciver, que mostra as condições numa das
+                                áreas mais populares.</p>
+                            <a href="#" class="btn btn-primary btn-camara">
+                                <i class="fas fa-camera me-2"></i>Ver Câmara
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para Reservar a Sua Aula de Esqui?</h2>
+            <p class="mb-4">Agora que já viu o estado atual das pistas, é o momento perfeito para reservar a sua aula
+                personalizada com a Alpine Ski Academy!</p>
+
+            <div class="mt-4">
+                <a href="https://wa.me/34669911342" class="btn btn-light btn-lg me-3" target="_blank">
+                    <i class="fab fa-whatsapp me-2"></i>Reservar por WhatsApp
+                </a>
+                <a href="contato-reservas.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-calendar-check me-2"></i>Preencher Formulário
+                </a>
+            </div>
+
+            <p class="mt-4">Os nossos instrutores especializados irão ajudá-lo a aproveitar ao máximo as condições
+                atuais de Baqueira</p>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">A oferecer instrução de esqui e snowboard de classe mundial desde
+                        2005. Os nossos instrutores certificados irão ajudá-lo a dominar as pistas com confiança.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669
+                                911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Serviços</h5>
+                    <ul class="footer-links">
+                        <li><a href="aulas-de-esqui-baqueira.html">Aulas de Esqui</a></li>
+                        <li><a href="aulas-de-snowboard-baqueira.html">Aulas de Snowboard</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="viagens-de-esqui.html">Viagens</a></li>
+                        <li><a href="cameras-baqueira.html">Câmaras</a></li>
+                        <li><a href="aluguel-de-equipamento-baqueira.html">Aluguer de Equipamento</a></li>
+                        <li><a href="precos-e-tarifas-baqueira.html">Preços</a></li>
+                        <li><a href="contato-reservas.html">Contato/Reservas</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="sobre-nos.html">A Nossa Equipa</a></li>
+                        <li><a href="sobre-nos.html">Testemunhos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato-reservas.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Conecte-se Connosco</h5>
+                    <div class="social-links mb-3">
+                        <a href="https://www.instagram.com/alpine.skiacademy/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575925712742" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@alpine.skiacademy?lang=es" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UCyFepUXiyXUa4RPcWUkSSaA" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/34669911342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Links Legais</h5>
+                    <ul class="footer-links">
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+                        <li><a href="politica-de-cancelamento.html">Política de Cancelamento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy S.L. Todos os direitos
+                        reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. é uma empresa independente. Não estamos ligados nem
+                        fazemos parte da Baqueira Beret, S.A. O uso do nome Baqueira é estritamente para localizar o
+                        local onde prestamos os nossos serviços.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ícone Flutuante do WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        // Funcionalidade de alternância do FAQ
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                answer.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Definir o ano atual no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

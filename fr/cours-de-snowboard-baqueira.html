@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de Snowboard à Baqueira | Apprenez et Perfectionnez Votre Style | Alpine Ski Academy </title>
+    <meta name="description"
+    content="Maîtrisez la planche avec nos cours de snowboard à Baqueira. Des moniteurs experts vous guideront de vos premiers virages au snowpark. Amusement et progression garantis pour enfants et adultes de tous niveaux. Votre aventure vous attend !">
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS files -->
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+    <script src="language.js"></script>
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": "Alpine Ski Academy",
+      "url": "https://alpineskiacademy.com",
+      "logo": "https://alpineskiacademy.com/logo.png",
+      "description": "Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Baqueira 1500",
+        "addressLocality": "Baqueira",
+        "addressRegion": "Lleida",
+        "postalCode": "25598",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34669911342",
+      "email": "reservas@alpineskiacademy.com",
+      "sameAs": [
+            "https://www.instagram.com/alpine.skiacademy/",
+        "https://www.facebook.com/profile.php?id=61575925712742",
+        "https://www.tiktok.com/@alpine.skiacademy"
+      ]
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpineskiacademy.com/">
+    <meta property="og:title" content="Alpine Ski Academy - École de Ski et Snowboard en Baqueira Beret">
+    <meta property="og:description"
+        content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.">
+    <meta property="og:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpineskiacademy.com/">
+    <meta property="twitter:title" content="Alpine Ski Academy - École de Ski et Snowboard en Baqueira Beret">
+    <meta property="twitter:description"
+        content="Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges.">
+    <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="top-info-item">
+                    <i class="fas fa-phone-alt me-1"></i>
+                    <span><a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></span>
+                </div>
+                <div class="top-info-item">
+                    <i class="fas fa-envelope me-1"></i>
+                    <span><a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Header with Navigation and Language Switcher -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="../fr.html">
+            <img src="logo1.jpg"
+                alt="Alpine Ski Academy – École de ski et snowboard à Baqueira">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="skiLessonsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cours de Ski
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
+                        <!-- Cours particuliers -->
+                        <li>
+                            <h6 class="dropdown-header">Cours Particuliers</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-particuliers-enfants-baqueira.html">Enfants</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-prives-familles-baqueira.html">Familles</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-particuliers-adultes-baqueira.html">Adultes</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-prives-carv-baqueira.html">Avec Carv</a></li>
+
+                        <!-- Cours spéciaux -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-freeride-baqueira.html">Freeride</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-freestyle-baqueira.html">Freestyle</a></li>
+
+                        <!-- Cours en groupe -->
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h6 class="dropdown-header">Cours en Groupe</h6>
+                        </li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-groupe-enfants-baqueira.html">Groupe Enfants</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-groupe-adultes-baqueira.html">Groupe Adultes</a></li>
+                        <li><a class="dropdown-item" href="../clases-esqui-baqueira/fr/cours-ski-groupe-entreprises-ecoles-baqueira.html">Entreprises/Écoles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cours-snowboard-baqueira.html">Snowboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a-propos-de-nous.html">Nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerie.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="voyages-ski.html">Voyages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webcams-baqueria-fr.html">Caméras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="location-materiel-ski-snowboard-baqueira.html">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prix-cours-ski-snowboard-baqueira.html">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-reservations.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Book Now Button -->
+            <div class="nav-cta ms-3">
+                <a href="contact-reservations.html" class="btn btn-primary btn-book-now">
+                    <i class="fas fa-calendar-check me-1"></i>Réserver
+                </a>
+            </div>
+            <!--Language switcher Dropdown -->
+<div class="language-switcher dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fas fa-globe me-1"></i> FR
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+         <li><a class="dropdown-item active language-option" href="cours-snowboard-baqueira.html" data-lang="fr">
+            <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../clases-de-snowboard.html" data-lang="es">
+            <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../en/snowboard-lessons-baqueira.html" data-lang="en">
+            <img src="https://flagcdn.com/w40/gb.png" width="20" height="15" class="me-2">English
+        </a></li>
+        <li><a class="dropdown-item language-option" href="../ca/cursos-snowboard-baqueira.html" data-lang="ca">
+            <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
+        </a></li>
+       
+        <li><a class="dropdown-item language-option" href="../pt/aulas-snowboard-baqueira.html" data-lang="pt">
+            <img src="https://flagcdn.com/w40/pt.png" width="20" height="15" class="me-2">Português
+        </a></li>
+    </ul>
+</div>
+        </div>
+    </div>
+</nav>
+
+<!-- Snowboard Hero Section with Video -->
+<section class="hero-snowboard">
+    <video autoplay muted loop class="hero-video">
+        <source src="images/Snowboard/profesora-snowboard-happy-riding-powder.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-4">Maîtrisez la Montagne : Cours de Snowboard à Baqueira pour Tous les Niveaux</h1>
+                <p class="lead mb-5">Apprenez et perfectionnez votre style avec des instructeurs experts sur les meilleures pistes de Baqueira</p>
+                <a href="#classes" class="btn btn-primary btn-lg me-3">Voir les Cours Disponibles</a>
+                <a href="#pricing" class="btn btn-outline-light btn-lg">Voir les Prix</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcrumb Navigation -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home me-1"></i>Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Snowboard</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title">Découvrez le Snowboard à un Autre Niveau avec Nos Moniteurs Experts</h2>
+                <p class="textjustify">Nos programmes sont spécifiquement conçus pour le snowboard, se concentrant sur la fluidité du mouvement, le contrôle absolu de la planche et une progression naturelle à chaque virage, adaptée à votre style et à vos objectifs.</p>
+                <p class="textjustify">De vos premières glissades et virages de base à la maîtrise du switch, la perfection du carving, les figures de flat ou les innovations du freestyle, chaque cours maximise votre apprentissage et votre plaisir en montagne.</p>
+                <p class="textjustify">Apprenez auprès d'authentiques riders avec des années d'expérience sur les pistes de Baqueira et une formation spécialisée. Nous partagerons avec vous non seulement la technique, mais aussi la culture du snowboard, les astuces et les meilleurs spots pour que chaque descente soit une aventure.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Snowboard/profesora-snowboard-baqueira.webp" alt="Instructeur de snowboard à Baqueira" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Methodology Section -->
+<section class="methodology-section">
+    <div class="container">
+        <h2 class="section-title text-center">Méthodologie 100% Adaptée au Snowboard</h2>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>Moniteurs Passionnés et Certifiés</h4>
+                    <p>Apprenez d'authentiques riders avec des années d'expérience sur les pistes de Baqueira et une formation spécialisée en snowboard.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Progrès Rapide et Sûr</h4>
+                    <p>Notre enseignement personnalisé et l'attention aux détails vous permettront de progresser rapidement avec une sécurité totale.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-laugh-beam"></i>
+                    </div>
+                    <h4>Plaisir comme Moteur</h4>
+                    <p>Pour nous, apprendre le snowboard est synonyme de plaisir. Cours dynamiques et ambiance parfaite pour profiter de chaque instant.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Classes Section -->
+<section class="classes-section" id="classes">
+    <div class="container">
+        <h2 class="section-title text-center">Votre Cours de Snowboard Parfait à Baqueira</h2>
+        <p class="text-center mb-5">Nous proposons différentes modalités de cours adaptées à tous les âges et niveaux</p>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/niño-debutante-snowboard-baqueira.webp" alt="Cours de snowboard pour enfants à Baqueira" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Cours de Snowboard pour Enfants</h3>
+                        <p>Initiez les plus jeunes à l'émotion du snowboard avec notre méthodologie adaptée à leur rythme et à leur plaisir. Moniteurs experts et patients guideront les enfants de tous âges pour qu'ils apprennent les bases de manière sûre, ludique et efficace.</p>
+                        <p><strong>Âge recommandé :</strong> À partir de 5-6 ans</p>
+                        <a href="contact-reservations.html" class="btn btn-primary">Plus d'Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/profesora-snowboard-baqueira.webp" alt="Cours de snowboard pour adultes à Baqueira" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Cours de Snowboard pour Adultes</h3>
+                        <p>Peu importe si vous n'êtes jamais monté sur une planche ou si vous cherchez à peaufiner vos figures au snowpark. Nos cours pour adultes sont conçus pour tous les niveaux : apprenez les fondamentaux en toute confiance, perfectionnez votre technique ou lancez-vous dans le freestyle.</p>
+                        <p><strong>Tous les niveaux :</strong> Débutant à Expert</p>
+                        <a href="contact-reservations.html" class="btn btn-primary">Plus d'Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/profesroa-snowboard-baqueira-beret.webp" alt="Cours privés de snowboard à Baqueira" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Cours Privés et Sur Mesure</h3>
+                        <p>Pour une progression accélérée et une attention 100% personnalisée. Nos cours privés de snowboard s'adaptent totalement à vos objectifs, niveau et horaire. Idéal pour s'améliorer rapidement ou pour des petits groupes d'amis ou de famille.</p>
+                        <p><strong>Jusqu'à 4 personnes :</strong> Tarifs de cours particulier</p>
+                        <a href="contact-reservations.html" class="btn btn-primary">Plus d'Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="class-card">
+                    <div class="class-img-container">
+                        <img src="images/Snowboard/clase-de-snowboard-baqueira-alpine-ski-academy.webp" alt="Cours de snowboard pour groupes à Baqueira" class="class-img">
+                    </div>
+                    <div class="class-info">
+                        <h3>Cours pour Groupes Déjà Formés</h3>
+                        <p>Organisons des expériences de snowboard inoubliables pour les groupes déjà formés (écoles, entreprises ou amis) qui souhaitent profiter de la neige de Baqueira d'une manière unique et cohésive. Programmes adaptés et plaisir maximum garanti.</p>
+                        <p><strong>À partir de 5 personnes :</strong> Tarifs spéciaux pour groupes</p>
+                        <a href="contact-reservations.html" class="btn btn-primary">Plus d'Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+    <div class="container">
+        <h2 class="section-title text-center">Ainsi Fonctionnent Vos Cours de Snowboard</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4>Cours Adaptés à Votre Niveau et Rythme</h4>
+                        <p>De vos premières descentes sur piste à la maîtrise de la poudreuse ou du snowpark. Nous évaluerons votre niveau pour vous assigner le professionnel qui correspond le mieux à vos besoins et objectifs. Votre progression est notre priorité, avec un enseignement conçu pour que vous avanciez de manière efficace et sûre, toujours à votre propre rythme.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4>Points de Rencontre Flexibles à Baqueira Beret</h4>
+                        <p>Nous nous adaptons à vous pour que la logistique soit la plus confortable possible. Vous pourrez rencontrer votre instructeur aux principaux accès aux pistes comme Ruda, 1500, Tanau, 1800, ou le point qui vous convient le mieux à condition que nous puissions le coordonner avec le reste de nos opérations quotidiennes. Nous vous confirmerons le lieu exact lors de la formalisation de votre réservation.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4>Cours Privés : Attention Exclusive et Flexibilité Totale</h4>
+                        <p>Si vous recherchez la personnalisation maximale, nos cours privés sont l'option idéale. Vous choisissez l'horaire et le nombre d'heures. Vous bénéficierez d'une attention exclusive de notre équipe de professionnels, avec un programme d'apprentissage conçu 100% pour vous. Parfait pour une progression accélérée ou pour des petits groupes d'amis ou de famille.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h4>Envoi de Vidéo pour Groupes</h4>
+                        <p>Pour les cours de snowboard en groupe (à condition qu'il s'agisse de groupes déjà formés), nous recommandons vivement de nous envoyer une vidéo courte (de 30 secondes à 1 minute) montrant le niveau actuel des participants. Cela nous permettra de nous assurer que le professionnel assigné est le plus adapté à votre groupe, garantissant un apprentissage optimal et amusant pour tous.</p>
+                        <p><strong>Envoyez votre vidéo à :</strong> WhatsApp <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a> ou <a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="#team" class="btn btn-outline-primary">Découvrez Notre Équipe</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title text-center">Que pensent les autres de nos cours de snowboard ?</h2>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"J'étais là pendant le week-end du PolarSound. La fixation de ma planche s'est cassée, et ils m'ont accueilli comme chez moi. Ils ont réparé la planche et la fixation en un rien de temps, et j'ai pu continuer à rider. Génial, merci !"</p>
+                    <p class="testimonial-author">Javier Mora</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Victor et Emilio étaient fantastiques : 100% disponibles, compétents et efficaces. Merci d'avoir rendu nos vacances parfaites"</p>
+                    <p class="testimonial-author">Diogo Salema da Costa</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Service excellent et très professionnel !"</p>
+                    <p class="testimonial-author">Jesús Suárez</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title text-center">Questions Fréquentes sur Vos Cours de Snowboard</h2>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quel équipement est nécessaire et quelles protections sont essentielles pour apprendre le snowboard ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour vos cours de snowboard, il est indispensable d'apporter une planche, des boots et des fixations adaptées à votre niveau. Si vous n'avez pas votre propre matériel, vous pouvez le louer dans les magasins spécialisés de Baqueira Beret.</p>
+                        <p>En tant qu'instructeur expérimenté, ma recommandation claire en matière de sécurité est la suivante : Le casque est obligatoire pour tous. De plus, des lunettes ou un masque de snowboard spécifiques sont fortement recommandés pour une vision optimale et une protection oculaire.</p>
+                        <p>Pour vos premières chutes, qui font inévitablement partie de l'apprentissage, nous vous conseillons vivement des protections spécifiques : une dorsale (obligatoire pour les enfants !) et des protections de fessiers avec protection du coccyx, fondamentales pour éviter les chocs en étant assis au sol et aussi en mouvement. Votre sécurité est notre priorité pour que vous profitiez au maximum de chaque descente !</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quel est l'âge recommandé pour commencer à apprendre le snowboard ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Chez Alpine Ski Academy, basés sur notre expérience et notre méthodologie, nous considérons que l'âge idéal pour que les enfants commencent leurs cours de snowboard est à partir de 5-6 ans.</p>
+                        <p>À cet âge, les petits ont généralement développé la coordination et l'équilibre nécessaires pour aborder les fondamentaux du snowboard de manière amusante et progressive, garantissant un apprentissage sûr et efficace.</p>
+                        <p>Notre équipe de professionnels adaptera chaque cours à leur rythme et, comme toujours, en privilégiant leur sécurité avec l'équipement approprié !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <p>Vous avez d'autres questions sur le monde du snowboard, l'équipement ou la préparation de vos cours ?</p>
+            <a href="#" class="btn btn-outline-primary">Visitez notre Blog</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Prêt à Maîtriser la Planche ?</h2>
+        <p class="mb-4">Réservez Maintenant Votre Cours de Snowboard et Maîtrisez Baqueira !</p>
+        
+        <div class="mt-4">
+            <a href="https://wa.me/34669911342" target="_blank"https://wa.me/34669911342" target="_blank">+34669911342</a>" class="btn btn-light btn-lg me-3">
+                <i class="fas fa-phone me-2"></i>Appeler pour Réserver
+            </a>
+            <a href="mailto:<a href="mailto:reservas@alpineskiacademy.com" target="_blank">reservas@alpineskiacademy.com</a>" class="btn btn-outline-light btn-lg" target="_blank">
+                <i class="fas fa-envelope me-2"></i>Demander des Informations
+            </a>
+        </div>
+        
+        <p class="mt-4">Vous préférez un contact plus personnel ou avez déjà un groupe formé ? Contactez-nous Directement !</p>
+    </div>
+</section>
+
+ <!-- Footer section  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Alpine Ski Academy</h5>
+                    <p class="footer-description">Votre école de ski et snowboard à Baqueira Beret. Leçons personnalisées pour tous niveaux et âges, progrès garanti et expériences inoubliables sur la neige.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone me-2"></i> <a href="https://wa.me/34669911342" target="_blank">+34 669 911 342</a></p>
+                        <p><i class="fas fa-envelope me-2"></i>reservas@alpineskiacademy.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                         <li><a href="#" style="text-decoration: none; color: inherit;">Cours de Ski</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Cours de Snowboard</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À Propos</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Voyages</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Caméras</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Location de Matériel</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Tarifs</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact / Réservation</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">Entreprise</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À Propos de Nous</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Notre équipe</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Témoignages</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Blog</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <div class="social-links mb-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="footer-title mt-4">Liens légaux</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Mentions Légales</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique de Confidentialité</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique de Cookies</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Politique d'Annulation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <hr class="footer-divider">
+                </div>
+                <div class="col-md-6">
+                    <p class="copyright">© <span id="currentYear"></span> Alpine Ski Academy. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="legal-notice">Alpine Ski Academy S.L. est une entreprise indépendante. Nous ne sommes pas liés ni ne faisons partie de Baqueira Beret, S.A. L'utilisation du nom Baqueira est strictement pour localiser le lieu où nous réalisons nos services en tant qu'école de ski.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/34669911342" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+    // FAQ toggle functionality
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html> 
