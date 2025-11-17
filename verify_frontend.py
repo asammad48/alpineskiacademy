@@ -38,7 +38,7 @@ def main():
 
         # Get the absolute path to the HTML file
         current_dir = os.path.dirname(os.path.abspath(__file__))
-
+        
         # Test Desktop
         page.set_viewport_size({"width": 1280, "height": 720})
         page.goto('file://' + os.path.join(current_dir, 'index.html'))

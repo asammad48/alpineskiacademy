@@ -23,7 +23,7 @@ test.describe('Navbar and Top Info Bar on English Page', () => {
   test('should display top-info-bar above the navbar on desktop', async ({ page }) => {
     await page.goto('http://localhost:8000/en/about-us.html');
     await page.setViewportSize({ width: 1280, height: 720 });
-
+    
     await page.waitForTimeout(500); // Wait for layout adjustments
 
     const topInfoBar = await page.locator('.top-info-bar');
@@ -51,12 +51,12 @@ test.describe('Navbar and Top Info Bar on English Page', () => {
 
     expect(topInfoBarBoundingBox.height).toBeGreaterThan(0);
     expect(navbarBoundingBox.y).toBeCloseTo(topInfoBarBoundingBox.height);
-
+    
     await navbarToggler.click();
-
+    
     const dropdownToggle = await page.locator('#skiLessonsDropdown');
     await dropdownToggle.click();
-
+    
     const dropdownMenu = await page.locator('.dropdown-menu[aria-labelledby="skiLessonsDropdown"]');
     await expect(dropdownMenu).toBeVisible();
   });
