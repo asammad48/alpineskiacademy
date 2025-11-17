@@ -1,46 +1,70 @@
 
-// Bootstrap & jQuery JS
 document.addEventListener('DOMContentLoaded', function() {
+    // Dynamically adjust navbar position based on top-info-bar height
+    function adjustLayoutForTopBar() {
+        const topBar = document.querySelector('.top-info-bar');
+        const navbar = document.querySelector('.navbar.fixed-top');
+        const heroSection = document.querySelector('.hero-section');
+
+        if (topBar && navbar) {
+            const topBarHeight = topBar.offsetHeight;
+            navbar.style.top = `${topBarHeight}px`;
+
+            const navbarHeight = navbar.offsetHeight;
+            const totalOffset = topBarHeight + navbarHeight;
+            document.body.style.paddingTop = `${totalOffset}px`;
+
+            // Adjust hero section margin if it exists
+            if (heroSection) {
+                // The hero section's negative margin was pulling it under the old navbar setup.
+                // With dynamic positioning, it should start right after the navbar.
+                heroSection.style.marginTop = '0';
+            }
+        }
+    }
+
+    // Run on initial load
+    adjustLayoutForTopBar();
+    // Rerun on resize to handle orientation changes or browser resizing
+    window.addEventListener('resize', adjustLayoutForTopBar);
+
     // Set current year in footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
     
-  // Toggle FAQ answers - Fixed version
-function toggleFaq(element) {
-    // Get the answer element
-    const answer = element.nextElementSibling;
-    
-    // Toggle answer visibility
-    if (answer.style.display === 'block') {
-        answer.style.display = 'none';
-    } else {
-        answer.style.display = 'block';
-    }
-    
-    // Toggle chevron icon
-    const icon = element.querySelector('i');
-    icon.classList.toggle('fa-chevron-down');
-    icon.classList.toggle('fa-chevron-up');
-}
+    // Toggle FAQ answers
+    window.toggleFaq = function(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('i');
 
-// Initialize FAQ items when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Make sure all FAQ answers start as hidden
-    document.querySelectorAll('.faq-answer').forEach(answer => {
-        answer.style.display = 'none';
-    });
-});
+        // Close other open FAQs
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item.querySelector('.faq-question') !== element) {
+                const otherAnswer = item.querySelector('.faq-answer');
+                const otherIcon = item.querySelector('.faq-question i');
+                if (otherAnswer.classList.contains('active')) {
+                    otherAnswer.classList.remove('active');
+                    otherIcon.style.transform = 'rotate(0deg)';
+                }
+            }
+        });
+
+        // Toggle the clicked FAQ
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            answer.classList.add('active');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    };
     
     // Navbar scroll effect
     $(window).scroll(function() {
         if ($(window).scrollTop() > 50) {
-            $('.navbar').addClass('shadow-sm').css('padding', '10px 0');
-            $('.navbar-brand img').css('height', '40px');
+            $('.navbar').addClass('shadow-sm');
         } else {
-            $('.navbar').removeClass('shadow-sm').css('padding', '15px 0');
-            $('.navbar-brand img').css('height', '50px');
+            $('.navbar').removeClass('shadow-sm');
         }
-        
-        // Check if why-us section is in view for counter animation
         checkCounterAnimation();
     });
     
@@ -48,67 +72,52 @@ document.addEventListener('DOMContentLoaded', function() {
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault();
         
-        $('html, body').animate(
-            {
-                scrollTop: $($(this).attr('href')).offset().top - 70,
-            },
-            500,
-            'linear'
-        );
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 100 // Adjusted offset for fixed navbar
+        }, 500, 'linear');
     });
 
-let countersAnimated = false;
+    let countersAnimated = false;
 
-$(document).ready(function() {
     function checkCounterAnimation() {
         if (countersAnimated) return;
 
-        const $whyUs = $('#why-us');
-        if ($whyUs.length === 0) return; // element must exist
+        const $statsSection = $('.stats-info-section');
+        if ($statsSection.length === 0) return;
 
         const scrollPos = $(window).scrollTop();
-        const whyUsPos = $whyUs.offset().top; // safe now
+        const statsPos = $statsSection.offset().top;
         const windowHeight = $(window).height();
 
-        if (scrollPos > whyUsPos - windowHeight + 200) {
+        if (scrollPos > statsPos - windowHeight + 200) {
             animateCounters();
             countersAnimated = true;
         }
     }
 
-    // Run on scroll
-    $(window).on('scroll', checkCounterAnimation);
-
-    // Also run once on page load
-    checkCounterAnimation();
-});
-
-
-    
     function animateCounters() {
-        $('.counter-number').each(function() {
-            const $this = $(this);
-            const target = parseInt($this.data('target'));
-            const duration = 300; // 0.3 seconds
-            const steps = 30; // Number of animation steps
-            const increment = target / steps;
-            let current = 0;
-            let step = 0;
-            
-            const timer = setInterval(() => {
-                current += increment;
-                step++;
-                
-                if (step >= steps) {
-                    $this.text(target.toLocaleString());
-                    clearInterval(timer);
-                } else {
-                    $this.text(Math.round(current).toLocaleString());
-                }
-            }, duration / steps);
+        // Years of Experience
+        $({ value: 0 }).animate({ value: 20 }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function() { $('#yearsExperience').text(Math.ceil(this.value)); }
+        });
+
+        // Satisfied Clients
+        $({ value: 0 }).animate({ value: 5000 }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function() { $('#satisfiedClients').text(Math.ceil(this.value) + '+'); }
+        });
+
+        // Satisfaction Rate
+        $({ value: 0 }).animate({ value: 100 }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function() { $('#satisfactionRate').text(Math.ceil(this.value) + '%'); }
         });
     }
-    
-    // Initial check in case page is loaded with section already in view
-    setTimeout(checkCounterAnimation, 500);
+
+    // Run check on load and scroll
+    checkCounterAnimation();
 });
