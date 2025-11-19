@@ -18,7 +18,7 @@ test.describe('Navbar and Top Info Bar', () => {
     });
 
     // Give the server a moment to start
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 5000));
     console.log('Server started with PID:', serverProcess.pid);
   });
 
