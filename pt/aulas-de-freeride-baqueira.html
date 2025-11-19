@@ -10,9 +10,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!--Custom JS files -->
-    <script src="script.js"></script>
-    <script src="animation.js"></script>
-    <script src="language.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/animation.js"></script>
+    <script src="../js/language.js"></script>
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">
     {
@@ -55,14 +55,14 @@
     <meta property="twitter:image" content="https://alpineskiacademy.com/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
 
     <!-- Preload -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="../styles.css" as="style">
+    <link rel="preload" href="../css/styles.css" as="style">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -80,7 +80,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
@@ -105,8 +105,8 @@
     <!-- Header with Navigation and Language Switcher -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../pt/">
-                <img src="../logo1.jpg" alt="Alpine Ski Academy – Escola de esqui e snowboard em Baqueira">
+            <a class="navbar-brand" href="../pt.html">
+                <img src="../images/logo1.jpg" alt="Alpine Ski Academy – Escola de esqui e snowboard em Baqueira">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -118,40 +118,32 @@
                             Aulas de Esqui
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="skiLessonsDropdown">
-                            <!-- Aulas Particulares -->
+                            <!-- Aulas particulares -->
                             <li>
                                 <h6 class="dropdown-header">Aulas Particulares</h6>
                             </li>
-                            <li><a class="dropdown-item" href="clases-esqui-particulares-ninos-baqueira.html">Crianças</a>
-                            </li>
-                            <li><a class="dropdown-item" href="aulas-esqui-privadas-familias-baqueira.html">Famílias</a></li>
-                            <li><a class="dropdown-item" href="aulas-particulares-adultos-baqueira.html">Adultos</a>
-                            </li>
-                            <li><a class="dropdown-item" href="aulas-esqui-privadas-carv-baqueira.html">Com Carv</a></li>
+                            <li><a class="dropdown-item" href="aulas-particulares-criancas-baqueira.html">Crianças</a></li>
+                            <li><a class="dropdown-item" href="aulas-particulares-familias-baqueira.html">Famílias</a></li>
+                            <li><a class="dropdown-item" href="aulas-particulares-adultos-baqueira.html">Adultos</a></li>
+                            <li><a class="dropdown-item" href="aulas-tecnologia-carv-baqueira.html">Com Carv</a></li>
+
+                            <!-- Aulas especiais -->
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
+                            <li><a class="dropdown-item" href="aulas-de-freeride-baqueira.html">Freeride</a></li>
+                            <li><a class="dropdown-item" href="aulas-de-freestyle-baqueira.html">Freestyle</a></li>
 
-                            <!-- Aulas Especializadas -->
-                            <li>
-                                <h6 class="dropdown-header">Aulas Especializadas</h6>
-                            </li>
-                            <li><a class="dropdown-item" href="aulas-esqui-freeride-baqueira.html">Freeride</a></li>
-                            <li><a class="dropdown-item" href="aulas-esqui-freestyle-baqueira.html">Freestyle</a></li>
+                            <!-- Aulas em grupo -->
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-
-                            <!-- Aulas em Grupo -->
                             <li>
                                 <h6 class="dropdown-header">Aulas em Grupo</h6>
                             </li>
-                            <li><a class="dropdown-item" href="aulas-em-grupo-criancas-baqueira.html">Grupo de
-                                    Crianças</a></li>
-                            <li><a class="dropdown-item" href="aulas-em-grupo-adultos-baqueira.html">Grupo de
-                                    Adultos</a></li>
-                            <li><a class="dropdown-item" href="aulas-esqui-grupo-empresas-escolas-baqueira.html">Empresas/Escolas</a>
-                            </li>
+                            <li><a class="dropdown-item" href="aulas-em-grupo-criancas-baqueira.html">Grupo Crianças</a></li>
+                            <li><a class="dropdown-item" href="aulas-em-grupo-adultos-baqueira.html">Grupo Adultos</a></li>
+                            <li><a class="dropdown-item" href="aulas-para-empresas-escolas-baqueira.html">Empresas/Escolas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -194,10 +186,10 @@
                         <li><a class="dropdown-item" href="../clases-de-freeride-baqueira.html">
                             <img src="https://flagcdn.com/w40/es.png" width="20" height="15" class="me-2">Español
                         </a></li>
-                        <li><a class="dropdown-item" href="../ca/classes-desqui-freeride-baqueira.html">
+                        <li><a class="dropdown-item" href="../ca/classes-de-freeride-baqueira.html">
                             <img src="https://flagcdn.com/w40/ad.png" width="20" height="15" class="me-2">Català
                         </a></li>
-                        <li><a class="dropdown-item" href="../fr/cours-de-ski-freeride-baqueira.html">
+                        <li><a class="dropdown-item" href="../fr/cours-de-freeride-baqueira.html">
                             <img src="https://flagcdn.com/w40/fr.png" width="20" height="15" class="me-2">Français
                         </a></li>
                         <li><a class="dropdown-item active" href="aulas-de-freeride-baqueira.html">
@@ -226,7 +218,7 @@
                         <a href="https://wa.me/34669911342" class="btn btn-primary btn-lg me-3" target="_blank">
                             <i class="fab fa-whatsapp me-2"></i>Reserve a Sua Aula de Freeride
                         </a>
-                        <a href="precos-e-tarifas-baqueira.html" class="btn btn-outline-light btn-lg">
+                        <a href="precos-aulas-esqui-snowboard-baqueira.html" class="btn btn-outline-light btn-lg">
                             <i class="fas fa-euro-sign me-2"></i>Consulte as Nossas Tarifas
                         </a>
                     </div>
@@ -240,7 +232,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../pt/">Início</a></li>
+                    <li class="breadcrumb-item"><a href="../pt.html">Início</a></li>
                     <li class="breadcrumb-item"><a href="aulas-de-esqui-baqueira.html">Aulas de Esqui</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Freeride</li>
                 </ol>
@@ -627,22 +619,19 @@
                     <h5 class="footer-title">Serviços</h5>
                     <ul class="footer-links">
                         <li><a href="aulas-de-esqui-baqueira.html">Aulas de Esqui</a></li>
-                        <li><a href="aulas-de-snowboard-baqueira.html">Aulas de Snowboard</a></li>
-                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                        <li><a href="viagens-de-esqui.html">Viagens</a></li>
-                        <li><a href="cameras-baqueira.html">Câmaras</a></li>
-                        <li><a href="aluguel-de-equipamento-baqueira.html">Aluguer de Equipamento</a></li>
-                        <li><a href="precos-e-tarifas-baqueira.html">Preços</a></li>
+                        <li><a href="aulas-snowboard-baqueira.html">Aulas de Snowboard</a></li>
+                        <li><a href="webcams-baqueria.html">Câmaras</a></li>
+                        <li><a href="aluguer-material-esqui-snowboard-baqueira.html">Aluguer de Equipamento</a></li>
+                        <li><a href="precos-aulas-esqui-snowboard-baqueira.html">Preços</a></li>
                         <li><a href="contato-reservas.html">Contato/Reservas</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4">
                     <h5 class="footer-title">Empresa</h5>
                     <ul class="footer-links">
                         <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                        <li><a href="sobre-nos.html">A Nossa Equipa</a></li>
-                        <li><a href="sobre-nos.html">Testemunhos</a></li>
+                        <li><a href="viajens-esqui.html">Viagens</a></li>
+                        <li><a href="precos-aulas-esqui-snowboard-baqueira.html">Preços</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contato-reservas.html">Contato</a></li>
                     </ul>
@@ -659,10 +648,10 @@
 
                     <h5 class="footer-title mt-4">Links Legais</h5>
                     <ul class="footer-links">
-                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="aviso-legal-pt.html">Aviso Legal</a></li>
                         <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
                         <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
-                        <li><a href="politica-de-cancelamento.html">Política de Cancelamento</a></li>
+                        <li><a href="Política-de-cancelamento.html">Política de Cancelamento</a></li>
                     </ul>
                 </div>
             </div>

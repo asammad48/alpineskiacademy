@@ -18,7 +18,7 @@
         body {
             /*font-family: 'Open Sans', sans-serif;*/
             overflow-x: hidden;
-            padding-top: 76px; /* To account for fixed navbar */
+            /* padding-top is now handled by script.js */
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
@@ -55,7 +55,7 @@
 .navbar {
     padding: 12px 0;
     transition: all 0.3s;
-    z-index: 1020;
+    z-index: 1030;
 }
 
 .navbar-brand img {
@@ -140,7 +140,6 @@
     
     /* Fix dropdown menu visibility on mobile */
     .nav-item.dropdown .dropdown-menu {
-        position: static !important; /* Normal document flow */
         float: none !important;
         width: 100% !important;
         margin-top: 0 !important;
@@ -202,7 +201,7 @@
             padding: 150px 0 100px;
             text-align: center;
             color: white;
-            margin-top: -76px;
+            /* margin-top is now handled by script.js */
         }
         
         .hero-content {
@@ -266,7 +265,6 @@
     
     /* Fix dropdown menu visibility on mobile - Let Bootstrap handle display */
     .nav-item.dropdown .dropdown-menu {
-        position: static !important; /* Normal document flow */
         float: none !important;
         width: 100% !important;
         margin-top: 0 !important;
@@ -328,9 +326,6 @@
     }
     
     /* Prevent hover from interfering on mobile */
-    .navbar .nav-item.dropdown:hover .dropdown-menu {
-        display: none !important;
-    }
 }
         
    
@@ -833,7 +828,7 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1035; /* Higher than navbar */
+    z-index: 1031;
 }
 
 .top-info-item {
@@ -863,20 +858,7 @@ footer {
   color: #c44d7f; /* Hover color */
 }
 
-/* Adjust body padding to account for the top info bar */
-body {
-    padding-top: 106px; /* Increased from 76px to account for top bar */
-}
-
-/* Adjust hero section margin */
-.hero-section {
-    margin-top: -106px; /* Increased from -76px to account for top bar */
-}
-
-/* Make navbar slightly lower to accommodate top bar */
-.navbar {
-    top: 28px; /* Height of top info bar */
-}
+/* Body padding and navbar top are now handled dynamically by script.js */
 
 /* Book Now CTA Button */
 .nav-cta {
@@ -1382,35 +1364,6 @@ body {
             }
         }
 
-        /* Hover dropdown styles */
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.navbar .dropdown-menu {
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-}
-
-/* Language switcher specific hover styles */
-.language-switcher:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-/* Prevent dropdown from closing when moving cursor to dropdown */
-.navbar .dropdown-menu {
-    margin-top: 0;
-    pointer-events: auto;
-}
 
 /* Adjust for mobile devices */
 @media (max-width: 991px) {

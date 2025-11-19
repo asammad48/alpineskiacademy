@@ -1,0 +1,17 @@
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /en/about-us.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] code 404, message File not found
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /language.js HTTP/1.1" 404 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/clases-divertidas-esqu%C3%AD-alpine-ski-academy.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /animation.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /logo1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/emilio-profesor-alpine-ski-academy-esquiando.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/Victor-ficha-profesor-Alpine-ski-academy.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/Emilio-ficha-profesor-alpine-ski-academy.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/Carlos-Ficha-profesor-alpine-ski-academy.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] code 404, message File not found
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/Srgi-ficha-profesor-freestyle.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/Anto-ficha-profesora-alpine-ski-Academy.webp HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/titulo-oficial-TD3-Victor-Puche-Fita%20(%20incrustar%20en%20pequeno%20en%20la%20ficha%20o%20en%20algun%20lugar%20para%20aumentar%20el%20EEAT%20).jpg HTTP/1.1" 404 -
+127.0.0.1 - - [17/Nov/2025 07:30:34] "GET /images/Nosotros/profesor-esqui-alpine-ski-academy-usando-carv-baqueira-beret.webp HTTP/1.1" 200 -
